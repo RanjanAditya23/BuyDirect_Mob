@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Mobile BuyDirect Automation Test Suite">
+	
+    <listeners>
+        <listener class-name="org.BuyDirect_Android_utils.ExtentTestNGListener"/>
+    </listeners>
+    
+    <test name="Test Cases">
+        <classes>
+            <class name="org.BIMNetworks.BuyDirect_Test.BaseTest"/>
+            <class name="org.BIMNetworks.BuyDirect_Test.WelcomePageTest"/>
+            <class name="org.BIMNetworks.BuyDirect_Test.EnrollPageTest"/>
+            <!-- Add more test classes if needed -->
+        </classes>
+    </test>
+</suite>
