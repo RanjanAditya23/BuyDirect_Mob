@@ -6,15 +6,6 @@
   </listeners>
   <test thread-count="5" name="Test Cases(failed)">
     <classes>
-      <class name="org.BIMNetworks.BuyDirect_Test.WelcomePageTest">
-        <methods>
-          <include name="test_FooterText"/>
-          <include name="driverInitialization"/>
-          <include name="test_FooterTextisDisplayed"/>
-          <include name="configureAppium"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- org.BIMNetworks.BuyDirect_Test.WelcomePageTest -->
       <class name="org.BIMNetworks.BuyDirect_Test.EnrollPageTest">
         <methods>
           <include name="test_ValidateTermsAndConditions"/>
@@ -25,6 +16,15 @@
           <include name="driverInitialization"/>
         </methods>
       </class> <!-- org.BIMNetworks.BuyDirect_Test.EnrollPageTest -->
+      <class name="org.BIMNetworks.BuyDirect_Test.WelcomePageTest">
+        <methods>
+          <include name="test_FooterText"/>
+          <include name="driverInitialization"/>
+          <include name="test_FooterTextisDisplayed"/>
+          <include name="configureAppium"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.BIMNetworks.BuyDirect_Test.WelcomePageTest -->
     </classes>
   </test> <!-- Test Cases(failed) -->
 </suite> <!-- Failed suite [Mobile BuyDirect Automation Test Suite] -->
