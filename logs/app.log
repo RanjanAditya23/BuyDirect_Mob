@@ -1,0 +1,10 @@
+2024-06-20 16:58:51 INFO  BaseTest:39 - Configuring Appium...
+2024-06-20 16:58:51 INFO  BaseTest:59 - Appium service started successfully.
+2024-06-20 16:58:51 DEBUG DriverSetUp:48 - Setting up EdgeOptions
+2024-06-20 16:58:51 DEBUG DriverSetUp:59 - EdgeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:edgedriver_autodownload: true, appium:noReset: true, appium:platformVersion: 14, browserName: Edge, platformName: ANDROID}
+2024-06-20 16:59:13 INFO  BaseTest:104 - Session ID after initialization: d6fee0ff-149b-4c51-a3d6-b1e58d979911
+2024-06-20 16:59:14 INFO  BaseTest:39 - Configuring Appium...
+2024-06-20 16:59:14 INFO  BaseTest:59 - Appium service started successfully.
+2024-06-20 16:59:14 DEBUG DriverSetUp:48 - Setting up EdgeOptions
+2024-06-20 16:59:14 DEBUG DriverSetUp:59 - EdgeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:edgedriver_autodownload: true, appium:noReset: true, appium:platformVersion: 14, browserName: Edge, platformName: ANDROID}
+2024-06-20 16:59:33 INFO  BaseTest:104 - Session ID after initialization: 6907fec8-eabb-4212-9830-510c1d431478
