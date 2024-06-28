@@ -582,3 +582,19 @@
 2024-06-28 15:21:24 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
 2024-06-28 15:21:51 INFO  BaseTest:115 - Tearing down the test...
 2024-06-28 15:21:51 INFO  BaseTest:118 - Session ID before quitting driver: f44f2fd6-697a-4af2-bfec-8aa24e97b0f2
+2024-06-28 17:44:32 INFO  BaseTest:37 - Configuring Appium...
+2024-06-28 17:44:32 INFO  BaseTest:59 - Appium service started successfully.
+2024-06-28 17:44:32 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-06-28 17:44:32 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-06-28 17:45:14 INFO  BaseTest:100 - Session ID after initialization: c2c65d3c-d3f9-4c17-b08e-50a951ae8a3d
+2024-06-28 17:45:33 INFO  BaseTest:107 - Session ID after launching URL: c2c65d3c-d3f9-4c17-b08e-50a951ae8a3d
+2024-06-28 17:46:07 INFO  BaseTest:115 - Tearing down the test...
+2024-06-28 17:46:07 INFO  BaseTest:118 - Session ID before quitting driver: c2c65d3c-d3f9-4c17-b08e-50a951ae8a3d
+2024-06-28 17:46:15 INFO  BaseTest:37 - Configuring Appium...
+2024-06-28 17:46:16 INFO  BaseTest:59 - Appium service started successfully.
+2024-06-28 17:46:16 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-06-28 17:46:16 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-06-28 17:46:55 INFO  BaseTest:100 - Session ID after initialization: 27f76c3a-61a0-4523-8ae1-777e39c73a25
+2024-06-28 17:47:07 INFO  BaseTest:107 - Session ID after launching URL: 27f76c3a-61a0-4523-8ae1-777e39c73a25
+2024-06-28 17:47:41 INFO  BaseTest:115 - Tearing down the test...
+2024-06-28 17:47:41 INFO  BaseTest:118 - Session ID before quitting driver: 27f76c3a-61a0-4523-8ae1-777e39c73a25
