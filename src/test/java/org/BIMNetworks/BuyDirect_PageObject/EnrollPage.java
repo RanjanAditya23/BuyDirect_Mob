@@ -193,6 +193,11 @@ public class EnrollPage {
     @FindBy(id = "term")
     private WebElement checkbox;
     
+    // Method to return the checkbox element
+    public WebElement getTermsAndConditionsCheckbox() {
+        return checkbox;
+    }
+    
     public void checkTermsAndConditions() {
         if (!checkbox.isSelected()) {
             checkbox.click();

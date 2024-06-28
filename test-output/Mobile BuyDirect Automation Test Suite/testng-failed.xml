@@ -9,20 +9,38 @@
       <class name="org.BIMNetworks.BuyDirect_Test.EnrollPageTest">
         <methods>
           <include name="test_ValidateTermsAndConditions"/>
+          <include name="test_PartnerLogo"/>
+          <include name="test_ProgressIndicators"/>
+          <include name="test_isDLRequired"/>
+          <include name="test_PartnerTenderNameisDisplayed"/>
           <include name="configureAppium"/>
-          <include name="test_FooterText"/>
+          <include name="test_ValidEnrollmentInputFields"/>
           <include name="tearDown"/>
-          <include name="test_FooterTextisDisplayed"/>
+          <include name="test_PartnerTenderNameHeader"/>
           <include name="driverInitialization"/>
+          <include name="test_EnrollPageRequiredFieldErrorMessage"/>
+          <include name="test_PartnerLogoisDisplayed"/>
         </methods>
       </class> <!-- org.BIMNetworks.BuyDirect_Test.EnrollPageTest -->
       <class name="org.BIMNetworks.BuyDirect_Test.WelcomePageTest">
         <methods>
-          <include name="test_FooterText"/>
+          <include name="test_TitleisDisplayedCenter"/>
+          <include name="BrokenImageTest"/>
+          <include name="test_SignInHereLinkTextisDisplayed"/>
+          <include name="test_TextBeforeSignInHereLink"/>
           <include name="driverInitialization"/>
-          <include name="test_FooterTextisDisplayed"/>
+          <include name="test_WelcomePageTitle"/>
+          <include name="test_ContinueButton"/>
+          <include name="test_PartnerLogoisDisplayed"/>
+          <include name="test_PartnerLogo"/>
           <include name="configureAppium"/>
+          <include name="test_welcomeMessage1"/>
+          <include name="test_ContinueButtonText"/>
+          <include name="test_PartnerTenderNameHeader"/>
+          <include name="test_welcomeMessage2"/>
+          <include name="test_CurrentURL"/>
           <include name="tearDown"/>
+          <include name="test_PartnerTenderNameisDisplayed"/>
         </methods>
       </class> <!-- org.BIMNetworks.BuyDirect_Test.WelcomePageTest -->
     </classes>

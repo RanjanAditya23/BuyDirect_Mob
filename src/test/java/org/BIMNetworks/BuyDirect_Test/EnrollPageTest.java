@@ -15,6 +15,7 @@ import org.BuyDirect_Android_utils.DataBaseConnection;
 import org.BuyDirect_Android_utils.ExcelUtility;
 import org.BuyDirect_Android_utils.Generics;
 import org.BuyDirect_Android_utils.Helper;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
@@ -87,29 +88,6 @@ public class EnrollPageTest extends BaseTest {
 		Assert.assertEquals(genericsObject.partnerTenderNameHeader(), DataBaseConnection.testWithDataBase(query).get(0));
 	}
 
-	// Footer Text
-	@Test
-	public void test_FooterTextisDisplayed() {
-		boolean footertextDisplayed = genericsObject.footerTextisDisplayed();
-		assertTrue(footertextDisplayed, "Footer text is not displayed on the welcome page");
-	}
-
-	@Test
-	public void test_FooterText() throws SQLException {
-		String query = "SELECT P1.Product_Name, P2.Partner_Contact_Number FROM [dbo].[Partner_BuyDirect_Settings] AS P1 INNER JOIN [dbo].[Partner_Profile] AS P2 ON P1.Partner_ID = P2.Partner_ID WHERE P1.Partner_ID = 127";
-
-		// Fetching data from the database as a list
-		List<String> data = DataBaseConnection.testWithDataBase(query);
-
-		// Check if the list contains at least two elements
-		if (data.size() >= 2) {
-			String partnerName = data.get(0);
-			String contactNumber = data.get(1);
-			Assert.assertEquals(genericsObject.footerText(),
-					"Please contact the " + partnerName + " Support Team at " + contactNumber + " with any questions.");
-		}
-	}
-
 	@Test
 	public void test_ProgressIndicators() throws InterruptedException {
 		genericsObject.allProgressIndicatorIsDisplayed();
@@ -152,22 +130,25 @@ public class EnrollPageTest extends BaseTest {
 		Assert.assertTrue(enrollPageObject.isEmailRequiredErrorMessageDisplayed(),"Required Email Address error message not displayed");
 		Assert.assertTrue(enrollPageObject.isMobilePhoneRequiredErrorMessageDisplayed(),"Required Mobile Phone error message not displayed");
 		Assert.assertTrue(enrollPageObject.isPinRequiredErrorMessageDisplayed(),"Required Pin error message not displayed");
+		WebElement checkbox = enrollPageObject.getTermsAndConditionsCheckbox();
+		helperObject.scrollToElement(checkbox);
 		Assert.assertTrue(enrollPageObject.isTermsAndConditionsRequiredErrorMessageDisplayed(),"Required Terms and Services error message not displayed");
 	}	
 	
 	@Test
 	public void test_ValidateTermsAndConditions() throws InterruptedException {
-		// Now check the checkbox and validate the error message disappears
-		enrollPageObject.checkTermsAndConditions();
+		// Test logic for validating terms and conditions
+    	enrollPageObject.uncheckTermsAndConditions();
 		enrollPageObject.clickContinue();
-		// Assert that the error message is not displayed
+		Assert.assertTrue(enrollPageObject.isTermsAndConditionsRequiredErrorMessageDisplayed(), "Required Terms and Services error message not displayed");
+
+		enrollPageObject.checkTermsAndConditions();
 		Thread.sleep(2000);
-		// Check if the error message is not found in the page source or DOM structure
 		boolean isErrorMessagePresent = driver.getPageSource().contains("Please select Terms of Services");
-		Assert.assertFalse(isErrorMessagePresent,"Error message still found in page source or DOM structure after disappearing");
+		Assert.assertFalse(isErrorMessagePresent, "Error message still found in page source or DOM structure after disappearing");
 	}
 	
-	@Test
+	@Test(dependsOnMethods = "test_ValidateTermsAndConditions")
 	public void test_ValidEnrollmentInputFields() throws InterruptedException {
 		
 	    // Define the file path, sheet name

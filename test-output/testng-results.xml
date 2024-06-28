@@ -1,548 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="29" passed="24" failed="5" skipped="0">
+<testng-results ignored="0" total="25" passed="25" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-20T17:16:17 IST" name="Mobile BuyDirect Automation Test Suite" finished-at="2024-06-20T17:21:36 IST" duration-ms="318737">
+  <suite started-at="2024-06-28T15:18:09 IST" name="Mobile BuyDirect Automation Test Suite" finished-at="2024-06-28T15:21:53 IST" duration-ms="223659">
     <groups>
     </groups>
-    <test started-at="2024-06-20T17:16:17 IST" name="Test Cases" finished-at="2024-06-20T17:21:36 IST" duration-ms="318737">
+    <test started-at="2024-06-28T15:18:09 IST" name="Test Cases" finished-at="2024-06-28T15:21:53 IST" duration-ms="223659">
       <class name="org.BIMNetworks.BuyDirect_Test.WelcomePageTest">
-        <test-method is-config="true" signature="configureAppium()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2]" started-at="2024-06-20T17:16:18 IST" name="configureAppium" finished-at="2024-06-20T17:17:01 IST" duration-ms="43901" status="PASS">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691]" started-at="2024-06-28T15:18:10 IST" name="configureAppium" finished-at="2024-06-28T15:19:25 IST" duration-ms="74664" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureAppium -->
-        <test-method is-config="true" signature="driverInitialization()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2]" started-at="2024-06-20T17:17:01 IST" name="driverInitialization" finished-at="2024-06-20T17:17:03 IST" duration-ms="1681" status="PASS">
+        <test-method is-config="true" signature="driverInitialization()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691]" started-at="2024-06-28T15:19:25 IST" name="driverInitialization" finished-at="2024-06-28T15:19:26 IST" duration-ms="1343" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverInitialization -->
-        <test-method signature="test_FooterText()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2]" started-at="2024-06-20T17:17:03 IST" name="test_FooterText" finished-at="2024-06-20T17:17:38 IST" duration-ms="34647" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Located by By.xpath: //div[@id='openingWelcome']/div[2]/div[3]/div/p (tried for 30 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.xpath: //div[@id='openingWelcome']/div[2]/div[3]/div/p (tried for 30 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at org.BuyDirect_Android_utils.Generics.footerText(Generics.java:57)
-at org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_FooterText(WelcomePageTest.java:151)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.xpath: //div[@id='openingWelcome']/div[2]/div[3]/div/p
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
-at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
-at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$Eo3iXy6f.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 28 more
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@20801cbb (tried for 1 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
-... 35 more
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='openingWelcome']/div[2]/div[3]/div/p"}
-  (Session info: chrome=113.0.5672.136)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [603e35ce-2e7b-4bf6-84c5-79e0d597ec80, findElement {value=//div[@id='openingWelcome']/div[2]/div[3]/div/p, using=xpath}]
-Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.chrome/com.goog..., appPackage: com.android.chrome, automationName: UiAutomator2, browserName: Chrome, chromedriver_autodownload: true, deviceName: emulator-5554, noReset: true, platformName: ANDROID, platformVersion: 14}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2154, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
-Session ID: 603e35ce-2e7b-4bf6-84c5-79e0d597ec80
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:81)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 37 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_FooterText -->
-        <test-method signature="test_FooterTextisDisplayed()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2]" started-at="2024-06-20T17:17:38 IST" name="test_FooterTextisDisplayed" finished-at="2024-06-20T17:18:09 IST" duration-ms="30244" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Located by By.xpath: //div[@id='openingWelcome']/div[2]/div[3]/div/p (tried for 30 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.xpath: //div[@id='openingWelcome']/div[2]/div[3]/div/p (tried for 30 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at org.BuyDirect_Android_utils.Generics.footerTextisDisplayed(Generics.java:62)
-at org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_FooterTextisDisplayed(WelcomePageTest.java:136)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.xpath: //div[@id='openingWelcome']/div[2]/div[3]/div/p
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
-at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
-at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$Eo3iXy6f.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 28 more
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@2dafae61 (tried for 1 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
-... 35 more
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='openingWelcome']/div[2]/div[3]/div/p"}
-  (Session info: chrome=113.0.5672.136)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [603e35ce-2e7b-4bf6-84c5-79e0d597ec80, findElement {value=//div[@id='openingWelcome']/div[2]/div[3]/div/p, using=xpath}]
-Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.chrome/com.goog..., appPackage: com.android.chrome, automationName: UiAutomator2, browserName: Chrome, chromedriver_autodownload: true, deviceName: emulator-5554, noReset: true, platformName: ANDROID, platformVersion: 14}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2154, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
-Session ID: 603e35ce-2e7b-4bf6-84c5-79e0d597ec80
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 37 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_FooterTextisDisplayed -->
-        <test-method signature="test_PartnerLogo()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2]" started-at="2024-06-20T17:18:09 IST" name="test_PartnerLogo" finished-at="2024-06-20T17:18:12 IST" duration-ms="3413" status="PASS">
+        <test-method signature="test_PartnerLogo()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691]" started-at="2024-06-28T15:19:26 IST" name="test_PartnerLogo" finished-at="2024-06-28T15:19:30 IST" duration-ms="4183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_PartnerLogo -->
-        <test-method signature="test_SignInHereLinkTextisDisplayed()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2]" started-at="2024-06-20T17:18:12 IST" name="test_SignInHereLinkTextisDisplayed" finished-at="2024-06-20T17:18:13 IST" duration-ms="748" status="PASS">
+        <test-method signature="test_SignInHereLinkTextisDisplayed()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691]" started-at="2024-06-28T15:19:30 IST" name="test_SignInHereLinkTextisDisplayed" finished-at="2024-06-28T15:19:31 IST" duration-ms="504" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_SignInHereLinkTextisDisplayed -->
-        <test-method signature="test_TextBeforeSignInHereLink()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2]" started-at="2024-06-20T17:18:13 IST" name="test_TextBeforeSignInHereLink" finished-at="2024-06-20T17:18:14 IST" duration-ms="494" status="PASS">
+        <test-method signature="test_TextBeforeSignInHereLink()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691]" started-at="2024-06-28T15:19:31 IST" name="test_TextBeforeSignInHereLink" finished-at="2024-06-28T15:19:31 IST" duration-ms="449" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_TextBeforeSignInHereLink -->
-        <test-method signature="test_TitleisDisplayedCenter()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2]" started-at="2024-06-20T17:18:14 IST" name="test_TitleisDisplayedCenter" finished-at="2024-06-20T17:18:16 IST" duration-ms="2760" status="PASS">
+        <test-method signature="test_TitleisDisplayedCenter()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691]" started-at="2024-06-28T15:19:31 IST" name="test_TitleisDisplayedCenter" finished-at="2024-06-28T15:19:33 IST" duration-ms="2041" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_TitleisDisplayedCenter -->
-        <test-method signature="test_welcomeMessage1()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2]" started-at="2024-06-20T17:18:16 IST" name="test_welcomeMessage1" finished-at="2024-06-20T17:18:20 IST" duration-ms="3386" status="PASS">
+        <test-method signature="test_welcomeMessage1()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691]" started-at="2024-06-28T15:19:33 IST" name="test_welcomeMessage1" finished-at="2024-06-28T15:19:36 IST" duration-ms="2965" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_welcomeMessage1 -->
-        <test-method signature="test_welcomeMessage2()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2]" started-at="2024-06-20T17:18:20 IST" name="test_welcomeMessage2" finished-at="2024-06-20T17:18:23 IST" duration-ms="3288" status="PASS">
+        <test-method signature="test_welcomeMessage2()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691]" started-at="2024-06-28T15:19:36 IST" name="test_welcomeMessage2" finished-at="2024-06-28T15:19:42 IST" duration-ms="5974" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_welcomeMessage2 -->
-        <test-method signature="BrokenImageTest()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2]" started-at="2024-06-20T17:18:23 IST" name="BrokenImageTest" finished-at="2024-06-20T17:18:25 IST" duration-ms="1718" status="PASS">
+        <test-method signature="BrokenImageTest()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691]" started-at="2024-06-28T15:19:42 IST" name="BrokenImageTest" finished-at="2024-06-28T15:19:43 IST" duration-ms="696" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrokenImageTest -->
-        <test-method signature="test_ContinueButtonText()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2]" started-at="2024-06-20T17:18:25 IST" name="test_ContinueButtonText" finished-at="2024-06-20T17:18:25 IST" duration-ms="585" status="PASS">
+        <test-method signature="test_ContinueButtonText()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691]" started-at="2024-06-28T15:19:43 IST" name="test_ContinueButtonText" finished-at="2024-06-28T15:19:43 IST" duration-ms="449" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_ContinueButtonText -->
-        <test-method signature="test_CurrentURL()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2]" started-at="2024-06-20T17:18:25 IST" name="test_CurrentURL" finished-at="2024-06-20T17:18:25 IST" duration-ms="79" status="PASS">
+        <test-method signature="test_CurrentURL()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691]" started-at="2024-06-28T15:19:43 IST" name="test_CurrentURL" finished-at="2024-06-28T15:19:43 IST" duration-ms="87" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_CurrentURL -->
-        <test-method signature="test_PartnerLogoisDisplayed()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2]" started-at="2024-06-20T17:18:25 IST" name="test_PartnerLogoisDisplayed" finished-at="2024-06-20T17:18:26 IST" duration-ms="242" status="PASS">
+        <test-method signature="test_PartnerLogoisDisplayed()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691]" started-at="2024-06-28T15:19:43 IST" name="test_PartnerLogoisDisplayed" finished-at="2024-06-28T15:19:44 IST" duration-ms="225" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_PartnerLogoisDisplayed -->
-        <test-method signature="test_PartnerTenderNameHeader()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2]" started-at="2024-06-20T17:18:26 IST" name="test_PartnerTenderNameHeader" finished-at="2024-06-20T17:18:29 IST" duration-ms="2833" status="PASS">
+        <test-method signature="test_PartnerTenderNameHeader()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691]" started-at="2024-06-28T15:19:44 IST" name="test_PartnerTenderNameHeader" finished-at="2024-06-28T15:19:46 IST" duration-ms="2767" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_PartnerTenderNameHeader -->
-        <test-method signature="test_PartnerTenderNameisDisplayed()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2]" started-at="2024-06-20T17:18:29 IST" name="test_PartnerTenderNameisDisplayed" finished-at="2024-06-20T17:18:29 IST" duration-ms="232" status="PASS">
+        <test-method signature="test_PartnerTenderNameisDisplayed()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691]" started-at="2024-06-28T15:19:46 IST" name="test_PartnerTenderNameisDisplayed" finished-at="2024-06-28T15:19:47 IST" duration-ms="198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_PartnerTenderNameisDisplayed -->
-        <test-method signature="test_WelcomePageTitle()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2]" started-at="2024-06-20T17:18:29 IST" name="test_WelcomePageTitle" finished-at="2024-06-20T17:18:29 IST" duration-ms="436" status="PASS">
+        <test-method signature="test_WelcomePageTitle()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691]" started-at="2024-06-28T15:19:47 IST" name="test_WelcomePageTitle" finished-at="2024-06-28T15:19:47 IST" duration-ms="416" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_WelcomePageTitle -->
-        <test-method signature="test_ContinueButton()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2]" started-at="2024-06-20T17:18:29 IST" name="test_ContinueButton" finished-at="2024-06-20T17:18:33 IST" depends-on-methods="org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_welcomeMessage2" duration-ms="3433" status="PASS">
+        <test-method signature="test_ContinueButton()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691]" started-at="2024-06-28T15:19:47 IST" name="test_ContinueButton" finished-at="2024-06-28T15:19:50 IST" depends-on-methods="org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_welcomeMessage2" duration-ms="3126" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_ContinueButton -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2]" started-at="2024-06-20T17:18:33 IST" name="tearDown" finished-at="2024-06-20T17:18:35 IST" duration-ms="2019" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691]" started-at="2024-06-28T15:19:50 IST" name="tearDown" finished-at="2024-06-28T15:19:53 IST" duration-ms="2456" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- org.BIMNetworks.BuyDirect_Test.WelcomePageTest -->
       <class name="org.BIMNetworks.BuyDirect_Test.EnrollPageTest">
-        <test-method is-config="true" signature="configureAppium()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5]" started-at="2024-06-20T17:18:35 IST" name="configureAppium" finished-at="2024-06-20T17:19:16 IST" duration-ms="41486" status="PASS">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@324a0017]" started-at="2024-06-28T15:19:53 IST" name="configureAppium" finished-at="2024-06-28T15:20:44 IST" duration-ms="51177" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureAppium -->
-        <test-method is-config="true" signature="driverInitialization()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5]" started-at="2024-06-20T17:19:16 IST" name="driverInitialization" finished-at="2024-06-20T17:19:16 IST" duration-ms="24" status="PASS">
+        <test-method is-config="true" signature="driverInitialization()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@324a0017]" started-at="2024-06-28T15:20:44 IST" name="driverInitialization" finished-at="2024-06-28T15:20:44 IST" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverInitialization -->
-        <test-method signature="BrokenImageTest()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5]" started-at="2024-06-20T17:19:16 IST" name="BrokenImageTest" finished-at="2024-06-20T17:19:17 IST" duration-ms="1114" status="PASS">
+        <test-method signature="BrokenImageTest()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@324a0017]" started-at="2024-06-28T15:20:44 IST" name="BrokenImageTest" finished-at="2024-06-28T15:20:45 IST" duration-ms="786" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrokenImageTest -->
-        <test-method signature="clickOnWelcomePageContinueButton()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5]" started-at="2024-06-20T17:19:17 IST" name="clickOnWelcomePageContinueButton" finished-at="2024-06-20T17:19:20 IST" duration-ms="2718" status="PASS">
+        <test-method signature="clickOnWelcomePageContinueButton()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@324a0017]" started-at="2024-06-28T15:20:45 IST" name="clickOnWelcomePageContinueButton" finished-at="2024-06-28T15:20:47 IST" duration-ms="2881" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnWelcomePageContinueButton -->
-        <test-method signature="test_EnrollPageRequiredFieldErrorMessage()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5]" started-at="2024-06-20T17:19:20 IST" name="test_EnrollPageRequiredFieldErrorMessage" finished-at="2024-06-20T17:19:24 IST" duration-ms="4376" status="PASS">
+        <test-method signature="test_EnrollPageRequiredFieldErrorMessage()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@324a0017]" started-at="2024-06-28T15:20:47 IST" name="test_EnrollPageRequiredFieldErrorMessage" finished-at="2024-06-28T15:20:56 IST" duration-ms="8140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_EnrollPageRequiredFieldErrorMessage -->
-        <test-method signature="test_FooterText()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5]" started-at="2024-06-20T17:19:24 IST" name="test_FooterText" finished-at="2024-06-20T17:20:01 IST" duration-ms="36443" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Located by By.xpath: //div[@id='openingWelcome']/div[2]/div[3]/div/p (tried for 30 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.xpath: //div[@id='openingWelcome']/div[2]/div[3]/div/p (tried for 30 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at org.BuyDirect_Android_utils.Generics.footerText(Generics.java:57)
-at org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_FooterText(EnrollPageTest.java:108)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.xpath: //div[@id='openingWelcome']/div[2]/div[3]/div/p
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
-at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
-at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$Eo3iXy6f.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 28 more
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@65e620b0 (tried for 1 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
-... 35 more
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='openingWelcome']/div[2]/div[3]/div/p"}
-  (Session info: chrome=113.0.5672.136)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [33aec463-faa4-4058-8ea7-57d4db5e1822, findElement {value=//div[@id='openingWelcome']/div[2]/div[3]/div/p, using=xpath}]
-Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.chrome/com.goog..., appPackage: com.android.chrome, automationName: UiAutomator2, browserName: Chrome, chromedriver_autodownload: true, deviceName: emulator-5554, noReset: true, platformName: ANDROID, platformVersion: 14}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2154, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
-Session ID: 33aec463-faa4-4058-8ea7-57d4db5e1822
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 37 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_FooterText -->
-        <test-method signature="test_FooterTextisDisplayed()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5]" started-at="2024-06-20T17:20:01 IST" name="test_FooterTextisDisplayed" finished-at="2024-06-20T17:20:32 IST" duration-ms="30233" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Located by By.xpath: //div[@id='openingWelcome']/div[2]/div[3]/div/p (tried for 30 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.xpath: //div[@id='openingWelcome']/div[2]/div[3]/div/p (tried for 30 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at org.BuyDirect_Android_utils.Generics.footerTextisDisplayed(Generics.java:62)
-at org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_FooterTextisDisplayed(EnrollPageTest.java:93)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.xpath: //div[@id='openingWelcome']/div[2]/div[3]/div/p
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
-at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
-at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$Eo3iXy6f.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 28 more
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@25cde5bb (tried for 1 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
-... 35 more
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='openingWelcome']/div[2]/div[3]/div/p"}
-  (Session info: chrome=113.0.5672.136)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [33aec463-faa4-4058-8ea7-57d4db5e1822, findElement {value=//div[@id='openingWelcome']/div[2]/div[3]/div/p, using=xpath}]
-Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.chrome/com.goog..., appPackage: com.android.chrome, automationName: UiAutomator2, browserName: Chrome, chromedriver_autodownload: true, deviceName: emulator-5554, noReset: true, platformName: ANDROID, platformVersion: 14}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2154, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
-Session ID: 33aec463-faa4-4058-8ea7-57d4db5e1822
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 37 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_FooterTextisDisplayed -->
-        <test-method signature="test_PartnerLogo()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5]" started-at="2024-06-20T17:20:32 IST" name="test_PartnerLogo" finished-at="2024-06-20T17:20:35 IST" duration-ms="3040" status="PASS">
+        <test-method signature="test_PartnerLogo()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@324a0017]" started-at="2024-06-28T15:20:56 IST" name="test_PartnerLogo" finished-at="2024-06-28T15:20:59 IST" duration-ms="3075" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_PartnerLogo -->
-        <test-method signature="test_PartnerLogoisDisplayed()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5]" started-at="2024-06-20T17:20:35 IST" name="test_PartnerLogoisDisplayed" finished-at="2024-06-20T17:20:35 IST" duration-ms="234" status="PASS">
+        <test-method signature="test_PartnerLogoisDisplayed()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@324a0017]" started-at="2024-06-28T15:20:59 IST" name="test_PartnerLogoisDisplayed" finished-at="2024-06-28T15:20:59 IST" duration-ms="307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_PartnerLogoisDisplayed -->
-        <test-method signature="test_PartnerTenderNameHeader()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5]" started-at="2024-06-20T17:20:35 IST" name="test_PartnerTenderNameHeader" finished-at="2024-06-20T17:20:38 IST" duration-ms="2946" status="PASS">
+        <test-method signature="test_PartnerTenderNameHeader()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@324a0017]" started-at="2024-06-28T15:20:59 IST" name="test_PartnerTenderNameHeader" finished-at="2024-06-28T15:21:13 IST" duration-ms="13689" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_PartnerTenderNameHeader -->
-        <test-method signature="test_PartnerTenderNameisDisplayed()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5]" started-at="2024-06-20T17:20:38 IST" name="test_PartnerTenderNameisDisplayed" finished-at="2024-06-20T17:20:39 IST" duration-ms="247" status="PASS">
+        <test-method signature="test_PartnerTenderNameisDisplayed()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@324a0017]" started-at="2024-06-28T15:21:13 IST" name="test_PartnerTenderNameisDisplayed" finished-at="2024-06-28T15:21:13 IST" duration-ms="223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_PartnerTenderNameisDisplayed -->
-        <test-method signature="test_ProgressIndicators()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5]" started-at="2024-06-20T17:20:39 IST" name="test_ProgressIndicators" finished-at="2024-06-20T17:20:39 IST" duration-ms="476" status="PASS">
+        <test-method signature="test_ProgressIndicators()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@324a0017]" started-at="2024-06-28T15:21:13 IST" name="test_ProgressIndicators" finished-at="2024-06-28T15:21:13 IST" duration-ms="540" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_ProgressIndicators -->
-        <test-method signature="test_ValidEnrollmentInputFields()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5]" started-at="2024-06-20T17:20:39 IST" name="test_ValidEnrollmentInputFields" finished-at="2024-06-20T17:20:59 IST" duration-ms="20379" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_ValidEnrollmentInputFields -->
-        <test-method signature="test_ValidateTermsAndConditions()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5]" started-at="2024-06-20T17:20:59 IST" name="test_ValidateTermsAndConditions" finished-at="2024-06-20T17:21:31 IST" duration-ms="31217" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: Located by By.id: btnEnroll (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.chrome/com.goog..., appPackage: com.android.chrome, automationName: UiAutomator2, browserName: Chrome, chromedriver_autodownload: true, deviceName: emulator-5554, noReset: true, platformName: ANDROID, platformVersion: 14}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2154, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
-Session ID: 33aec463-faa4-4058-8ea7-57d4db5e1822]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.id: btnEnroll (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.chrome/com.goog..., appPackage: com.android.chrome, automationName: UiAutomator2, browserName: Chrome, chromedriver_autodownload: true, deviceName: emulator-5554, noReset: true, platformName: ANDROID, platformVersion: 14}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2154, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
-Session ID: 33aec463-faa4-4058-8ea7-57d4db5e1822
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at org.BIMNetworks.BuyDirect_PageObject.EnrollPage.clickContinue(EnrollPage.java:221)
-at org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_ValidateTermsAndConditions(EnrollPageTest.java:162)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="test_ValidateTermsAndConditions()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@324a0017]" started-at="2024-06-28T15:21:13 IST" name="test_ValidateTermsAndConditions" finished-at="2024-06-28T15:21:18 IST" duration-ms="4558" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_ValidateTermsAndConditions -->
-        <test-method signature="test_isDLRequired()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5]" started-at="2024-06-20T17:21:31 IST" name="test_isDLRequired" finished-at="2024-06-20T17:21:34 IST" duration-ms="3283" status="PASS">
+        <test-method signature="test_isDLRequired()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@324a0017]" started-at="2024-06-28T15:21:18 IST" name="test_isDLRequired" finished-at="2024-06-28T15:21:21 IST" duration-ms="3170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_isDLRequired -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5]" started-at="2024-06-20T17:21:34 IST" name="tearDown" finished-at="2024-06-20T17:21:36 IST" duration-ms="1720" status="PASS">
+        <test-method signature="test_ValidEnrollmentInputFields()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@324a0017]" started-at="2024-06-28T15:21:21 IST" name="test_ValidEnrollmentInputFields" finished-at="2024-06-28T15:21:51 IST" depends-on-methods="org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_ValidateTermsAndConditions" duration-ms="29642" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_ValidEnrollmentInputFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@324a0017]" started-at="2024-06-28T15:21:51 IST" name="tearDown" finished-at="2024-06-28T15:21:53 IST" duration-ms="2209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

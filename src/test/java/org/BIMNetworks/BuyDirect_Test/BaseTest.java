@@ -18,7 +18,6 @@ import org.testng.annotations.Listeners;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
@@ -34,7 +33,7 @@ public class BaseTest {
     private Properties properties;
 
     @BeforeClass
-    public void configureAppium() throws MalformedURLException, IOException, URISyntaxException {
+    public void configureAppium() throws IOException, URISyntaxException {
         logger.info("Configuring Appium...");
 
         // Load properties from the config file
@@ -46,36 +45,34 @@ public class BaseTest {
             properties.load(inputStream);
         } catch (IOException e) {
             logger.error("Failed to load config.properties", e);
-            throw e; // Handle or rethrow as appropriate
+            throw e;
         }
 
         // Start Appium service
+        String appiumJSPath = properties.getProperty("appium.js.path", "C:\\Users\\ranjan\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js");
         service = new AppiumServiceBuilder()
-                .withAppiumJS(new File("C:\\Users\\ranjan\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
-                .withIPAddress("127.0.0.1").usingPort(4723).build();
-
+                .withAppiumJS(new File(appiumJSPath))
+                .withIPAddress(properties.getProperty("appium.server.ip", "127.0.0.1"))
+                .usingPort(Integer.parseInt(properties.getProperty("appium.server.port", "4723")))
+                .build();
         service.start();
         logger.info("Appium service started successfully.");
 
-        // Chrome options setup
+        // Browser options setup
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setExperimentalOption("w3c", false); // To enable old JSON wire protocol
 
-        // Firefox options setup
         FirefoxOptions firefoxOptions = new FirefoxOptions();
         firefoxOptions.setCapability("moz:firefoxOptions", true);
-        // Add any additional Firefox options as needed
 
-        // Edge options setup
         EdgeOptions edgeOptions = new EdgeOptions();
         edgeOptions.setCapability("ms:edgeOptions", true);
-        // Add any additional Edge options as needed
 
         // Get the browser from properties
-        String browser = properties.getProperty("appium.browser", "chrome"); // Default to "chrome" if not specified
+        String browser = properties.getProperty("appium.browser", "chrome").toLowerCase();
 
         UiAutomator2Options options;
-        switch (browser.toLowerCase()) {
+        switch (browser) {
             case "firefox":
                 options = DriverSetUp.getFirefoxOptions(properties, firefoxOptions);
                 break;
