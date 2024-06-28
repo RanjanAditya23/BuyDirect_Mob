@@ -7,6 +7,7 @@ import java.util.UUID;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchSessionException;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -69,6 +70,14 @@ public class Helper {
 		return parts[0] + randomString + "@" + parts[1];
 	}
 
-	
+	// Scroll to an element
+    public void scrollToElement(WebElement element) {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
+    // Click the Element using JavaScript
+    public void clickElement(WebElement element) {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+    }
 	
 }

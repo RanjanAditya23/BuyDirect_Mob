@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test Cases</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>24/5/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>25/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 20 17:16:17 IST 2024</td>
+<td>Started on:</td><td>Fri Jun 28 15:18:09 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>318 seconds (318737 ms)</td>
+<tr><td>Total time:</td><td>223 seconds (223659 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,611 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_ValidateTermsAndConditions()'><b>test_ValidateTermsAndConditions</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.id: btnEnroll (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.chrome/com.goog..., appPackage: com.android.chrome, automationName: UiAutomator2, browserName: Chrome, chromedriver_autodownload: true, deviceName: emulator-5554, noReset: true, platformName: ANDROID, platformVersion: 14}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2154, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
-Session ID: 33aec463-faa4-4058-8ea7-57d4db5e1822
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at org.BIMNetworks.BuyDirect_PageObject.EnrollPage.clickContinue(EnrollPage.java:221)
-	at org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_ValidateTermsAndConditions(EnrollPageTest.java:162)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1031581596", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1031581596'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.id: btnEnroll (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.chrome/com.goog..., appPackage: com.android.chrome, automationName: UiAutomator2, browserName: Chrome, chromedriver_autodownload: true, deviceName: emulator-5554, noReset: true, platformName: ANDROID, platformVersion: 14}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2154, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
-Session ID: 33aec463-faa4-4058-8ea7-57d4db5e1822
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at org.BIMNetworks.BuyDirect_PageObject.EnrollPage.clickContinue(EnrollPage.java:221)
-	at org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_ValidateTermsAndConditions(EnrollPageTest.java:162)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>31</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_FooterTextisDisplayed()'><b>test_FooterTextisDisplayed</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.xpath: //div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at org.BuyDirect_Android_utils.Generics.footerTextisDisplayed(Generics.java:62)
-	at org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_FooterTextisDisplayed(WelcomePageTest.java:136)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
-	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$Eo3iXy6f.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 28 more
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@2dafae61 (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
-	... 35 more
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p&quot;}
-  (Session info: chrome=113.0.5672.136)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [603e35ce-2e7b-4bf6-84c5-79e0d597ec80, findElement {value=//div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p, using=xpath}]
-Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.chrome/com.goog..., appPackage: com.android.chrome, automationName: UiAutomator2, browserName: Chrome, chromedriver_autodownload: true, deviceName: emulator-5554, noReset: true, platformName: ANDROID, platformVersion: 14}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2154, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
-Session ID: 603e35ce-2e7b-4bf6-84c5-79e0d597ec80
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 37 more
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1914526580", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1914526580'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.xpath: //div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at org.BuyDirect_Android_utils.Generics.footerTextisDisplayed(Generics.java:62)
-	at org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_FooterTextisDisplayed(WelcomePageTest.java:136)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
-	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$Eo3iXy6f.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 28 more
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@2dafae61 (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
-	... 35 more
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p&quot;}
-  (Session info: chrome=113.0.5672.136)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [603e35ce-2e7b-4bf6-84c5-79e0d597ec80, findElement {value=//div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p, using=xpath}]
-Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.chrome/com.goog..., appPackage: com.android.chrome, automationName: UiAutomator2, browserName: Chrome, chromedriver_autodownload: true, deviceName: emulator-5554, noReset: true, platformName: ANDROID, platformVersion: 14}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2154, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
-Session ID: 603e35ce-2e7b-4bf6-84c5-79e0d597ec80
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 37 more
-</pre></div></td>
-<td>30</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_FooterText()'><b>test_FooterText</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.xpath: //div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at org.BuyDirect_Android_utils.Generics.footerText(Generics.java:57)
-	at org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_FooterText(EnrollPageTest.java:108)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
-	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$Eo3iXy6f.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 28 more
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@65e620b0 (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
-	... 35 more
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p&quot;}
-  (Session info: chrome=113.0.5672.136)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [33aec463-faa4-4058-8ea7-57d4db5e1822, findElement {value=//div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p, using=xpath}]
-Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.chrome/com.goog..., appPackage: com.android.chrome, automationName: UiAutomator2, browserName: Chrome, chromedriver_autodownload: true, deviceName: emulator-5554, noReset: true, platformName: ANDROID, platformVersion: 14}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2154, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
-Session ID: 33aec463-faa4-4058-8ea7-57d4db5e1822
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 37 more
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace238998613", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace238998613'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.xpath: //div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at org.BuyDirect_Android_utils.Generics.footerText(Generics.java:57)
-	at org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_FooterText(EnrollPageTest.java:108)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
-	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$Eo3iXy6f.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 28 more
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@65e620b0 (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
-	... 35 more
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p&quot;}
-  (Session info: chrome=113.0.5672.136)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [33aec463-faa4-4058-8ea7-57d4db5e1822, findElement {value=//div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p, using=xpath}]
-Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.chrome/com.goog..., appPackage: com.android.chrome, automationName: UiAutomator2, browserName: Chrome, chromedriver_autodownload: true, deviceName: emulator-5554, noReset: true, platformName: ANDROID, platformVersion: 14}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2154, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
-Session ID: 33aec463-faa4-4058-8ea7-57d4db5e1822
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 37 more
-</pre></div></td>
-<td>36</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_FooterText()'><b>test_FooterText</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.xpath: //div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at org.BuyDirect_Android_utils.Generics.footerText(Generics.java:57)
-	at org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_FooterText(WelcomePageTest.java:151)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
-	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$Eo3iXy6f.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 28 more
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@20801cbb (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
-	... 35 more
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p&quot;}
-  (Session info: chrome=113.0.5672.136)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [603e35ce-2e7b-4bf6-84c5-79e0d597ec80, findElement {value=//div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p, using=xpath}]
-Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.chrome/com.goog..., appPackage: com.android.chrome, automationName: UiAutomator2, browserName: Chrome, chromedriver_autodownload: true, deviceName: emulator-5554, noReset: true, platformName: ANDROID, platformVersion: 14}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2154, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
-Session ID: 603e35ce-2e7b-4bf6-84c5-79e0d597ec80
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:81)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 37 more
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1000419469", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1000419469'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.xpath: //div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at org.BuyDirect_Android_utils.Generics.footerText(Generics.java:57)
-	at org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_FooterText(WelcomePageTest.java:151)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
-	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$Eo3iXy6f.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 28 more
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@20801cbb (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
-	... 35 more
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p&quot;}
-  (Session info: chrome=113.0.5672.136)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [603e35ce-2e7b-4bf6-84c5-79e0d597ec80, findElement {value=//div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p, using=xpath}]
-Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.chrome/com.goog..., appPackage: com.android.chrome, automationName: UiAutomator2, browserName: Chrome, chromedriver_autodownload: true, deviceName: emulator-5554, noReset: true, platformName: ANDROID, platformVersion: 14}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2154, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
-Session ID: 603e35ce-2e7b-4bf6-84c5-79e0d597ec80
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:81)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 37 more
-</pre></div></td>
-<td>34</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_FooterTextisDisplayed()'><b>test_FooterTextisDisplayed</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.xpath: //div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at org.BuyDirect_Android_utils.Generics.footerTextisDisplayed(Generics.java:62)
-	at org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_FooterTextisDisplayed(EnrollPageTest.java:93)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
-	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$Eo3iXy6f.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 28 more
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@25cde5bb (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
-	... 35 more
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p&quot;}
-  (Session info: chrome=113.0.5672.136)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [33aec463-faa4-4058-8ea7-57d4db5e1822, findElement {value=//div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p, using=xpath}]
-Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.chrome/com.goog..., appPackage: com.android.chrome, automationName: UiAutomator2, browserName: Chrome, chromedriver_autodownload: true, deviceName: emulator-5554, noReset: true, platformName: ANDROID, platformVersion: 14}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2154, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
-Session ID: 33aec463-faa4-4058-8ea7-57d4db5e1822
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 37 more
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace744983675", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace744983675'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.xpath: //div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at org.BuyDirect_Android_utils.Generics.footerTextisDisplayed(Generics.java:62)
-	at org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_FooterTextisDisplayed(EnrollPageTest.java:93)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
-	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$Eo3iXy6f.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 28 more
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@25cde5bb (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
-	... 35 more
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p&quot;}
-  (Session info: chrome=113.0.5672.136)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [33aec463-faa4-4058-8ea7-57d4db5e1822, findElement {value=//div[@id=&apos;openingWelcome&apos;]/div[2]/div[3]/div/p, using=xpath}]
-Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.chrome/com.goog..., appPackage: com.android.chrome, automationName: UiAutomator2, browserName: Chrome, chromedriver_autodownload: true, deviceName: emulator-5554, noReset: true, platformName: ANDROID, platformVersion: 14}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2154, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
-Session ID: 33aec463-faa4-4058-8ea7-57d4db5e1822
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 37 more
-</pre></div></td>
-<td>30</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -680,125 +75,130 @@ Session ID: 33aec463-faa4-4058-8ea7-57d4db5e1822
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_welcomeMessage1()'><b>test_welcomeMessage1</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
-<td></td>
-<td>3</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_WelcomePageTitle()'><b>test_WelcomePageTitle</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
-<td></td>
-<td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_PartnerTenderNameHeader()'><b>test_PartnerTenderNameHeader</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
+<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_TitleisDisplayedCenter()'><b>test_TitleisDisplayedCenter</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
 <td></td>
 <td>2</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5</td></tr>
+<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691</td></tr>
 <tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_PartnerLogoisDisplayed()'><b>test_PartnerLogoisDisplayed</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
+<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_ValidEnrollmentInputFields()'><b>test_ValidEnrollmentInputFields</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
 <td></td>
-<td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_PartnerTenderNameHeader()'><b>test_PartnerTenderNameHeader</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
-<td></td>
-<td>2</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2</td></tr>
+<td>29</td>
+<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@324a0017</td></tr>
 <tr>
 <td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_PartnerTenderNameisDisplayed()'><b>test_PartnerTenderNameisDisplayed</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
 <td></td>
 <td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2</td></tr>
+<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691</td></tr>
 <tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_ContinueButtonText()'><b>test_ContinueButtonText</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
-<td></td>
-<td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_ValidEnrollmentInputFields()'><b>test_ValidEnrollmentInputFields</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
-<td></td>
-<td>20</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_PartnerLogo()'><b>test_PartnerLogo</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
-<td></td>
-<td>3</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_PartnerLogoisDisplayed()'><b>test_PartnerLogoisDisplayed</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
-<td></td>
-<td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_TextBeforeSignInHereLink()'><b>test_TextBeforeSignInHereLink</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
-<td></td>
-<td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_PartnerTenderNameisDisplayed()'><b>test_PartnerTenderNameisDisplayed</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
-<td></td>
-<td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_CurrentURL()'><b>test_CurrentURL</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
-<td></td>
-<td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_ContinueButton()'><b>test_ContinueButton</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
-<td></td>
-<td>3</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_TitleisDisplayedCenter()'><b>test_TitleisDisplayedCenter</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
+<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_welcomeMessage1()'><b>test_welcomeMessage1</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
 <td></td>
 <td>2</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2</td></tr>
+<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691</td></tr>
 <tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.BrokenImageTest()'><b>BrokenImageTest</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
+<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_PartnerTenderNameHeader()'><b>test_PartnerTenderNameHeader</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
 <td></td>
-<td>1</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_EnrollPageRequiredFieldErrorMessage()'><b>test_EnrollPageRequiredFieldErrorMessage</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
-<td></td>
-<td>4</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5</td></tr>
+<td>13</td>
+<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@324a0017</td></tr>
 <tr>
 <td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_ProgressIndicators()'><b>test_ProgressIndicators</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
 <td></td>
 <td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5</td></tr>
+<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@324a0017</td></tr>
 <tr>
 <td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_isDLRequired()'><b>test_isDLRequired</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
 <td></td>
 <td>3</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5</td></tr>
+<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@324a0017</td></tr>
 <tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_SignInHereLinkTextisDisplayed()'><b>test_SignInHereLinkTextisDisplayed</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
+<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_CurrentURL()'><b>test_CurrentURL</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
 <td></td>
 <td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.BrokenImageTest()'><b>BrokenImageTest</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
-<td></td>
-<td>1</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2</td></tr>
+<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691</td></tr>
 <tr>
 <td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_PartnerLogo()'><b>test_PartnerLogo</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
 <td></td>
 <td>3</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5</td></tr>
+<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@324a0017</td></tr>
 <tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_welcomeMessage2()'><b>test_welcomeMessage2</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
+<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_ValidateTermsAndConditions()'><b>test_ValidateTermsAndConditions</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
 <td></td>
-<td>3</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@53d102a2</td></tr>
+<td>4</td>
+<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@324a0017</td></tr>
+<tr>
+<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_EnrollPageRequiredFieldErrorMessage()'><b>test_EnrollPageRequiredFieldErrorMessage</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
+<td></td>
+<td>8</td>
+<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@324a0017</td></tr>
+<tr>
+<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_PartnerLogoisDisplayed()'><b>test_PartnerLogoisDisplayed</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
+<td></td>
+<td>0</td>
+<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@324a0017</td></tr>
 <tr>
 <td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.clickOnWelcomePageContinueButton()'><b>clickOnWelcomePageContinueButton</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
 <td></td>
 <td>2</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@6b3e12b5</td></tr>
+<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@324a0017</td></tr>
+<tr>
+<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_welcomeMessage2()'><b>test_welcomeMessage2</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
+<td></td>
+<td>5</td>
+<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691</td></tr>
+<tr>
+<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_PartnerLogo()'><b>test_PartnerLogo</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
+<td></td>
+<td>4</td>
+<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691</td></tr>
+<tr>
+<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_WelcomePageTitle()'><b>test_WelcomePageTitle</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
+<td></td>
+<td>0</td>
+<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691</td></tr>
+<tr>
+<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_SignInHereLinkTextisDisplayed()'><b>test_SignInHereLinkTextisDisplayed</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
+<td></td>
+<td>0</td>
+<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691</td></tr>
+<tr>
+<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_PartnerTenderNameisDisplayed()'><b>test_PartnerTenderNameisDisplayed</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
+<td></td>
+<td>0</td>
+<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@324a0017</td></tr>
+<tr>
+<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.BrokenImageTest()'><b>BrokenImageTest</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
+<td></td>
+<td>0</td>
+<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@324a0017</td></tr>
+<tr>
+<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_PartnerTenderNameHeader()'><b>test_PartnerTenderNameHeader</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
+<td></td>
+<td>2</td>
+<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691</td></tr>
+<tr>
+<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_ContinueButton()'><b>test_ContinueButton</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
+<td></td>
+<td>3</td>
+<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691</td></tr>
+<tr>
+<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.BrokenImageTest()'><b>BrokenImageTest</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
+<td></td>
+<td>0</td>
+<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691</td></tr>
+<tr>
+<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_PartnerLogoisDisplayed()'><b>test_PartnerLogoisDisplayed</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
+<td></td>
+<td>0</td>
+<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691</td></tr>
+<tr>
+<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_TextBeforeSignInHereLink()'><b>test_TextBeforeSignInHereLink</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
+<td></td>
+<td>0</td>
+<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691</td></tr>
+<tr>
+<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_ContinueButtonText()'><b>test_ContinueButtonText</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
+<td></td>
+<td>0</td>
+<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@59b38691</td></tr>
 </table><p>
 </body>
 </html>

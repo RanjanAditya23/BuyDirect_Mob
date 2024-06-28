@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.BIMNetworks.BuyDirect_Test.WelcomePageTest">
+      <class name="org.BIMNetworks.BuyDirect_Test.EnrollPageTest">
         <methods>
-          <include name="driverInitialization"/>
-          <include name="test_WelcomePageTitle"/>
+          <include name="test_ValidateTermsAndConditions"/>
           <include name="configureAppium"/>
           <include name="tearDown"/>
+          <include name="driverInitialization"/>
         </methods>
-      </class> <!-- org.BIMNetworks.BuyDirect_Test.WelcomePageTest -->
+      </class> <!-- org.BIMNetworks.BuyDirect_Test.EnrollPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
