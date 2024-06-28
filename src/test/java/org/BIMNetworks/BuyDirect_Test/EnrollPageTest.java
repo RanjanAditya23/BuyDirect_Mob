@@ -141,7 +141,8 @@ public class EnrollPageTest extends BaseTest {
     	enrollPageObject.uncheckTermsAndConditions();
 		enrollPageObject.clickContinue();
 		Assert.assertTrue(enrollPageObject.isTermsAndConditionsRequiredErrorMessageDisplayed(), "Required Terms and Services error message not displayed");
-
+		WebElement checkbox = enrollPageObject.getTermsAndConditionsCheckbox();
+		helperObject.scrollToElement(checkbox);
 		enrollPageObject.checkTermsAndConditions();
 		Thread.sleep(2000);
 		boolean isErrorMessagePresent = driver.getPageSource().contains("Please select Terms of Services");
