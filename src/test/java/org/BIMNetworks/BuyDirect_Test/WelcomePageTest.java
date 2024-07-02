@@ -31,25 +31,25 @@ public class WelcomePageTest extends BaseTest {
 	}
 
 	@Test
-	public void test_WelcomePageTitle() throws Exception {
+	public void testWelcomePageTitle() throws Exception {
 		String expectedTitle = "Welcome";
 		Assert.assertEquals(welcomePageObject.pagetitle(), expectedTitle, "Page title doesn't match expected.");
 	}
 
 	@Test
-	public void test_CurrentURL() {
+	public void testCurrentURL() {
 	    String expectedUrl = "https://bimhep-qa.bimnetworkstech.com/?partnerId=MTI3";
 	    Assert.assertEquals(driver.getCurrentUrl(), expectedUrl, "URL mismatch: ");
 	}
 
 	@Test
-	public void test_PartnerLogoisDisplayed() {
+	public void testPartnerLogoisDisplayed() {
 		boolean partnerLogoDisplayed = genericsObject.partnerLogoisDisplayed();
 		assertTrue(partnerLogoDisplayed, "Partner Logo is not displayed on the welcome page");
 	}
 	
 	@Test
-	public void BrokenImageTest() throws URISyntaxException, IOException {
+	public void brokenImageTest() throws URISyntaxException, IOException {
 
 		// Construct URL object from the image URL string
 		URL url = new URI(genericsObject.partnerlogo()).toURL();
@@ -65,25 +65,25 @@ public class WelcomePageTest extends BaseTest {
 	}
 
 	@Test
-	public void test_PartnerLogo() throws SQLException {
+	public void testPartnerLogo() throws SQLException {
 		String query = "select Partner_Image_URL from [dbo].[Partner_Image] where Partner_ID = 127 and Partner_Image_ID = 1";
 		Assert.assertEquals(genericsObject.partnerlogo(), DataBaseConnection.testWithDataBase(query).get(0));
 	}
 
 	@Test
-	public void test_PartnerTenderNameisDisplayed() {
+	public void testPartnerTenderNameisDisplayed() {
 		boolean partnerTenderNameDisplayed = genericsObject.partnerTenderNameisDisplayed();
 		assertTrue(partnerTenderNameDisplayed, "Partner Tender Name is not displayed on the welcome page");
 	}
 
 	@Test
-	public void test_PartnerTenderNameHeader() throws SQLException {
+	public void testPartnerTenderNameHeader() throws SQLException {
 		String query = "select Tender_Name_Header from [dbo].[Partner_BuyDirect_Settings] where Partner_ID = 127 and Tender_Name_Header = 'BIM Grocery Pay'";
 		Assert.assertEquals(genericsObject.partnerTenderNameHeader(), DataBaseConnection.testWithDataBase(query).get(0));
 	}
 
 	@Test
-	public void test_TitleisDisplayedCenter() {
+	public void testTitleisDisplayedCenter() {
 
 	    WebElement logoElement = welcomePageObject.logoElement();
 	    WebElement titleElement = welcomePageObject.titleElement();
@@ -106,36 +106,36 @@ public class WelcomePageTest extends BaseTest {
 	}
 
 	@Test
-	public void test_welcomeMessage1() throws SQLException {
+	public void testWelcomeMessage1() throws SQLException {
 		String query = "SELECT REPLACE(REPLACE(REPLACE(Welcome_Message,'<PartnerName>',Tender_Name_Body), '<PartnerPhone>', Partner_Contact_Number),'', '') AS WelcomeMessage FROM [dbo].[Partner_BuyDirect_Settings] PBS INNER JOIN [dbo].[Partner_Profile] PP ON PBS.Partner_ID = PP.Partner_ID WHERE PBS.Partner_ID = 127";
 		Assert.assertEquals(welcomePageObject.dynamicWelcomeMessage1(), DataBaseConnection.testWithDataBase(query).get(0).split("\\|")[0].trim());
 	}
 
 	@Test
-	public void test_welcomeMessage2() throws SQLException {
+	public void testWelcomeMessage2() throws SQLException {
 		String query = "SELECT REPLACE(REPLACE(REPLACE(Welcome_Message,'<PartnerName>',Tender_Name_Body), '<PartnerPhone>', Partner_Contact_Number),'', '') AS WelcomeMessage FROM [dbo].[Partner_BuyDirect_Settings] PBS INNER JOIN [dbo].[Partner_Profile] PP ON PBS.Partner_ID = PP.Partner_ID WHERE PBS.Partner_ID = 127";
 		Assert.assertEquals(welcomePageObject.dynamicWelcomeMessage2(), DataBaseConnection.testWithDataBase(query).get(0).split("\\|")[1].trim());
 	}
 
 	@Test
-	public void test_TextBeforeSignInHereLink() {
+	public void testTextBeforeSignInHereLink() {
 		String actualText = welcomePageObject.signInHereBeforeText().substring(0, "To continue enrolling,".length()).trim();
 		Assert.assertEquals(actualText, "To continue enrolling,");
 	}
 
 	@Test
-	public void test_SignInHereLinkTextisDisplayed() {
+	public void testSignInHereLinkTextisDisplayed() {
 		boolean signInLinkDisplayed = welcomePageObject.signInHereTextisDisplayed();
 		assertTrue(signInLinkDisplayed, "Sign in here link is not displayed on the welcome page");
 	}
 
 	@Test
-	public void test_ContinueButtonText() throws Exception {
+	public void testContinueButtonText() throws Exception {
 		Assert.assertEquals(welcomePageObject.ContinueButton(), "Begin");
 	}
 
-	@Test(dependsOnMethods = "test_welcomeMessage2")
-	public void test_ContinueButton() throws InterruptedException {
+	@Test(dependsOnMethods = "testWelcomeMessage2")
+	public void testContinueButton() throws InterruptedException {
 
 		welcomePageObject.ClickOnContinue();
 		assertTrue(welcomePageObject.EnrollIndicator().isDisplayed(), "User is not redirected to the enrollment page");
