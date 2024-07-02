@@ -142,7 +142,9 @@ public class EnrollPageTest extends BaseTest {
 	
 	@Test
     public void testValidateTermsAndConditions() throws InterruptedException {
-        // Uncheck Terms and Conditions checkbox and proceed
+		WebElement checkbox = enrollPageObject.getTermsAndConditionsCheckbox();
+		helperObject.scrollToElement(checkbox);
+		
         enrollPageObject.uncheckTermsAndConditions();
         enrollPageObject.clickContinue();
         
@@ -150,7 +152,7 @@ public class EnrollPageTest extends BaseTest {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         
         // Verify error message when aria-invalid is true
-        WebElement checkbox = enrollPageObject.getTermsAndConditionsCheckbox();
+        checkbox = enrollPageObject.getTermsAndConditionsCheckbox();
         String ariaInvalidBeforeCheck = checkbox.getAttribute("aria-invalid");
         
         if ("true".equals(ariaInvalidBeforeCheck)) {
@@ -158,10 +160,6 @@ public class EnrollPageTest extends BaseTest {
             Assert.assertTrue(errorMessage.isDisplayed(), "Error message 'Please select Terms of Services' is not displayed when aria-invalid is true");
         }
         
-        // Scroll to checkbox (assuming helperObject is properly defined)
-        helperObject.scrollToElement(checkbox);
-        
-        // Check Terms and Conditions checkbox and verify error message disappearance
         enrollPageObject.checkTermsAndConditions();
         
         // Verify error message is not displayed when aria-invalid is false
