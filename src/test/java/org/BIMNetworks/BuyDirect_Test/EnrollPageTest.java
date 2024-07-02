@@ -141,38 +141,38 @@ public class EnrollPageTest extends BaseTest {
 	}	
 	
 	@Test
-	public void testValidateTermsAndConditions() throws InterruptedException {
-		// Validate TermsAndConditions checkbox
-	    enrollPageObject.uncheckTermsAndConditions();
-	    enrollPageObject.clickContinue();
-
-	    // Initialize WebDriverWait
-	     wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
-	    // Verify error message when aria-invalid is true
-	    WebElement checkbox = enrollPageObject.getTermsAndConditionsCheckbox();
-	    String ariaInvalidBeforeCheck = checkbox.getAttribute("aria-invalid");
-
-	    if ("true".equals(ariaInvalidBeforeCheck)) {
-	        WebElement errorMessage = wait.until(ExpectedConditions
-	                .visibilityOfElementLocated(By.xpath("//div[text()='Please select Terms of Services']")));
-	        Assert.assertTrue(errorMessage.isDisplayed(),
-	                "Error message 'Please select Terms of Services' is not displayed when aria-invalid is true");
-	    }
-
-	    helperObject.scrollToElement(checkbox);
-	    enrollPageObject.checkTermsAndConditions();
-
-	    // Verify error message is not displayed when aria-invalid is false
-	    String ariaInvalidAfterCheck = checkbox.getAttribute("aria-invalid");
-	    if ("false".equals(ariaInvalidAfterCheck)) {
-	        // Wait for the error message to disappear
-	        boolean isErrorMessageInvisible = wait.until(ExpectedConditions
-	                .invisibilityOfElementLocated(By.xpath("//div[text()='Please select Terms of Services']")));
-	        Assert.assertTrue(isErrorMessageInvisible,
-	                "Error message 'Please select Terms of Services' is displayed when aria-invalid is false");
-	    }
-	}
+    public void testValidateTermsAndConditions() throws InterruptedException {
+        // Uncheck Terms and Conditions checkbox and proceed
+        enrollPageObject.uncheckTermsAndConditions();
+        enrollPageObject.clickContinue();
+        
+        // Initialize WebDriverWait with appropriate timeout
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        
+        // Verify error message when aria-invalid is true
+        WebElement checkbox = enrollPageObject.getTermsAndConditionsCheckbox();
+        String ariaInvalidBeforeCheck = checkbox.getAttribute("aria-invalid");
+        
+        if ("true".equals(ariaInvalidBeforeCheck)) {
+            WebElement errorMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Please select Terms of Services']")));
+            Assert.assertTrue(errorMessage.isDisplayed(), "Error message 'Please select Terms of Services' is not displayed when aria-invalid is true");
+        }
+        
+        // Scroll to checkbox (assuming helperObject is properly defined)
+        helperObject.scrollToElement(checkbox);
+        
+        // Check Terms and Conditions checkbox and verify error message disappearance
+        enrollPageObject.checkTermsAndConditions();
+        
+        // Verify error message is not displayed when aria-invalid is false
+        String ariaInvalidAfterCheck = checkbox.getAttribute("aria-invalid");
+        
+        if ("false".equals(ariaInvalidAfterCheck)) {
+            // Wait for the error message to disappear
+            boolean isErrorMessageInvisible = wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[text()='Please select Terms of Services']")));
+            Assert.assertTrue(isErrorMessageInvisible, "Error message 'Please select Terms of Services' is displayed when aria-invalid is false");
+        }
+    }
 	
 	@Test(dependsOnMethods = "testValidateTermsAndConditions")
 	public void testValidEnrollmentInputFields() throws InterruptedException {

@@ -84,8 +84,8 @@ public class BaseTest {
                 options = DriverSetUp.getChromeOptions(properties, chromeOptions);
                 break;
         }
-        
-        // Add newCommandTimeout capability
+
+        // Add newCommandTimeout capability to keep the session alive for 10 minutes
         options.setNewCommandTimeout(Duration.ofMinutes(10)); 
 
         // Specify the URL of your Appium server

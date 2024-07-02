@@ -2,134 +2,134 @@
 <testng-results ignored="0" total="25" passed="25" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-02T16:03:38 IST" name="Mobile BuyDirect Automation Test Suite" finished-at="2024-07-02T16:06:34 IST" duration-ms="175982">
+  <suite started-at="2024-07-02T17:11:17 IST" name="Mobile BuyDirect Automation Test Suite" finished-at="2024-07-02T17:14:15 IST" duration-ms="178192">
     <groups>
     </groups>
-    <test started-at="2024-07-02T16:03:38 IST" name="Test Cases" finished-at="2024-07-02T16:06:34 IST" duration-ms="175982">
+    <test started-at="2024-07-02T17:11:17 IST" name="Test Cases" finished-at="2024-07-02T17:14:15 IST" duration-ms="178192">
       <class name="org.BIMNetworks.BuyDirect_Test.WelcomePageTest">
-        <test-method is-config="true" signature="configureAppium()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T16:03:38 IST" name="configureAppium" finished-at="2024-07-02T16:04:16 IST" duration-ms="37795" status="PASS">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T17:11:19 IST" name="configureAppium" finished-at="2024-07-02T17:12:01 IST" duration-ms="42774" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureAppium -->
-        <test-method is-config="true" signature="driverInitialization()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T16:04:16 IST" name="driverInitialization" finished-at="2024-07-02T16:04:18 IST" duration-ms="1785" status="PASS">
+        <test-method is-config="true" signature="driverInitialization()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T17:12:01 IST" name="driverInitialization" finished-at="2024-07-02T17:12:04 IST" duration-ms="2171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverInitialization -->
-        <test-method signature="testPartnerTenderNameHeader()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T16:04:18 IST" name="testPartnerTenderNameHeader" finished-at="2024-07-02T16:04:22 IST" duration-ms="4032" status="PASS">
+        <test-method signature="testPartnerTenderNameHeader()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T17:12:04 IST" name="testPartnerTenderNameHeader" finished-at="2024-07-02T17:12:08 IST" duration-ms="4354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPartnerTenderNameHeader -->
-        <test-method signature="testWelcomeMessage2()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T16:04:22 IST" name="testWelcomeMessage2" finished-at="2024-07-02T16:04:26 IST" duration-ms="3739" status="PASS">
+        <test-method signature="testWelcomeMessage2()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T17:12:08 IST" name="testWelcomeMessage2" finished-at="2024-07-02T17:12:11 IST" duration-ms="3087" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWelcomeMessage2 -->
-        <test-method signature="brokenImageTest()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T16:04:26 IST" name="brokenImageTest" finished-at="2024-07-02T16:04:27 IST" duration-ms="979" status="PASS">
+        <test-method signature="brokenImageTest()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T17:12:11 IST" name="brokenImageTest" finished-at="2024-07-02T17:12:12 IST" duration-ms="791" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- brokenImageTest -->
-        <test-method signature="testContinueButtonText()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T16:04:27 IST" name="testContinueButtonText" finished-at="2024-07-02T16:04:27 IST" duration-ms="417" status="PASS">
+        <test-method signature="testContinueButtonText()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T17:12:12 IST" name="testContinueButtonText" finished-at="2024-07-02T17:12:13 IST" duration-ms="789" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testContinueButtonText -->
-        <test-method signature="testCurrentURL()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T16:04:27 IST" name="testCurrentURL" finished-at="2024-07-02T16:04:27 IST" duration-ms="61" status="PASS">
+        <test-method signature="testCurrentURL()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T17:12:13 IST" name="testCurrentURL" finished-at="2024-07-02T17:12:13 IST" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCurrentURL -->
-        <test-method signature="testPartnerLogo()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T16:04:27 IST" name="testPartnerLogo" finished-at="2024-07-02T16:04:31 IST" duration-ms="3672" status="PASS">
+        <test-method signature="testPartnerLogo()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T17:12:13 IST" name="testPartnerLogo" finished-at="2024-07-02T17:12:16 IST" duration-ms="2931" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPartnerLogo -->
-        <test-method signature="testPartnerLogoisDisplayed()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T16:04:31 IST" name="testPartnerLogoisDisplayed" finished-at="2024-07-02T16:04:32 IST" duration-ms="621" status="PASS">
+        <test-method signature="testPartnerLogoisDisplayed()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T17:12:16 IST" name="testPartnerLogoisDisplayed" finished-at="2024-07-02T17:12:16 IST" duration-ms="273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPartnerLogoisDisplayed -->
-        <test-method signature="testPartnerTenderNameisDisplayed()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T16:04:32 IST" name="testPartnerTenderNameisDisplayed" finished-at="2024-07-02T16:04:32 IST" duration-ms="212" status="PASS">
+        <test-method signature="testPartnerTenderNameisDisplayed()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T17:12:16 IST" name="testPartnerTenderNameisDisplayed" finished-at="2024-07-02T17:12:16 IST" duration-ms="269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPartnerTenderNameisDisplayed -->
-        <test-method signature="testSignInHereLinkTextisDisplayed()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T16:04:32 IST" name="testSignInHereLinkTextisDisplayed" finished-at="2024-07-02T16:04:32 IST" duration-ms="464" status="PASS">
+        <test-method signature="testSignInHereLinkTextisDisplayed()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T17:12:16 IST" name="testSignInHereLinkTextisDisplayed" finished-at="2024-07-02T17:12:17 IST" duration-ms="525" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSignInHereLinkTextisDisplayed -->
-        <test-method signature="testTextBeforeSignInHereLink()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T16:04:32 IST" name="testTextBeforeSignInHereLink" finished-at="2024-07-02T16:04:33 IST" duration-ms="495" status="PASS">
+        <test-method signature="testTextBeforeSignInHereLink()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T17:12:17 IST" name="testTextBeforeSignInHereLink" finished-at="2024-07-02T17:12:17 IST" duration-ms="500" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTextBeforeSignInHereLink -->
-        <test-method signature="testTitleisDisplayedCenter()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T16:04:33 IST" name="testTitleisDisplayedCenter" finished-at="2024-07-02T16:04:35 IST" duration-ms="2722" status="PASS">
+        <test-method signature="testTitleisDisplayedCenter()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T17:12:17 IST" name="testTitleisDisplayedCenter" finished-at="2024-07-02T17:12:20 IST" duration-ms="2989" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTitleisDisplayedCenter -->
-        <test-method signature="testWelcomeMessage1()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T16:04:35 IST" name="testWelcomeMessage1" finished-at="2024-07-02T16:04:39 IST" duration-ms="3124" status="PASS">
+        <test-method signature="testWelcomeMessage1()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T17:12:20 IST" name="testWelcomeMessage1" finished-at="2024-07-02T17:12:23 IST" duration-ms="3130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWelcomeMessage1 -->
-        <test-method signature="testWelcomePageTitle()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T16:04:39 IST" name="testWelcomePageTitle" finished-at="2024-07-02T16:04:39 IST" duration-ms="579" status="PASS">
+        <test-method signature="testWelcomePageTitle()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T17:12:23 IST" name="testWelcomePageTitle" finished-at="2024-07-02T17:12:24 IST" duration-ms="503" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWelcomePageTitle -->
-        <test-method signature="testContinueButton()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T16:04:39 IST" name="testContinueButton" finished-at="2024-07-02T16:04:43 IST" depends-on-methods="org.BIMNetworks.BuyDirect_Test.WelcomePageTest.testWelcomeMessage2" duration-ms="3546" status="PASS">
+        <test-method signature="testContinueButton()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T17:12:24 IST" name="testContinueButton" finished-at="2024-07-02T17:12:27 IST" depends-on-methods="org.BIMNetworks.BuyDirect_Test.WelcomePageTest.testWelcomeMessage2" duration-ms="3441" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testContinueButton -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T16:04:43 IST" name="tearDown" finished-at="2024-07-02T16:04:45 IST" duration-ms="2141" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.WelcomePageTest@63798ca7]" started-at="2024-07-02T17:12:27 IST" name="tearDown" finished-at="2024-07-02T17:12:31 IST" duration-ms="3147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- org.BIMNetworks.BuyDirect_Test.WelcomePageTest -->
       <class name="org.BIMNetworks.BuyDirect_Test.EnrollPageTest">
-        <test-method is-config="true" signature="configureAppium()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T16:04:45 IST" name="configureAppium" finished-at="2024-07-02T16:05:18 IST" duration-ms="32639" status="PASS">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T17:12:31 IST" name="configureAppium" finished-at="2024-07-02T17:13:02 IST" duration-ms="31892" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureAppium -->
-        <test-method is-config="true" signature="driverInitialization()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T16:05:18 IST" name="driverInitialization" finished-at="2024-07-02T16:05:18 IST" duration-ms="18" status="PASS">
+        <test-method is-config="true" signature="driverInitialization()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T17:13:02 IST" name="driverInitialization" finished-at="2024-07-02T17:13:02 IST" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverInitialization -->
-        <test-method signature="brokenImageTest()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T16:05:18 IST" name="brokenImageTest" finished-at="2024-07-02T16:05:19 IST" duration-ms="1052" status="PASS">
+        <test-method signature="brokenImageTest()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T17:13:02 IST" name="brokenImageTest" finished-at="2024-07-02T17:13:04 IST" duration-ms="1172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- brokenImageTest -->
-        <test-method signature="clickOnWelcomePageContinueButton()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T16:05:19 IST" name="clickOnWelcomePageContinueButton" finished-at="2024-07-02T16:05:23 IST" duration-ms="4272" status="PASS">
+        <test-method signature="clickOnWelcomePageContinueButton()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T17:13:04 IST" name="clickOnWelcomePageContinueButton" finished-at="2024-07-02T17:13:07 IST" duration-ms="3676" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnWelcomePageContinueButton -->
-        <test-method signature="testEnrollPageRequiredFieldErrorMessage()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T16:05:23 IST" name="testEnrollPageRequiredFieldErrorMessage" finished-at="2024-07-02T16:05:29 IST" duration-ms="5989" status="PASS">
+        <test-method signature="testEnrollPageRequiredFieldErrorMessage()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T17:13:07 IST" name="testEnrollPageRequiredFieldErrorMessage" finished-at="2024-07-02T17:13:12 IST" duration-ms="4880" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEnrollPageRequiredFieldErrorMessage -->
-        <test-method signature="testIsDLRequired()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T16:05:29 IST" name="testIsDLRequired" finished-at="2024-07-02T16:05:32 IST" duration-ms="3611" status="PASS">
+        <test-method signature="testIsDLRequired()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T17:13:12 IST" name="testIsDLRequired" finished-at="2024-07-02T17:13:16 IST" duration-ms="3336" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testIsDLRequired -->
-        <test-method signature="testPartnerLogo()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T16:05:32 IST" name="testPartnerLogo" finished-at="2024-07-02T16:05:35 IST" duration-ms="2921" status="PASS">
+        <test-method signature="testPartnerLogo()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T17:13:16 IST" name="testPartnerLogo" finished-at="2024-07-02T17:13:18 IST" duration-ms="2795" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPartnerLogo -->
-        <test-method signature="testPartnerTenderNameHeader()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T16:05:35 IST" name="testPartnerTenderNameHeader" finished-at="2024-07-02T16:05:39 IST" duration-ms="3301" status="PASS">
+        <test-method signature="testPartnerTenderNameHeader()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T17:13:18 IST" name="testPartnerTenderNameHeader" finished-at="2024-07-02T17:13:21 IST" duration-ms="2790" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPartnerTenderNameHeader -->
-        <test-method signature="testPartnerTenderNameisDisplayed()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T16:05:39 IST" name="testPartnerTenderNameisDisplayed" finished-at="2024-07-02T16:05:39 IST" duration-ms="247" status="PASS">
+        <test-method signature="testPartnerTenderNameisDisplayed()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T17:13:21 IST" name="testPartnerTenderNameisDisplayed" finished-at="2024-07-02T17:13:21 IST" duration-ms="343" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPartnerTenderNameisDisplayed -->
-        <test-method signature="testProgressIndicators()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T16:05:39 IST" name="testProgressIndicators" finished-at="2024-07-02T16:05:40 IST" duration-ms="602" status="PASS">
+        <test-method signature="testProgressIndicators()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T17:13:21 IST" name="testProgressIndicators" finished-at="2024-07-02T17:13:22 IST" duration-ms="451" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProgressIndicators -->
-        <test-method signature="testValidateTermsAndConditions()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T16:05:40 IST" name="testValidateTermsAndConditions" finished-at="2024-07-02T16:06:14 IST" duration-ms="34373" status="PASS">
+        <test-method signature="testValidateTermsAndConditions()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T17:13:22 IST" name="testValidateTermsAndConditions" finished-at="2024-07-02T17:13:55 IST" duration-ms="33151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidateTermsAndConditions -->
-        <test-method signature="test_PartnerLogoisDisplayed()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T16:06:14 IST" name="test_PartnerLogoisDisplayed" finished-at="2024-07-02T16:06:14 IST" duration-ms="230" status="PASS">
+        <test-method signature="test_PartnerLogoisDisplayed()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T17:13:55 IST" name="test_PartnerLogoisDisplayed" finished-at="2024-07-02T17:13:55 IST" duration-ms="241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_PartnerLogoisDisplayed -->
-        <test-method signature="testValidEnrollmentInputFields()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T16:06:14 IST" name="testValidEnrollmentInputFields" finished-at="2024-07-02T16:06:32 IST" depends-on-methods="org.BIMNetworks.BuyDirect_Test.EnrollPageTest.testValidateTermsAndConditions" duration-ms="18015" status="PASS">
+        <test-method signature="testValidEnrollmentInputFields()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T17:13:55 IST" name="testValidEnrollmentInputFields" finished-at="2024-07-02T17:14:14 IST" depends-on-methods="org.BIMNetworks.BuyDirect_Test.EnrollPageTest.testValidateTermsAndConditions" duration-ms="18680" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidEnrollmentInputFields -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T16:06:32 IST" name="tearDown" finished-at="2024-07-02T16:06:34 IST" duration-ms="1652" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.BIMNetworks.BuyDirect_Test.EnrollPageTest@22875539]" started-at="2024-07-02T17:14:14 IST" name="tearDown" finished-at="2024-07-02T17:14:15 IST" duration-ms="1460" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
