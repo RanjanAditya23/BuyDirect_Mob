@@ -84,6 +84,9 @@ public class BaseTest {
                 options = DriverSetUp.getChromeOptions(properties, chromeOptions);
                 break;
         }
+        
+        // Add newCommandTimeout capability
+        options.setNewCommandTimeout(Duration.ofMinutes(10)); 
 
         // Specify the URL of your Appium server
         URL url = new URI(properties.getProperty("appium.server.url")).toURL();

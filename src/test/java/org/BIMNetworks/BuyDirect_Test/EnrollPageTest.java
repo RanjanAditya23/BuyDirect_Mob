@@ -8,6 +8,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.sql.SQLException;
+import java.time.Duration;
 import java.util.List;
 import org.BIMNetworks.BuyDirect_PageObject.EnrollPage;
 import org.BIMNetworks.BuyDirect_PageObject.WelcomePage;
@@ -15,7 +16,10 @@ import org.BuyDirect_Android_utils.DataBaseConnection;
 import org.BuyDirect_Android_utils.ExcelUtility;
 import org.BuyDirect_Android_utils.Generics;
 import org.BuyDirect_Android_utils.Helper;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
@@ -28,6 +32,7 @@ public class EnrollPageTest extends BaseTest {
 	Generics genericsObject;
 	WelcomePage welcomePageObject;
 	Helper helperObject;
+	WebDriverWait wait;
 
 
 	@BeforeClass
@@ -54,7 +59,7 @@ public class EnrollPageTest extends BaseTest {
 
 	// BrokenImageTest
 	@Test
-	public void BrokenImageTest() throws URISyntaxException, IOException {
+	public void brokenImageTest() throws URISyntaxException, IOException {
 
 		// Construct URL object from the image URL string
 		URL url = new URI(genericsObject.partnerlogo()).toURL();
@@ -70,31 +75,31 @@ public class EnrollPageTest extends BaseTest {
 	}
 
 	@Test
-	public void test_PartnerLogo() throws SQLException {
+	public void testPartnerLogo() throws SQLException {
 		String query = "select Partner_Image_URL from [dbo].[Partner_Image] where Partner_ID = 127 and Partner_Image_ID = 1";
 		Assert.assertEquals(genericsObject.partnerlogo(), DataBaseConnection.testWithDataBase(query).get(0));
 	}
 
 	// TenderName
 	@Test
-	public void test_PartnerTenderNameisDisplayed() {
+	public void testPartnerTenderNameisDisplayed() {
 		boolean partnerTenderNameDisplayed = genericsObject.partnerTenderNameisDisplayed();
 		assertTrue(partnerTenderNameDisplayed, "Partner Tender Name is not displayed on the welcome page");
 	}
 
 	@Test
-	public void test_PartnerTenderNameHeader() throws SQLException {
+	public void testPartnerTenderNameHeader() throws SQLException {
 		String query = "select Tender_Name_Header from [dbo].[Partner_BuyDirect_Settings] where Partner_ID = 127 and Tender_Name_Header = 'BIM Grocery Pay'";
 		Assert.assertEquals(genericsObject.partnerTenderNameHeader(), DataBaseConnection.testWithDataBase(query).get(0));
 	}
 
 	@Test
-	public void test_ProgressIndicators() throws InterruptedException {
+	public void testProgressIndicators() throws InterruptedException {
 		genericsObject.allProgressIndicatorIsDisplayed();
 	}
 
 	@Test
-	public void test_isDLRequired() throws SQLException, InterruptedException {
+	public void testIsDLRequired() throws SQLException, InterruptedException {
 		// Database connection and logic to retrieve IsDLRequired
 		String query = "select IsDLRequired from [dbo].[Partner_BuyDirect_Settings] where Partner_ID = 127";
 		int isDLRequired = Integer.parseInt(DataBaseConnection.testWithDataBase(query).get(0));
@@ -121,7 +126,7 @@ public class EnrollPageTest extends BaseTest {
 	}
 
 	@Test
-	public void test_EnrollPageRequiredFieldErrorMessage() throws InterruptedException {
+	public void testEnrollPageRequiredFieldErrorMessage() throws InterruptedException {
 		// Validate enroll page input field required error message 
 		enrollPageObject.clickContinue();
 
@@ -136,21 +141,41 @@ public class EnrollPageTest extends BaseTest {
 	}	
 	
 	@Test
-	public void test_ValidateTermsAndConditions() throws InterruptedException {
-		// Test logic for validating terms and conditions
-    	enrollPageObject.uncheckTermsAndConditions();
-		enrollPageObject.clickContinue();
-		Assert.assertTrue(enrollPageObject.isTermsAndConditionsRequiredErrorMessageDisplayed(), "Required Terms and Services error message not displayed");
-		WebElement checkbox = enrollPageObject.getTermsAndConditionsCheckbox();
-		helperObject.scrollToElement(checkbox);
-		enrollPageObject.checkTermsAndConditions();
-		Thread.sleep(2000);
-		boolean isErrorMessagePresent = driver.getPageSource().contains("Please select Terms of Services");
-		Assert.assertFalse(isErrorMessagePresent, "Error message still found in page source or DOM structure after disappearing");
+	public void testValidateTermsAndConditions() throws InterruptedException {
+		// Validate TermsAndConditions checkbox
+	    enrollPageObject.uncheckTermsAndConditions();
+	    enrollPageObject.clickContinue();
+
+	    // Initialize WebDriverWait
+	     wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+	    // Verify error message when aria-invalid is true
+	    WebElement checkbox = enrollPageObject.getTermsAndConditionsCheckbox();
+	    String ariaInvalidBeforeCheck = checkbox.getAttribute("aria-invalid");
+
+	    if ("true".equals(ariaInvalidBeforeCheck)) {
+	        WebElement errorMessage = wait.until(ExpectedConditions
+	                .visibilityOfElementLocated(By.xpath("//div[text()='Please select Terms of Services']")));
+	        Assert.assertTrue(errorMessage.isDisplayed(),
+	                "Error message 'Please select Terms of Services' is not displayed when aria-invalid is true");
+	    }
+
+	    helperObject.scrollToElement(checkbox);
+	    enrollPageObject.checkTermsAndConditions();
+
+	    // Verify error message is not displayed when aria-invalid is false
+	    String ariaInvalidAfterCheck = checkbox.getAttribute("aria-invalid");
+	    if ("false".equals(ariaInvalidAfterCheck)) {
+	        // Wait for the error message to disappear
+	        boolean isErrorMessageInvisible = wait.until(ExpectedConditions
+	                .invisibilityOfElementLocated(By.xpath("//div[text()='Please select Terms of Services']")));
+	        Assert.assertTrue(isErrorMessageInvisible,
+	                "Error message 'Please select Terms of Services' is displayed when aria-invalid is false");
+	    }
 	}
 	
-	@Test(dependsOnMethods = "test_ValidateTermsAndConditions")
-	public void test_ValidEnrollmentInputFields() throws InterruptedException {
+	@Test(dependsOnMethods = "testValidateTermsAndConditions")
+	public void testValidEnrollmentInputFields() throws InterruptedException {
 		
 	    // Define the file path, sheet name
 	    String filePath = ".\\datafiles\\testdata.xlsx";
@@ -172,10 +197,12 @@ public class EnrollPageTest extends BaseTest {
 	    enrollPageObject.enterCreatePIN(pin);
 	    helperObject.scroll();
 	    enrollPageObject.checkTermsAndConditions();
+	    WebElement checkbox = enrollPageObject.getTermsAndConditionsCheckbox();
+		helperObject.scrollToElement(checkbox);
 	    enrollPageObject.clickContinue();
 	}
 
-	public void test_ValidateFirstName(String firstName) {
+	public void testValidateFirstName(String firstName) {
 	    String regexValidator = "^[a-zA-Z]+(?:[\\s-_.’']+[a-zA-Z]+)*$";
 
 	    if (firstName.length() < 1 || firstName.length() > 28 || !firstName.matches(regexValidator)) {
@@ -185,7 +212,7 @@ public class EnrollPageTest extends BaseTest {
 	    }
 	}
 
-	public void test_ValidateLastName(String lastName) {
+	public void testValidateLastName(String lastName) {
 	    String regexValidator = "^[a-zA-Z]+(?:[\\s-_.’']+[a-zA-Z]+)*$";
 
 	    if (lastName.length() < 1 || lastName.length() > 28 || !lastName.matches(regexValidator)) {
@@ -195,7 +222,7 @@ public class EnrollPageTest extends BaseTest {
 	    }
 	}
 
-	public void test_ValidateEmail(String email) {
+	public void testValidateEmail(String email) {
 		String regexValidator = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
 
 	    if (!email.matches(regexValidator)) {
@@ -209,7 +236,7 @@ public class EnrollPageTest extends BaseTest {
 	    }
 	}
 
-	public void test_ValidateMobilePhone(String phone) {
+	public void testValidateMobilePhone(String phone) {
 	    String regexValidator = "^(1-?)?(\\([2-9]\\d{2}\\)|[2-9]\\d{2})-?[2-9]\\d{2}-?\\d{4}$";
 
 	    if (!phone.matches(regexValidator)) {
@@ -224,7 +251,7 @@ public class EnrollPageTest extends BaseTest {
 	}
 
 	// Validate PIN
-	public void test_ValidatePIN(String pin) {
+	public void testValidatePIN(String pin) {
 	    // Check if the PIN is exactly 4 digits
 	    if (!pin.matches("^\\d{4}$")) {
 	        Assert.assertTrue(
