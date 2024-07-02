@@ -8,8 +8,7 @@
     <classes>
       <class name="org.BIMNetworks.BuyDirect_Test.EnrollPageTest">
         <methods>
-          <include name="testValidateTermsAndConditions"/>
-          <include name="testValidEnrollmentInputFields"/>
+          <include name="testIsDLRequired"/>
           <include name="configureAppium"/>
           <include name="tearDown"/>
           <include name="driverInitialization"/>
