@@ -96,7 +96,7 @@ public class BaseTest {
         String encodedPartnerId = Base64.getEncoder().encodeToString(partnerId.getBytes());
 
         // Construct the URL with encoded partner ID
-        String partnerUrl = "https://bimhep-qa.bimnetworkstech.com/?partnerId=" + encodedPartnerId;
+        String partnerUrl = "https://uqa-va-buydirect.azurewebsites.net/?partnerId=" + encodedPartnerId;
 
         // Create an instance of AndroidDriver with the options
         driver = new AndroidDriver(url, options);

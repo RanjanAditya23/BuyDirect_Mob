@@ -5,7 +5,7 @@
     <classes>
       <class name="org.BIMNetworks.BuyDirect_Test.EnrollPageTest">
         <methods>
-          <include name="test_ValidateTermsAndConditions"/>
+          <include name="testTextBeforeSignInHereLink"/>
           <include name="configureAppium"/>
           <include name="tearDown"/>
           <include name="driverInitialization"/>

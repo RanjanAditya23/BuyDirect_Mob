@@ -71,8 +71,16 @@ public class WelcomePage  {
 		wait.until(ExpectedConditions.visibilityOf(welcomemessage2));
 		return welcomemessage2.getText();
 	}
+	
+	// Continue Button
+	@FindBy(id = "btnContinueEnroll")
+	private WebElement continueButton;
 
-
+	public String ContinueButton() {
+		wait.until(ExpectedConditions.visibilityOf(continueButton));
+		return continueButton.getText();
+	}
+	
 	// SignInHere Before Text
 	@FindBy(xpath = "//div[@id='openingWelcome']/div[2]/div[2]//parent::p")
 	private WebElement signinbeforetext;
@@ -82,7 +90,6 @@ public class WelcomePage  {
 		return signinbeforetext.getText();
 	}
 
-	
 	// SignInHere Link
 	@FindBy(xpath = "//div[@id='openingWelcome']/div[2]/div[2]/div/p/a")
 	private WebElement signinherelink;
@@ -94,16 +101,6 @@ public class WelcomePage  {
 	public boolean signInHereTextisDisplayed() {
 		wait.until(ExpectedConditions.visibilityOf(signinherelink));
 		return signinherelink.isDisplayed();
-	}
-
-	
-	// Continue Button
-	@FindBy(id = "btnContinueEnroll")
-	private WebElement continueButton;
-
-	public String ContinueButton() {
-		wait.until(ExpectedConditions.visibilityOf(continueButton));
-		return continueButton.getText();
 	}
 
 	// Enroll Page WebElement 

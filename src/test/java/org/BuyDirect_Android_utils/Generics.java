@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -46,6 +47,20 @@ public class Generics {
 
 	public boolean partnerTenderNameisDisplayed() {
 		return partnertendername.isDisplayed();
+	}
+	
+	// Footer Text
+	@FindBy(xpath = "//div[@id='openingWelcome']/div[2]/div[3]/div/p")
+	private WebElement footertext;
+
+	public String footerText() {
+		wait.until(ExpectedConditions.visibilityOf(footertext));
+		return footertext.getText();
+	}
+
+	public boolean footerTextisDisplayed() {
+		wait.until(ExpectedConditions.visibilityOf(footertext));
+		return footertext.isDisplayed();
 	}
 
 	// Progress Indicators
