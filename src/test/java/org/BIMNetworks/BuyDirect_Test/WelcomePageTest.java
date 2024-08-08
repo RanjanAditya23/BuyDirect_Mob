@@ -8,6 +8,8 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.sql.SQLException;
+import java.util.List;
+
 import org.BIMNetworks.BuyDirect_PageObject.WelcomePage;
 import org.BuyDirect_Android_utils.DataBaseConnection;
 import org.BuyDirect_Android_utils.Generics;
@@ -29,7 +31,7 @@ public class WelcomePageTest extends BaseTest {
 		welcomePageObject = new WelcomePage(driver);
 		genericsObject = new Generics(driver); 
 	}
-
+	
 	@Test
 	public void testWelcomePageTitle() throws Exception {
 		String expectedTitle = "Welcome";
@@ -38,7 +40,7 @@ public class WelcomePageTest extends BaseTest {
 
 	@Test
 	public void testCurrentURL() {
-	    String expectedUrl = "https://bimhep-qa.bimnetworkstech.com/?partnerId=MTI3";
+	    String expectedUrl = "https://uqa-va-buydirect.azurewebsites.net/?partnerId=MTI3";
 	    Assert.assertEquals(driver.getCurrentUrl(), expectedUrl, "URL mismatch: ");
 	}
 
@@ -132,6 +134,28 @@ public class WelcomePageTest extends BaseTest {
 	@Test
 	public void testContinueButtonText() throws Exception {
 		Assert.assertEquals(welcomePageObject.ContinueButton(), "Begin");
+	}
+	
+	@Test
+	public void test_FooterTextisDisplayed() {
+		boolean footertextDisplayed = genericsObject.footerTextisDisplayed();
+		assertTrue(footertextDisplayed, "Footer text is not displayed on the welcome page");
+	}
+
+	@Test
+	public void test_FooterText() throws SQLException {
+		String query = "SELECT P1.Product_Name, P2.Partner_Contact_Number FROM [dbo].[Partner_BuyDirect_Settings] AS P1 INNER JOIN [dbo].[Partner_Profile] AS P2 ON P1.Partner_ID = P2.Partner_ID WHERE P1.Partner_ID = 127";
+
+		// Fetching data from the database as a list
+		List<String> data = DataBaseConnection.testWithDataBase(query);
+
+		// Check if the list contains at least two elements
+		if (data.size() >= 2) {
+			String partnerName = data.get(0);
+			String contactNumber = data.get(1);
+			Assert.assertEquals(genericsObject.footerText(),
+					"Please contact the " + partnerName + " Support Team at " + contactNumber + " with any questions.");
+		}
 	}
 
 	@Test(dependsOnMethods = "testWelcomeMessage2")

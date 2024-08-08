@@ -9,6 +9,7 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 import org.BIMNetworks.BuyDirect_PageObject.EnrollPage;
 import org.BIMNetworks.BuyDirect_PageObject.WelcomePage;
@@ -100,29 +101,30 @@ public class EnrollPageTest extends BaseTest {
 
 	@Test
 	public void testIsDLRequired() throws SQLException, InterruptedException {
-		// Database connection and logic to retrieve IsDLRequired
-		String query = "select IsDLRequired from [dbo].[Partner_BuyDirect_Settings] where Partner_ID = 127";
-		int isDLRequired = Integer.parseInt(DataBaseConnection.testWithDataBase(query).get(0));
+	    // Database connection and logic to retrieve IsDLRequired and Is_Plastics_Page_Displayed
+	    String query = "select IsDLRequired, Is_Plastics_Page_Displayed from [dbo].[Partner_BuyDirect_Settings] where Partner_ID = 127";
+	    List<String> result = DataBaseConnection.testWithDataBase(query);
+	    int isDLRequired = Integer.parseInt(result.get(0));
+	    int isPlasticsPageDisplayed = Integer.parseInt(result.get(1));
 
-		// Expected indicators based on IsDLRequired
-		List<String> expectedText;
-		switch (isDLRequired) {
-		case 0:
-			expectedText = Helper.createList("Enroll", "Address", "Plastic", "Banking");
-			break;
-		case 1:
-			expectedText = Helper.createList("Enroll", "Address", "Identity", "Plastic", "Banking");
-			break;
-		default:
-			Assert.fail("Invalid value retrieved from the database: " + isDLRequired);
-			return;
-		}
+	    // Expected indicators based on IsDLRequired and Is_Plastics_Page_Displayed
+	    List<String> expectedText = new ArrayList<>();
 
-		// Get the displayed text from UI
-		List<String> displayedTexts = genericsObject.getAllIndicatorsText();
+	    expectedText.add("Enroll");
+	    expectedText.add("Address");
+	    if (isDLRequired == 1) {
+	        expectedText.add("Identity");
+	    }
+	    if (isPlasticsPageDisplayed == 1) {
+	        expectedText.add("Plastic");
+	    }
+	    expectedText.add("Banking");
 
-		// Validate displayed texts
-		Assert.assertEquals(displayedTexts, expectedText);
+	    // Get the displayed text from UI
+	    List<String> displayedTexts = genericsObject.getAllIndicatorsText();
+
+	    // Validate displayed texts
+	    Assert.assertEquals(displayedTexts, expectedText);
 	}
 
 	@Test
@@ -272,8 +274,154 @@ public class EnrollPageTest extends BaseTest {
 	    }
 	}
 
+	@Test
+	public void testCombinedTermsAndConditionsText() throws SQLException, InterruptedException {
+	    // Query the database for the expected combined text
+	    String query = "select Terms_Checkbox_text from [dbo].[Partner_BuyDirect_Settings] where Partner_ID = 127";
+	    List<String> result = DataBaseConnection.testWithDataBase(query);
+	    String expectedText = result.get(0).replace("{", "").replace("}", ""); // Remove curly braces
+
+	    // Concatenate the TermsAndConditions text and the link text
+	    String actualText = enrollPageObject.termsAndConditionsbeforetext();
+
+	    // Validate the TermsAndConditions text against the database value
+	    Assert.assertEquals(actualText, expectedText, "TermsAndConditions text does not match the expected value from the database");
+	}
+
+	@Test
+	public void testTermsAndConditionsBeforeTextIsDisplayed() {
+		boolean isDisplayed = enrollPageObject.termsAndConditionsbeforetexisDisplayed();
+		Assert.assertTrue(isDisplayed, "Terms and Conditions before text is not displayed");
+	}
+
+	@Test
+	public void testTermsAndConditionsLinkTextIsDisplayed() {
+		boolean isDisplayed = enrollPageObject.termsAndConditionsLinkTextisDisplayed();
+		Assert.assertTrue(isDisplayed, "Terms and Conditions link text is not displayed");
+	}
+	
+	@Test
+    public void testTermsAndConditionsLinkIsNotBroken() throws IOException, URISyntaxException {
+        // Get the href attribute of the link
+        String url = enrollPageObject.getTermsAndConditionsLinkHref();
+
+        // Validate the URL by checking the HTTP response status code
+        int statusCode = Helper.getHTTPResponseStatusCode(url);
+
+        // Verify the status code is 200 (OK)
+        Assert.assertEquals(statusCode, 200, "The Terms and Conditions link is broken");
+    }
+
+	// Window Handle
+	@Test
+	public void testTermsAndConditionsLinkOpensNewWindow() throws InterruptedException { 
+	    // Initialize WebDriverWait with a timeout of 10 seconds
+	    wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+	    // Store the current window handle
+	    String originalWindow = driver.getWindowHandle();
+	    
+	    // Scroll to the "Terms and Conditions" link element
+	    WebElement termsandconditions = enrollPageObject.termsAndConditionsLinkText();
+	    helperObject.scrollToElement(termsandconditions);
+
+	    // Click the "Terms and Conditions" link
+	    enrollPageObject.clickTermsAndConditionsLink();
+
+	    // Wait for the new window or tab to open
+	    wait.until(ExpectedConditions.numberOfWindowsToBe(2));
+
+	    // Loop through all window handles to find the new window
+	    for (String windowHandle : driver.getWindowHandles()) {
+	        if (!originalWindow.contentEquals(windowHandle)) {
+	            driver.switchTo().window(windowHandle);
+	            break;
+	        }
+	    }
+
+	    // Verify the URL of the new window
+	    String expectedUrl = "https://test.bimnetworks.com/user/terms/partner/127"; // Replace with the expected URL
+	    String actualUrl = driver.getCurrentUrl();
+	    Assert.assertEquals(actualUrl, expectedUrl, "The URL of the new window does not match the expected URL");
+
+	    // Close the new window and switch back to the original window
+	    driver.close();
+	    driver.switchTo().window(originalWindow);
+	}
+	
+	// Validate TextNotifications Text	
+	@Test
+	public void testTextNotificationsTextIsDisplayed() {
+	    boolean isDisplayed = enrollPageObject.isTextNotificationsTextLabelDisplayed();
+	    Assert.assertTrue(isDisplayed, "TextNotifications text is not displayed");
+	}
+
+	@Test
+	public void testTextNotificationsLinkTextIsDisplayed() {
+	    boolean isDisplayed = enrollPageObject.isTextNotificationsLinkDisplayed();
+	    Assert.assertTrue(isDisplayed, "TextNotifications link text is not displayed");
+	}
+
+	@Test
+	public void testTextNotificationsLinkIsNotBroken() throws IOException, URISyntaxException {
+	    // Get the href attribute of the link
+	    String url = enrollPageObject.getTextNotificationsLinkHref();
+
+	    // Validate the URL by checking the HTTP response status code
+	    int statusCode = Helper.getHTTPResponseStatusCode(url);
+
+	    // Verify the status code is 200 (OK)
+	    Assert.assertEquals(statusCode, 200, "The TextNotifications link is broken");
+	}
+
+	@Test
+	public void testTextNotificationsLinkOpensNewWindow() throws InterruptedException {
+	    // Initialize WebDriverWait with a timeout of 10 seconds
+	    wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+	    // Store the current window handle
+	    String originalWindow = driver.getWindowHandle();
+	    
+	    // Scroll to the "TextNotifications" link element
+	    WebElement textnotifications = enrollPageObject.termsAndConditionsLinkText();
+	    helperObject.scrollToElement(textnotifications);
+
+	    // Click the "Text Notifications" link
+	    enrollPageObject.clickTextNotificationsLink();
+
+	    // Wait for the new window or tab to open
+	    wait.until(ExpectedConditions.numberOfWindowsToBe(2));
+
+	    // Switch to the new window
+	    for (String windowHandle : driver.getWindowHandles()) {
+	        if (!originalWindow.equals(windowHandle)) {
+	            driver.switchTo().window(windowHandle);
+
+	            // Verify the URL of the new window
+	            String expectedUrl = "https://test.bimnetworks.com/user/terms/partner/127#text-notification";
+	            String actualUrl = driver.getCurrentUrl();
+	            Assert.assertEquals(actualUrl, expectedUrl, "The URL of the new window does not match the expected URL");
+
+	            // Close the new window and switch back to the original window
+	            driver.close();
+	            driver.switchTo().window(originalWindow);
+	            break;
+	        }
+	    }
+	}
+	
+	@Test
+	public void testTextBeforeSignInHereLink() throws InterruptedException {
+		String actualText = enrollPageObject.signInHereBeforeText().substring(0, "To continue enrolling,".length()).trim();
+		Assert.assertEquals(actualText, "To continue enrolling,");
+	}
+
+	@Test
+	public void testSignInHereLinkTextisDisplayed() throws InterruptedException {
+		boolean signInLinkDisplayed = enrollPageObject.signInHereTextisDisplayed();
+		assertTrue(signInLinkDisplayed, "Sign in here link is not displayed on the welcome page");
+	}
+	
 	
 
-
-	
 }

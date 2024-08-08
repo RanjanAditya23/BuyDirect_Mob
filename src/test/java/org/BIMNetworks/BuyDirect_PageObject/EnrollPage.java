@@ -217,6 +217,100 @@ public class EnrollPage {
 	public boolean isTermsAndConditionsRequiredErrorMessageDisplayed() throws InterruptedException {
 		return termsAndConditionsRequiredErrorMessage.isDisplayed();
 	}
+	
+	// TermsAndConditions before text
+	@FindBy(xpath = "//label[text()='I certify that I am at least 18 years old and that I agree to the ']")
+	private WebElement TermsAndConditionsbeforetext;
+
+	public String termsAndConditionsbeforetext() {
+		wait.until(ExpectedConditions.visibilityOf(TermsAndConditionsbeforetext));
+		return TermsAndConditionsbeforetext.getText();
+	}
+	
+	public boolean termsAndConditionsbeforetexisDisplayed() {
+		wait.until(ExpectedConditions.visibilityOf(TermsAndConditionsbeforetext));
+		return TermsAndConditionsbeforetext.isDisplayed();
+	}
+
+	// TermsAndConditions Link text
+	@FindBy(xpath = "//a[text()='Term and Conditions']")
+	private WebElement gettermsAndConditionslinkText;
+	
+    // Method to return the Terms And Conditions LinkText element
+    public WebElement termsAndConditionsLinkText() {
+        return gettermsAndConditionslinkText;
+    }
+
+	public String getTermsAndConditionslinkText() {
+		return gettermsAndConditionslinkText.getText();
+	}
+	
+	public String getTermsAndConditionsLinkHref() {
+		return gettermsAndConditionslinkText.getAttribute("href");
+	}
+
+	public void clickTermsAndConditionsLink() {
+	    gettermsAndConditionslinkText.click();
+	}
+	
+	public boolean termsAndConditionsLinkTextisDisplayed() {
+		wait.until(ExpectedConditions.visibilityOf(gettermsAndConditionslinkText));
+		return gettermsAndConditionslinkText.isDisplayed();
+	}
+	
+	
+	// Text Notifications
+    @FindBy(id = "notifications")
+    private WebElement notificationscheckbox;
+    
+    // Method to return the checkbox element
+    public WebElement getTextNotificationsCheckbox() {
+        return notificationscheckbox;
+    }
+    
+    public void checkTextNotifications() {
+        if (!notificationscheckbox.isSelected()) {
+        	notificationscheckbox.click();
+        }
+    }
+
+    public void uncheckTextNotifications() {
+        if (notificationscheckbox.isSelected()) {
+        	notificationscheckbox.click();
+        }
+    }
+
+    @FindBy(xpath = "//label[@class='form-check-label label--text-notification']")
+    private WebElement textNotificationsTextLabel;
+
+    @FindBy(xpath = "//a[text()='Text Notifications']")
+    private WebElement textNotificationsLink;
+
+    public String getTextNotificationsTextLabel() {
+        wait.until(ExpectedConditions.visibilityOf(textNotificationsTextLabel));
+        return textNotificationsTextLabel.getText();
+    }
+
+    public boolean isTextNotificationsTextLabelDisplayed() {
+        return textNotificationsTextLabel.isDisplayed();
+    }
+
+    public String getTextNotificationsLinkText() {
+        return textNotificationsLink.getText();
+    }
+
+    public String getTextNotificationsLinkHref() {
+        return textNotificationsLink.getAttribute("href");
+    }
+
+    public void clickTextNotificationsLink() {
+        textNotificationsLink.click();
+    }
+
+    public boolean isTextNotificationsLinkDisplayed() {
+        wait.until(ExpectedConditions.visibilityOf(textNotificationsLink));
+        return textNotificationsLink.isDisplayed();
+    }
     
     // Continue
     @FindBy(id = "btnEnroll")
@@ -226,8 +320,27 @@ public class EnrollPage {
         wait.until(ExpectedConditions.elementToBeClickable(continueButton));
         continueButton.click();
     }
-   
     
+	// SignInHere Before Text
+	@FindBy(xpath = "(//p[@class='text-muted mb-0 SingInHereText'])[1]")
+	private WebElement signinbeforetext;
 
+	public String signInHereBeforeText() {
+		wait.until(ExpectedConditions.visibilityOf(signinbeforetext));
+		return signinbeforetext.getText();
+	}
+
+	// SignInHere Link
+	@FindBy(xpath = "(//p[@class='text-muted mb-0 SingInHereText'])[1]")
+	private WebElement signinherelink;
+
+	public void signInHereLink() {
+		signinherelink.getAttribute("href");
+	}
+
+	public boolean signInHereTextisDisplayed() {
+		wait.until(ExpectedConditions.visibilityOf(signinherelink));
+		return signinherelink.isDisplayed();
+	}
     
 }

@@ -1,5 +1,10 @@
 package org.BuyDirect_Android_utils;
 
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
@@ -79,5 +84,17 @@ public class Helper {
     public void clickElement(WebElement element) {
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
     }
+    
+    // URLValidator
+    public static int getHTTPResponseStatusCode(String urlString) throws IOException, URISyntaxException {
+        URI uri = new URI(urlString);
+        URL url = uri.toURL();
+        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+        connection.setRequestMethod("GET");
+        connection.connect();
+        return connection.getResponseCode();
+    }
+    
+    
 	
 }
