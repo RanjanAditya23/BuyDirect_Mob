@@ -8,7 +8,6 @@
     <classes>
       <class name="org.BIMNetworks.BuyDirect_Test.EnrollPageTest">
         <methods>
-          <include name="testCombinedTermsAndConditionsText"/>
           <include name="testTextBeforeSignInHereLink"/>
           <include name="configureAppium"/>
           <include name="tearDown"/>
