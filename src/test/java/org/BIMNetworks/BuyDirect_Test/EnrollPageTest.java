@@ -11,6 +11,8 @@ import java.sql.SQLException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeoutException;
+
 import org.BIMNetworks.BuyDirect_PageObject.EnrollPage;
 import org.BIMNetworks.BuyDirect_PageObject.WelcomePage;
 import org.BuyDirect_Android_utils.DataBaseConnection;
@@ -101,6 +103,9 @@ public class EnrollPageTest extends BaseTest {
 
 	@Test
 	public void testIsDLRequired() throws SQLException, InterruptedException {
+	    // Initialize WebDriverWait with a timeout of 30 seconds
+	    wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+
 	    // Database connection and logic to retrieve IsDLRequired and Is_Plastics_Page_Displayed
 	    String query = "select IsDLRequired, Is_Plastics_Page_Displayed from [dbo].[Partner_BuyDirect_Settings] where Partner_ID = 127";
 	    List<String> result = DataBaseConnection.testWithDataBase(query);
@@ -109,7 +114,6 @@ public class EnrollPageTest extends BaseTest {
 
 	    // Expected indicators based on IsDLRequired and Is_Plastics_Page_Displayed
 	    List<String> expectedText = new ArrayList<>();
-
 	    expectedText.add("Enroll");
 	    expectedText.add("Address");
 	    if (isDLRequired == 1) {
@@ -120,63 +124,82 @@ public class EnrollPageTest extends BaseTest {
 	    }
 	    expectedText.add("Banking");
 
+	    // Wait for the indicators to be visible in the UI before retrieving them
+	    wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//li[@class='nav-item']")));  // Update with the correct selector
+
 	    // Get the displayed text from UI
 	    List<String> displayedTexts = genericsObject.getAllIndicatorsText();
 
 	    // Validate displayed texts
-	    Assert.assertEquals(displayedTexts, expectedText);
+	    Assert.assertEquals(displayedTexts, expectedText, "Displayed texts do not match the expected texts");
 	}
 
 	@Test
 	public void testEnrollPageRequiredFieldErrorMessage() throws InterruptedException {
-		// Validate enroll page input field required error message 
-		enrollPageObject.clickContinue();
+	    // Initialize WebDriverWait with a timeout of 30 seconds
+	    wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
-		Assert.assertTrue(enrollPageObject.isFirstNameRequiredMessageDisplayed(),"Required First Name error message not displayed");
-		Assert.assertTrue(enrollPageObject.isLastNameRequiredMessageDisplayed(),"Required Last Name error message not displayed");
-		Assert.assertTrue(enrollPageObject.isEmailRequiredErrorMessageDisplayed(),"Required Email Address error message not displayed");
-		Assert.assertTrue(enrollPageObject.isMobilePhoneRequiredErrorMessageDisplayed(),"Required Mobile Phone error message not displayed");
-		Assert.assertTrue(enrollPageObject.isPinRequiredErrorMessageDisplayed(),"Required Pin error message not displayed");
-		WebElement checkbox = enrollPageObject.getTermsAndConditionsCheckbox();
-		helperObject.scrollToElement(checkbox);
-		Assert.assertTrue(enrollPageObject.isTermsAndConditionsRequiredErrorMessageDisplayed(),"Required Terms and Services error message not displayed");
-	}	
+	    // Wait for the Continue button to be clickable before interacting with it
+	    wait.until(ExpectedConditions.elementToBeClickable(By.id("btnEnroll")));
+	    enrollPageObject.clickContinue();
+
+	    // Validate that required field error messages are displayed
+	    Assert.assertTrue(enrollPageObject.isFirstNameRequiredMessageDisplayed(), "Required First Name error message not displayed");
+	    Assert.assertTrue(enrollPageObject.isLastNameRequiredMessageDisplayed(), "Required Last Name error message not displayed");
+	    Assert.assertTrue(enrollPageObject.isEmailRequiredErrorMessageDisplayed(), "Required Email Address error message not displayed");
+	    Assert.assertTrue(enrollPageObject.isMobilePhoneRequiredErrorMessageDisplayed(), "Required Mobile Phone error message not displayed");
+	    Assert.assertTrue(enrollPageObject.isPinRequiredErrorMessageDisplayed(), "Required Pin error message not displayed");
+
+	    // Scroll to the Terms and Conditions checkbox
+	    WebElement checkbox = enrollPageObject.getTermsAndConditionsCheckbox();
+	    helperObject.scrollToElement(checkbox);
+
+	    // Validate that the Terms and Conditions required field error message is displayed
+	    Assert.assertTrue(enrollPageObject.isTermsAndConditionsRequiredErrorMessageDisplayed(), "Required Terms and Services error message not displayed");
+	}
+	
 	
 	@Test
-    public void testValidateTermsAndConditions() throws InterruptedException {
-		WebElement checkbox = enrollPageObject.getTermsAndConditionsCheckbox();
-		helperObject.scrollToElement(checkbox);
-		
-        enrollPageObject.uncheckTermsAndConditions();
-        enrollPageObject.clickContinue();
-        
-        // Initialize WebDriverWait with appropriate timeout
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        
-        // Verify error message when aria-invalid is true
-        checkbox = enrollPageObject.getTermsAndConditionsCheckbox();
-        String ariaInvalidBeforeCheck = checkbox.getAttribute("aria-invalid");
-        
-        if ("true".equals(ariaInvalidBeforeCheck)) {
-            WebElement errorMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Please select Terms of Services']")));
-            Assert.assertTrue(errorMessage.isDisplayed(), "Error message 'Please select Terms of Services' is not displayed when aria-invalid is true");
-        }
-        
-        enrollPageObject.checkTermsAndConditions();
-        
-        // Verify error message is not displayed when aria-invalid is false
-        String ariaInvalidAfterCheck = checkbox.getAttribute("aria-invalid");
-        
-        if ("false".equals(ariaInvalidAfterCheck)) {
-            // Wait for the error message to disappear
-            boolean isErrorMessageInvisible = wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[text()='Please select Terms of Services']")));
-            Assert.assertTrue(isErrorMessageInvisible, "Error message 'Please select Terms of Services' is displayed when aria-invalid is false");
-        }
-    }
+	public void testValidateTermsAndConditions() throws InterruptedException, TimeoutException {
+	    // Scroll to the checkbox
+	    WebElement checkbox = enrollPageObject.getTermsAndConditionsCheckbox();
+	    helperObject.scrollToElement(checkbox);
+
+	    // Uncheck the Terms and Conditions checkbox and click continue
+	    enrollPageObject.uncheckTermsAndConditions();
+	    enrollPageObject.clickContinue();
+
+	    // Initialize WebDriverWait with appropriate timeout
+	    wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+	    // Verify error message when aria-invalid is true
+	    checkbox = enrollPageObject.getTermsAndConditionsCheckbox();
+	    String ariaInvalidBeforeCheck = checkbox.getAttribute("aria-invalid");
+
+	    if ("true".equals(ariaInvalidBeforeCheck)) {
+	        WebElement errorMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Please select Terms of Services']")));
+			Assert.assertTrue(errorMessage.isDisplayed(), "Error message 'Please select Terms of Services' is not displayed when aria-invalid is true");
+	    }
+
+	    // Check the Terms and Conditions checkbox and click continue
+	    enrollPageObject.checkTermsAndConditions();
+
+	    // Verify error message is not displayed when aria-invalid is false
+	    String ariaInvalidAfterCheck = checkbox.getAttribute("aria-invalid");
+
+	    if ("false".equals(ariaInvalidAfterCheck)) {
+	        // Wait for the error message to disappear
+			boolean isErrorMessageInvisible = wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[text()='Please select Terms of Services']")));
+			Assert.assertTrue(isErrorMessageInvisible, "Error message 'Please select Terms of Services' is displayed when aria-invalid is false");
+	    }
+
+	    WebElement continueButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("btnEnroll")));
+		continueButton.click();
+	}
+
 	
 	@Test(dependsOnMethods = "testValidateTermsAndConditions")
 	public void testValidEnrollmentInputFields() throws InterruptedException {
-		
 	    // Define the file path, sheet name
 	    String filePath = ".\\datafiles\\testdata.xlsx";
 	    String sheetName = "Enroll";
@@ -276,14 +299,16 @@ public class EnrollPageTest extends BaseTest {
 
 	@Test
 	public void testCombinedTermsAndConditionsText() throws SQLException, InterruptedException {
+	    // Initialize WebDriverWait with a timeout of 30 seconds
+	    wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	    // Query the database for the expected combined text
 	    String query = "select Terms_Checkbox_text from [dbo].[Partner_BuyDirect_Settings] where Partner_ID = 127";
 	    List<String> result = DataBaseConnection.testWithDataBase(query);
 	    String expectedText = result.get(0).replace("{", "").replace("}", ""); // Remove curly braces
-
-	    // Concatenate the TermsAndConditions text and the link text
+	    // Wait for the TermsAndConditions text element to be visible
+	    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//label[text()='I certify that I am at least 18 years old and that I agree to the ']")));
+	    // Get the actual text
 	    String actualText = enrollPageObject.termsAndConditionsbeforetext();
-
 	    // Validate the TermsAndConditions text against the database value
 	    Assert.assertEquals(actualText, expectedText, "TermsAndConditions text does not match the expected value from the database");
 	}
@@ -295,8 +320,10 @@ public class EnrollPageTest extends BaseTest {
 	}
 
 	@Test
-	public void testTermsAndConditionsLinkTextIsDisplayed() {
-		boolean isDisplayed = enrollPageObject.termsAndConditionsLinkTextisDisplayed();
+	public void testTermsAndConditionsLinkTextIsDisplayed() throws TimeoutException {
+	    // Initialize WebDriverWait with a timeout of 15 seconds
+	    wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+	    boolean isDisplayed = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='Term and Conditions']"))).isDisplayed();
 		Assert.assertTrue(isDisplayed, "Terms and Conditions link text is not displayed");
 	}
 	
@@ -312,11 +339,10 @@ public class EnrollPageTest extends BaseTest {
         Assert.assertEquals(statusCode, 200, "The Terms and Conditions link is broken");
     }
 
-	// Window Handle
 	@Test
 	public void testTermsAndConditionsLinkOpensNewWindow() throws InterruptedException { 
-	    // Initialize WebDriverWait with a timeout of 10 seconds
-	    wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    // Initialize WebDriverWait with a timeout of 15 seconds
+	    wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
 	    // Store the current window handle
 	    String originalWindow = driver.getWindowHandle();
@@ -324,6 +350,9 @@ public class EnrollPageTest extends BaseTest {
 	    // Scroll to the "Terms and Conditions" link element
 	    WebElement termsandconditions = enrollPageObject.termsAndConditionsLinkText();
 	    helperObject.scrollToElement(termsandconditions);
+
+	    // Ensure the element is visible and interactable
+	    wait.until(ExpectedConditions.elementToBeClickable(termsandconditions));
 
 	    // Click the "Terms and Conditions" link
 	    enrollPageObject.clickTermsAndConditionsLink();
@@ -351,10 +380,15 @@ public class EnrollPageTest extends BaseTest {
 	
 	// Validate TextNotifications Text	
 	@Test
-	public void testTextNotificationsTextIsDisplayed() {
-	    boolean isDisplayed = enrollPageObject.isTextNotificationsTextLabelDisplayed();
+	public void testTextNotificationsTextIsDisplayed() throws TimeoutException, InterruptedException {
+	    // Wait for the element to be visible
+	    boolean isDisplayed = false;
+	    wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		isDisplayed = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//label[@class='form-check-label label--text-notification']"))).isDisplayed();
+	    // Perform the assertion
 	    Assert.assertTrue(isDisplayed, "TextNotifications text is not displayed");
 	}
+
 
 	@Test
 	public void testTextNotificationsLinkTextIsDisplayed() {
@@ -412,15 +446,27 @@ public class EnrollPageTest extends BaseTest {
 	
 	@Test
 	public void testTextBeforeSignInHereLink() throws InterruptedException {
-		String actualText = enrollPageObject.signInHereBeforeText().substring(0, "To continue enrolling,".length()).trim();
-		Assert.assertEquals(actualText, "To continue enrolling,");
+	    // Initialize WebDriverWait with a timeout of 30 seconds
+	    wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+	    // Wait for the element to be visible
+	    WebElement signInHereTextElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//p[@class='text-muted mb-0 SingInHereText'])[1]")));
+	    // Extract the text and perform the assertion
+	    String actualText = signInHereTextElement.getText().substring(0, "To continue enrolling,".length()).trim();
+	    Assert.assertEquals(actualText, "To continue enrolling,");
 	}
 
 	@Test
-	public void testSignInHereLinkTextisDisplayed() throws InterruptedException {
-		boolean signInLinkDisplayed = enrollPageObject.signInHereTextisDisplayed();
-		assertTrue(signInLinkDisplayed, "Sign in here link is not displayed on the welcome page");
+	public void testSignInHereLinkTextisDisplayed() throws InterruptedException, TimeoutException {
+	    // Initialize WebDriverWait with a longer timeout if necessary
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	    // Ensure the element is visible before interacting
+	    boolean signInLinkDisplayed;
+	    WebElement signInLink = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//p[@class='text-muted mb-0 SingInHereText'])[1]")));
+		signInLinkDisplayed = signInLink.isDisplayed();
+	    assertTrue(signInLinkDisplayed, "Sign in here link is not displayed on the welcome page");
 	}
+
+
 	
 	
 

@@ -1594,3 +1594,393 @@
 2024-08-08 19:06:11 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
 2024-08-08 19:06:30 INFO  BaseTest:118 - Tearing down the test...
 2024-08-08 19:06:30 INFO  BaseTest:121 - Session ID before quitting driver: f94241cb-7f66-4cac-9395-4f65e4483372
+2024-08-08 19:34:29 INFO  BaseTest:37 - Configuring Appium...
+2024-08-08 19:34:29 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-08 19:34:29 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-08 19:34:29 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-08 19:35:20 INFO  BaseTest:103 - Session ID after initialization: bc4d8f50-54ae-4ba7-9367-e7b9312b1730
+2024-08-08 19:35:44 INFO  BaseTest:110 - Session ID after launching URL: bc4d8f50-54ae-4ba7-9367-e7b9312b1730
+2024-08-08 19:39:33 INFO  BaseTest:118 - Tearing down the test...
+2024-08-08 19:39:33 INFO  BaseTest:121 - Session ID before quitting driver: bc4d8f50-54ae-4ba7-9367-e7b9312b1730
+2024-08-08 19:39:36 INFO  BaseTest:37 - Configuring Appium...
+2024-08-08 19:39:36 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-08 19:39:36 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-08 19:39:36 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-08 19:40:20 INFO  BaseTest:103 - Session ID after initialization: 4bc8ad16-98bb-4200-acdf-f2dc39313e47
+2024-08-08 19:40:42 INFO  BaseTest:110 - Session ID after launching URL: 4bc8ad16-98bb-4200-acdf-f2dc39313e47
+2024-08-08 19:41:19 INFO  BaseTest:118 - Tearing down the test...
+2024-08-08 19:41:19 INFO  BaseTest:121 - Session ID before quitting driver: 4bc8ad16-98bb-4200-acdf-f2dc39313e47
+2024-08-08 20:27:05 INFO  BaseTest:37 - Configuring Appium...
+2024-08-08 20:27:05 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-08 20:27:05 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-08 20:27:05 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-08 20:27:40 INFO  BaseTest:103 - Session ID after initialization: 702a4100-4f09-4518-b954-8ffc2857fc79
+2024-08-08 20:27:55 INFO  BaseTest:110 - Session ID after launching URL: 702a4100-4f09-4518-b954-8ffc2857fc79
+2024-08-08 20:28:24 INFO  BaseTest:118 - Tearing down the test...
+2024-08-08 20:28:24 INFO  BaseTest:121 - Session ID before quitting driver: 702a4100-4f09-4518-b954-8ffc2857fc79
+2024-08-08 20:28:26 INFO  BaseTest:37 - Configuring Appium...
+2024-08-08 20:28:26 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-08 20:28:26 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-08 20:28:26 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-08 20:28:59 INFO  BaseTest:103 - Session ID after initialization: b65993c4-a6a2-44c0-bf89-340a63c64596
+2024-08-08 20:29:15 INFO  BaseTest:110 - Session ID after launching URL: b65993c4-a6a2-44c0-bf89-340a63c64596
+2024-08-08 21:36:17 INFO  BaseTest:37 - Configuring Appium...
+2024-08-08 21:36:17 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-08 21:36:18 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-08 21:36:18 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-08 21:37:44 INFO  BaseTest:37 - Configuring Appium...
+2024-08-08 21:37:44 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-08 21:37:44 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-08 21:37:44 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-08 21:38:53 INFO  BaseTest:37 - Configuring Appium...
+2024-08-08 21:38:58 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-08 21:38:58 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-08 21:38:58 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-08 21:40:02 INFO  BaseTest:103 - Session ID after initialization: dde448c0-22fe-4f9f-8e81-33642a108a92
+2024-08-08 21:40:20 INFO  BaseTest:110 - Session ID after launching URL: dde448c0-22fe-4f9f-8e81-33642a108a92
+2024-08-08 21:40:50 INFO  BaseTest:118 - Tearing down the test...
+2024-08-08 21:40:50 INFO  BaseTest:121 - Session ID before quitting driver: dde448c0-22fe-4f9f-8e81-33642a108a92
+2024-08-08 21:40:51 INFO  BaseTest:37 - Configuring Appium...
+2024-08-08 21:40:51 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-08 21:40:51 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-08 21:40:51 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-09 14:28:55 INFO  BaseTest:37 - Configuring Appium...
+2024-08-09 14:28:55 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-09 14:28:55 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-09 14:28:55 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-09 14:29:14 INFO  BaseTest:37 - Configuring Appium...
+2024-08-09 14:29:14 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-09 14:29:14 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-09 14:29:14 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-09 14:29:54 INFO  BaseTest:103 - Session ID after initialization: 70db3fea-8817-4a41-b9f7-4f6badfa8cfc
+2024-08-09 14:30:07 INFO  BaseTest:110 - Session ID after launching URL: 70db3fea-8817-4a41-b9f7-4f6badfa8cfc
+2024-08-09 14:33:04 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 14:33:04 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 14:33:04 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 14:33:04 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 14:33:04 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 14:33:05 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 14:33:05 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 14:33:05 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 14:33:05 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 14:33:05 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 14:33:05 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 14:33:05 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 14:33:05 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 14:33:05 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 14:33:05 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 14:33:05 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 14:33:05 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 14:33:05 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 14:33:05 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 14:33:05 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 14:33:05 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 14:33:05 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 14:33:05 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 14:33:05 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 14:33:05 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 14:33:36 INFO  BaseTest:118 - Tearing down the test...
+2024-08-09 14:33:36 INFO  BaseTest:121 - Session ID before quitting driver: 70db3fea-8817-4a41-b9f7-4f6badfa8cfc
+2024-08-09 14:44:06 INFO  BaseTest:37 - Configuring Appium...
+2024-08-09 14:44:10 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-09 14:44:10 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-09 14:44:10 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-09 14:44:36 INFO  BaseTest:103 - Session ID after initialization: 6268faf4-a105-4c0e-9ab5-4db17cec2934
+2024-08-09 14:44:47 INFO  BaseTest:110 - Session ID after launching URL: 6268faf4-a105-4c0e-9ab5-4db17cec2934
+2024-08-09 14:45:15 INFO  BaseTest:118 - Tearing down the test...
+2024-08-09 14:45:15 INFO  BaseTest:121 - Session ID before quitting driver: 6268faf4-a105-4c0e-9ab5-4db17cec2934
+2024-08-09 14:45:17 INFO  BaseTest:37 - Configuring Appium...
+2024-08-09 14:45:17 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-09 14:45:17 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-09 14:45:17 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-09 14:45:43 INFO  BaseTest:103 - Session ID after initialization: ee5480e0-5066-476b-84a3-9a5a3194438a
+2024-08-09 14:45:54 INFO  BaseTest:110 - Session ID after launching URL: ee5480e0-5066-476b-84a3-9a5a3194438a
+2024-08-09 14:48:40 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 14:48:40 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 14:48:40 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 14:48:40 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 14:48:40 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 14:48:41 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 14:48:41 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 14:48:41 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 14:48:41 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 14:48:41 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 14:48:41 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 14:48:41 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 14:48:41 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 14:48:41 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 14:48:41 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 14:48:41 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 14:48:41 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 14:48:41 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 14:48:41 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 14:48:41 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 14:48:41 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 14:48:41 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 14:48:41 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 14:48:41 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 14:48:41 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 14:48:56 INFO  BaseTest:118 - Tearing down the test...
+2024-08-09 14:48:56 INFO  BaseTest:121 - Session ID before quitting driver: ee5480e0-5066-476b-84a3-9a5a3194438a
+2024-08-09 15:00:30 INFO  BaseTest:37 - Configuring Appium...
+2024-08-09 15:00:31 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-09 15:00:31 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-09 15:00:31 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-09 15:01:00 INFO  BaseTest:103 - Session ID after initialization: b949bce4-3c3a-44d8-b21d-85ac3cf2ec1b
+2024-08-09 15:01:14 INFO  BaseTest:110 - Session ID after launching URL: b949bce4-3c3a-44d8-b21d-85ac3cf2ec1b
+2024-08-09 15:36:27 INFO  BaseTest:37 - Configuring Appium...
+2024-08-09 15:36:27 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-09 15:36:27 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-09 15:36:27 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-09 15:36:57 INFO  BaseTest:103 - Session ID after initialization: 4b4d4690-b75b-43a7-9413-969e044a8ae6
+2024-08-09 15:37:08 INFO  BaseTest:110 - Session ID after launching URL: 4b4d4690-b75b-43a7-9413-969e044a8ae6
+2024-08-09 15:40:07 INFO  BaseTest:37 - Configuring Appium...
+2024-08-09 15:40:07 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-09 15:40:07 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-09 15:40:07 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-09 15:40:37 INFO  BaseTest:103 - Session ID after initialization: b9d264c8-304a-49ac-bdc6-8a118935870b
+2024-08-09 15:40:46 INFO  BaseTest:110 - Session ID after launching URL: b9d264c8-304a-49ac-bdc6-8a118935870b
+2024-08-09 15:40:57 INFO  BaseTest:118 - Tearing down the test...
+2024-08-09 15:40:57 INFO  BaseTest:121 - Session ID before quitting driver: b9d264c8-304a-49ac-bdc6-8a118935870b
+2024-08-09 15:41:48 INFO  BaseTest:37 - Configuring Appium...
+2024-08-09 15:41:48 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-09 15:41:48 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-09 15:41:48 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-09 15:42:15 INFO  BaseTest:103 - Session ID after initialization: e7707988-f8ca-4559-912e-9fabfc9daf11
+2024-08-09 15:42:28 INFO  BaseTest:110 - Session ID after launching URL: e7707988-f8ca-4559-912e-9fabfc9daf11
+2024-08-09 15:44:05 INFO  BaseTest:37 - Configuring Appium...
+2024-08-09 15:44:05 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-09 15:44:05 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-09 15:44:06 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-09 15:44:36 INFO  BaseTest:103 - Session ID after initialization: c1293b8e-0a52-420a-b43f-2fd22738cb05
+2024-08-09 15:44:48 INFO  BaseTest:110 - Session ID after launching URL: c1293b8e-0a52-420a-b43f-2fd22738cb05
+2024-08-09 15:45:16 INFO  BaseTest:118 - Tearing down the test...
+2024-08-09 15:45:16 INFO  BaseTest:121 - Session ID before quitting driver: c1293b8e-0a52-420a-b43f-2fd22738cb05
+2024-08-09 15:45:18 INFO  BaseTest:37 - Configuring Appium...
+2024-08-09 15:45:18 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-09 15:45:18 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-09 15:45:18 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-09 15:45:48 INFO  BaseTest:103 - Session ID after initialization: 97693dc9-585a-43f6-ba09-bdab3780a898
+2024-08-09 15:46:01 INFO  BaseTest:110 - Session ID after launching URL: 97693dc9-585a-43f6-ba09-bdab3780a898
+2024-08-09 15:47:18 INFO  BaseTest:118 - Tearing down the test...
+2024-08-09 15:47:18 INFO  BaseTest:121 - Session ID before quitting driver: 97693dc9-585a-43f6-ba09-bdab3780a898
+2024-08-09 15:48:20 INFO  BaseTest:37 - Configuring Appium...
+2024-08-09 15:48:20 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-09 15:48:20 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-09 15:48:20 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-09 15:48:51 INFO  BaseTest:103 - Session ID after initialization: 789c0f17-2706-48af-842a-d739779e37a6
+2024-08-09 15:49:04 INFO  BaseTest:110 - Session ID after launching URL: 789c0f17-2706-48af-842a-d739779e37a6
+2024-08-09 15:49:33 INFO  BaseTest:118 - Tearing down the test...
+2024-08-09 15:49:33 INFO  BaseTest:121 - Session ID before quitting driver: 789c0f17-2706-48af-842a-d739779e37a6
+2024-08-09 15:49:35 INFO  BaseTest:37 - Configuring Appium...
+2024-08-09 15:49:35 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-09 15:49:35 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-09 15:49:35 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-09 15:50:01 INFO  BaseTest:103 - Session ID after initialization: 4cee64f2-6873-4ddd-8ced-db8181caf55a
+2024-08-09 15:50:10 INFO  BaseTest:110 - Session ID after launching URL: 4cee64f2-6873-4ddd-8ced-db8181caf55a
+2024-08-09 15:52:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 15:52:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 15:52:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 15:52:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 15:52:25 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 15:52:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 15:52:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 15:52:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 15:52:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 15:52:25 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 15:52:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 15:52:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 15:52:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 15:52:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 15:52:25 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 15:52:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 15:52:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 15:52:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 15:52:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 15:52:25 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 15:52:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 15:52:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 15:52:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 15:52:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 15:52:25 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 15:52:37 INFO  BaseTest:118 - Tearing down the test...
+2024-08-09 15:52:38 INFO  BaseTest:121 - Session ID before quitting driver: 4cee64f2-6873-4ddd-8ced-db8181caf55a
+2024-08-09 16:26:17 INFO  BaseTest:37 - Configuring Appium...
+2024-08-09 16:26:17 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-09 16:26:17 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-09 16:26:17 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-09 16:26:47 INFO  BaseTest:103 - Session ID after initialization: edfe5681-1cb2-408c-95b9-d2a197a672f5
+2024-08-09 16:26:58 INFO  BaseTest:110 - Session ID after launching URL: edfe5681-1cb2-408c-95b9-d2a197a672f5
+2024-08-09 16:27:31 INFO  BaseTest:118 - Tearing down the test...
+2024-08-09 16:27:31 INFO  BaseTest:121 - Session ID before quitting driver: edfe5681-1cb2-408c-95b9-d2a197a672f5
+2024-08-09 16:29:02 INFO  BaseTest:37 - Configuring Appium...
+2024-08-09 16:29:02 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-09 16:29:02 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-09 16:29:02 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-09 16:29:29 INFO  BaseTest:103 - Session ID after initialization: 2fce2941-517b-455a-b09f-8128870044eb
+2024-08-09 16:29:40 INFO  BaseTest:110 - Session ID after launching URL: 2fce2941-517b-455a-b09f-8128870044eb
+2024-08-09 16:30:07 INFO  BaseTest:118 - Tearing down the test...
+2024-08-09 16:30:07 INFO  BaseTest:121 - Session ID before quitting driver: 2fce2941-517b-455a-b09f-8128870044eb
+2024-08-09 16:30:09 INFO  BaseTest:37 - Configuring Appium...
+2024-08-09 16:30:09 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-09 16:30:09 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-09 16:30:09 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-09 16:30:38 INFO  BaseTest:103 - Session ID after initialization: 4c864b6f-bf2f-44b0-b409-b8292e6be8af
+2024-08-09 16:30:51 INFO  BaseTest:110 - Session ID after launching URL: 4c864b6f-bf2f-44b0-b409-b8292e6be8af
+2024-08-09 16:34:00 INFO  BaseTest:118 - Tearing down the test...
+2024-08-09 16:34:00 INFO  BaseTest:121 - Session ID before quitting driver: 4c864b6f-bf2f-44b0-b409-b8292e6be8af
+2024-08-09 16:34:55 INFO  BaseTest:37 - Configuring Appium...
+2024-08-09 16:34:55 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-09 16:34:55 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-09 16:34:55 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-09 16:35:24 INFO  BaseTest:103 - Session ID after initialization: 50462d82-993c-49ea-9834-d732aba5f5f9
+2024-08-09 16:35:38 INFO  BaseTest:110 - Session ID after launching URL: 50462d82-993c-49ea-9834-d732aba5f5f9
+2024-08-09 16:36:05 INFO  BaseTest:118 - Tearing down the test...
+2024-08-09 16:36:05 INFO  BaseTest:121 - Session ID before quitting driver: 50462d82-993c-49ea-9834-d732aba5f5f9
+2024-08-09 16:36:07 INFO  BaseTest:37 - Configuring Appium...
+2024-08-09 16:36:07 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-09 16:36:07 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-09 16:36:07 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-09 16:36:35 INFO  BaseTest:103 - Session ID after initialization: 170e561f-5195-44e1-a592-25d330d0a320
+2024-08-09 16:36:47 INFO  BaseTest:110 - Session ID after launching URL: 170e561f-5195-44e1-a592-25d330d0a320
+2024-08-09 16:39:00 INFO  BaseTest:118 - Tearing down the test...
+2024-08-09 16:39:00 INFO  BaseTest:121 - Session ID before quitting driver: 170e561f-5195-44e1-a592-25d330d0a320
+2024-08-09 17:31:49 INFO  BaseTest:37 - Configuring Appium...
+2024-08-09 17:31:49 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-09 17:31:49 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-09 17:31:49 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-09 17:32:19 INFO  BaseTest:103 - Session ID after initialization: 0e14c97e-bfc9-48b8-b18b-bbc8f6785860
+2024-08-09 17:32:32 INFO  BaseTest:110 - Session ID after launching URL: 0e14c97e-bfc9-48b8-b18b-bbc8f6785860
+2024-08-09 17:33:08 INFO  BaseTest:118 - Tearing down the test...
+2024-08-09 17:33:08 INFO  BaseTest:121 - Session ID before quitting driver: 0e14c97e-bfc9-48b8-b18b-bbc8f6785860
+2024-08-09 17:33:54 INFO  BaseTest:37 - Configuring Appium...
+2024-08-09 17:33:54 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-09 17:33:54 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-09 17:33:54 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-09 17:34:30 INFO  BaseTest:103 - Session ID after initialization: dafc8eb7-1bde-444e-ae12-0f20d9dc6b3d
+2024-08-09 17:34:43 INFO  BaseTest:110 - Session ID after launching URL: dafc8eb7-1bde-444e-ae12-0f20d9dc6b3d
+2024-08-09 17:35:11 INFO  BaseTest:118 - Tearing down the test...
+2024-08-09 17:35:11 INFO  BaseTest:121 - Session ID before quitting driver: dafc8eb7-1bde-444e-ae12-0f20d9dc6b3d
+2024-08-09 17:35:13 INFO  BaseTest:37 - Configuring Appium...
+2024-08-09 17:35:13 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-09 17:35:13 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-09 17:35:13 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-09 17:35:43 INFO  BaseTest:103 - Session ID after initialization: cb0e1bc5-e2ea-48d6-b6a1-13278936a1d6
+2024-08-09 17:35:53 INFO  BaseTest:110 - Session ID after launching URL: cb0e1bc5-e2ea-48d6-b6a1-13278936a1d6
+2024-08-09 17:37:38 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 17:37:38 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 17:37:38 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 17:37:38 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 17:37:39 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 17:37:39 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 17:37:39 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 17:37:39 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 17:37:39 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 17:37:39 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 17:37:39 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 17:37:39 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 17:37:39 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 17:37:39 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 17:37:40 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 17:37:40 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 17:37:40 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 17:37:40 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 17:37:40 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 17:37:40 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 17:37:40 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 17:37:40 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 17:37:40 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 17:37:40 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 17:37:40 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 17:37:57 INFO  BaseTest:118 - Tearing down the test...
+2024-08-09 17:37:57 INFO  BaseTest:121 - Session ID before quitting driver: cb0e1bc5-e2ea-48d6-b6a1-13278936a1d6
+2024-08-09 17:41:05 INFO  BaseTest:37 - Configuring Appium...
+2024-08-09 17:41:05 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-09 17:41:05 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-09 17:41:05 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-09 17:41:35 INFO  BaseTest:103 - Session ID after initialization: bd8c5fb9-2a30-4dbf-93d9-59e2070fa67d
+2024-08-09 17:41:49 INFO  BaseTest:110 - Session ID after launching URL: bd8c5fb9-2a30-4dbf-93d9-59e2070fa67d
+2024-08-09 17:41:54 INFO  BaseTest:118 - Tearing down the test...
+2024-08-09 17:41:54 INFO  BaseTest:121 - Session ID before quitting driver: bd8c5fb9-2a30-4dbf-93d9-59e2070fa67d
+2024-08-09 17:42:25 INFO  BaseTest:37 - Configuring Appium...
+2024-08-09 17:42:25 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-09 17:42:25 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-09 17:42:25 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-09 17:42:54 INFO  BaseTest:103 - Session ID after initialization: e675b72f-0975-400b-8e1c-b9b793c6ee82
+2024-08-09 17:43:05 INFO  BaseTest:110 - Session ID after launching URL: e675b72f-0975-400b-8e1c-b9b793c6ee82
+2024-08-09 17:43:35 INFO  BaseTest:118 - Tearing down the test...
+2024-08-09 17:43:35 INFO  BaseTest:121 - Session ID before quitting driver: e675b72f-0975-400b-8e1c-b9b793c6ee82
+2024-08-09 17:43:37 INFO  BaseTest:37 - Configuring Appium...
+2024-08-09 17:43:37 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-09 17:43:37 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-09 17:43:37 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-09 17:44:10 INFO  BaseTest:103 - Session ID after initialization: c7dffe56-2a97-4e77-a6b0-d73c985b1863
+2024-08-09 17:44:20 INFO  BaseTest:110 - Session ID after launching URL: c7dffe56-2a97-4e77-a6b0-d73c985b1863
+2024-08-09 17:46:07 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 17:46:07 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 17:46:07 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 17:46:07 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 17:46:07 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 17:46:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 17:46:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 17:46:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 17:46:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 17:46:08 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 17:46:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 17:46:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 17:46:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 17:46:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 17:46:08 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 17:46:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 17:46:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 17:46:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 17:46:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 17:46:08 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 17:46:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 17:46:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 17:46:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 17:46:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 17:46:08 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 17:46:26 INFO  BaseTest:118 - Tearing down the test...
+2024-08-09 17:46:26 INFO  BaseTest:121 - Session ID before quitting driver: c7dffe56-2a97-4e77-a6b0-d73c985b1863
+2024-08-09 17:46:52 INFO  BaseTest:37 - Configuring Appium...
+2024-08-09 17:46:53 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-09 17:46:53 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-09 17:46:53 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-09 17:47:24 INFO  BaseTest:103 - Session ID after initialization: cc50262a-66bf-46a6-bd98-9fec87ee2d07
+2024-08-09 17:47:34 INFO  BaseTest:110 - Session ID after launching URL: cc50262a-66bf-46a6-bd98-9fec87ee2d07
+2024-08-09 17:48:02 INFO  BaseTest:118 - Tearing down the test...
+2024-08-09 17:48:02 INFO  BaseTest:121 - Session ID before quitting driver: cc50262a-66bf-46a6-bd98-9fec87ee2d07
+2024-08-09 17:48:05 INFO  BaseTest:37 - Configuring Appium...
+2024-08-09 17:48:05 INFO  BaseTest:59 - Appium service started successfully.
+2024-08-09 17:48:05 DEBUG DriverSetUp:16 - Setting up ChromeOptions
+2024-08-09 17:48:05 DEBUG DriverSetUp:27 - ChromeOptions set: Capabilities {appium:automationName: UiAutomator2, appium:chromedriver_autodownload: true, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 14, browserName: Chrome, platformName: ANDROID}
+2024-08-09 17:48:39 INFO  BaseTest:103 - Session ID after initialization: 4036bef9-b161-44d9-9d5d-2c4d56d8310b
+2024-08-09 17:48:50 INFO  BaseTest:110 - Session ID after launching URL: 4036bef9-b161-44d9-9d5d-2c4d56d8310b
+2024-08-09 17:50:07 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 17:50:07 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 17:50:07 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 17:50:07 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 17:50:08 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 17:50:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 17:50:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 17:50:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 17:50:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 17:50:08 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 17:50:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 17:50:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 17:50:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 17:50:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 17:50:08 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 17:50:09 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 17:50:09 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 17:50:09 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 17:50:09 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 17:50:09 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 17:50:09 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-09 17:50:09 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-08-09 17:50:09 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet9.xml.rels
+2024-08-09 17:50:09 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-09 17:50:09 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-09 17:50:28 INFO  BaseTest:118 - Tearing down the test...
+2024-08-09 17:50:28 INFO  BaseTest:121 - Session ID before quitting driver: 4036bef9-b161-44d9-9d5d-2c4d56d8310b
