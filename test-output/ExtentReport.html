@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Functional Testing</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Aug 9, 2024 05:46:52 PM</span></a>
+<a href="#"><span class="badge badge-primary">Aug 12, 2024 07:35:59 PM</span></a>
 </li>
 </ul>
 </div>
@@ -81,7 +81,7 @@
           <div class="test-detail">
             <p class="name">testPartnerTenderNameHeader</p>
             <p class="text-sm">
-              <span>5:47:36 PM</span> / <span>00:00:04:100</span>
+              <span>7:36:49 PM</span> / <span>00:00:04:180</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -90,9 +90,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testPartnerTenderNameHeader</h5>
-<span class='badge badge-success'>08.09.2024 5:47:36 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:47:40 PM</span>
-<span class='badge badge-default'>00:00:04:100</span>
+<span class='badge badge-success'>08.12.2024 7:36:49 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:36:53 PM</span>
+<span class='badge badge-default'>00:00:04:180</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -104,8 +104,29 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:36:52 PM</td>
+        <td>
+          Database Query: SELECT Tender_Name_Header FROM [dbo].[Partner_BuyDirect_Settings] WHERE Partner_ID = 127 AND Tender_Name_Header = 'BIM Grocery Pay'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:36:52 PM</td>
+        <td>
+          Expected Tender Name Header: BIM Grocery Pay
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:36:53 PM</td>
+        <td>
+          Actual Tender Name Header: BIM Grocery Pay
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:47:40 PM</td>
+        <td>7:36:53 PM</td>
         <td>
           Test passed
         </td>
@@ -122,7 +143,7 @@
           <div class="test-detail">
             <p class="name">testWelcomeMessage2</p>
             <p class="text-sm">
-              <span>5:47:40 PM</span> / <span>00:00:03:109</span>
+              <span>7:36:53 PM</span> / <span>00:00:03:067</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -131,9 +152,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testWelcomeMessage2</h5>
-<span class='badge badge-success'>08.09.2024 5:47:40 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:47:43 PM</span>
-<span class='badge badge-default'>00:00:03:109</span>
+<span class='badge badge-success'>08.12.2024 7:36:53 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:36:56 PM</span>
+<span class='badge badge-default'>00:00:03:067</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -145,8 +166,29 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:36:55 PM</td>
+        <td>
+          Database Query: SELECT REPLACE(REPLACE(REPLACE(Welcome_Message,'<PartnerName>',Tender_Name_Body), '<PartnerPhone>', Partner_Contact_Number),'', '') AS WelcomeMessage FROM [dbo].[Partner_BuyDirect_Settings] PBS INNER JOIN [dbo].[Partner_Profile] PP ON PBS.Partner_ID = PP.Partner_ID WHERE PBS.Partner_ID = 127
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:36:55 PM</td>
+        <td>
+          Expected Welcome Message 2: Complete your enrollment today to lock in an EXTRA 10% off your first 3 orders!
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:36:56 PM</td>
+        <td>
+          Actual Welcome Message 2: Complete your enrollment today to lock in an EXTRA 10% off your first 3 orders!
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:47:43 PM</td>
+        <td>7:36:56 PM</td>
         <td>
           Test passed
         </td>
@@ -163,7 +205,7 @@
           <div class="test-detail">
             <p class="name">brokenImageTest</p>
             <p class="text-sm">
-              <span>5:47:43 PM</span> / <span>00:00:00:824</span>
+              <span>7:36:56 PM</span> / <span>00:00:02:126</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -172,9 +214,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">brokenImageTest</h5>
-<span class='badge badge-success'>08.09.2024 5:47:43 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:47:44 PM</span>
-<span class='badge badge-default'>00:00:00:824</span>
+<span class='badge badge-success'>08.12.2024 7:36:56 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:36:58 PM</span>
+<span class='badge badge-default'>00:00:02:126</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -186,8 +228,22 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:36:58 PM</td>
+        <td>
+          Image URL: https://enroll-qa-cdn.bimnetworks.com/grocery.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:36:58 PM</td>
+        <td>
+          HTTP Response Code: 200
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:47:44 PM</td>
+        <td>7:36:58 PM</td>
         <td>
           Test passed
         </td>
@@ -204,7 +260,7 @@
           <div class="test-detail">
             <p class="name">testContinueButtonText</p>
             <p class="text-sm">
-              <span>5:47:44 PM</span> / <span>00:00:00:539</span>
+              <span>7:36:58 PM</span> / <span>00:00:00:580</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -213,9 +269,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testContinueButtonText</h5>
-<span class='badge badge-success'>08.09.2024 5:47:44 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:47:44 PM</span>
-<span class='badge badge-default'>00:00:00:539</span>
+<span class='badge badge-success'>08.12.2024 7:36:58 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:36:59 PM</span>
+<span class='badge badge-default'>00:00:00:580</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -227,8 +283,22 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:36:59 PM</td>
+        <td>
+          Expected Continue Button Text: Begin
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:36:59 PM</td>
+        <td>
+          Actual Continue Button Text: Begin
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:47:44 PM</td>
+        <td>7:36:59 PM</td>
         <td>
           Test passed
         </td>
@@ -245,7 +315,7 @@
           <div class="test-detail">
             <p class="name">testCurrentURL</p>
             <p class="text-sm">
-              <span>5:47:44 PM</span> / <span>00:00:00:081</span>
+              <span>7:36:59 PM</span> / <span>00:00:00:134</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -254,9 +324,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testCurrentURL</h5>
-<span class='badge badge-success'>08.09.2024 5:47:44 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:47:44 PM</span>
-<span class='badge badge-default'>00:00:00:081</span>
+<span class='badge badge-success'>08.12.2024 7:36:59 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:36:59 PM</span>
+<span class='badge badge-default'>00:00:00:134</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -268,8 +338,29 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:36:59 PM</td>
+        <td>
+          Expected URL: https://uqa-va-buydirect.azurewebsites.net/?partnerId=MTI3
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:36:59 PM</td>
+        <td>
+          Actual URL: https://uqa-va-buydirect.azurewebsites.net/?partnerId=MTI3
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:47:44 PM</td>
+        <td>7:36:59 PM</td>
+        <td>
+          Current URL matched expected URL.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:36:59 PM</td>
         <td>
           Test passed
         </td>
@@ -286,7 +377,7 @@
           <div class="test-detail">
             <p class="name">testPartnerLogo</p>
             <p class="text-sm">
-              <span>5:47:44 PM</span> / <span>00:00:02:842</span>
+              <span>7:36:59 PM</span> / <span>00:00:02:843</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -295,9 +386,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testPartnerLogo</h5>
-<span class='badge badge-success'>08.09.2024 5:47:44 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:47:47 PM</span>
-<span class='badge badge-default'>00:00:02:842</span>
+<span class='badge badge-success'>08.12.2024 7:36:59 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:37:02 PM</span>
+<span class='badge badge-default'>00:00:02:843</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -309,8 +400,29 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:01 PM</td>
+        <td>
+          Database Query: SELECT Partner_Image_URL FROM [dbo].[Partner_Image] WHERE Partner_ID = 127 AND Partner_Image_ID = 1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:01 PM</td>
+        <td>
+          Expected Partner Logo URL: https://enroll-qa-cdn.bimnetworks.com/grocery.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:02 PM</td>
+        <td>
+          Actual Partner Logo URL: https://enroll-qa-cdn.bimnetworks.com/grocery.png
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:47:47 PM</td>
+        <td>7:37:02 PM</td>
         <td>
           Test passed
         </td>
@@ -327,7 +439,7 @@
           <div class="test-detail">
             <p class="name">testPartnerLogoisDisplayed</p>
             <p class="text-sm">
-              <span>5:47:47 PM</span> / <span>00:00:00:267</span>
+              <span>7:37:02 PM</span> / <span>00:00:00:273</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -336,9 +448,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testPartnerLogoisDisplayed</h5>
-<span class='badge badge-success'>08.09.2024 5:47:47 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:47:47 PM</span>
-<span class='badge badge-default'>00:00:00:267</span>
+<span class='badge badge-success'>08.12.2024 7:37:02 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:37:02 PM</span>
+<span class='badge badge-default'>00:00:00:273</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -350,8 +462,22 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:02 PM</td>
+        <td>
+          Partner logo displayed: true
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:47:47 PM</td>
+        <td>7:37:02 PM</td>
+        <td>
+          Partner logo is displayed on the welcome page.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:37:02 PM</td>
         <td>
           Test passed
         </td>
@@ -368,7 +494,7 @@
           <div class="test-detail">
             <p class="name">testPartnerTenderNameisDisplayed</p>
             <p class="text-sm">
-              <span>5:47:47 PM</span> / <span>00:00:00:353</span>
+              <span>7:37:02 PM</span> / <span>00:00:00:347</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -377,9 +503,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testPartnerTenderNameisDisplayed</h5>
-<span class='badge badge-success'>08.09.2024 5:47:47 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:47:48 PM</span>
-<span class='badge badge-default'>00:00:00:353</span>
+<span class='badge badge-success'>08.12.2024 7:37:02 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:37:02 PM</span>
+<span class='badge badge-default'>00:00:00:347</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -391,8 +517,15 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:02 PM</td>
+        <td>
+          Partner Tender Name Displayed: true
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:47:48 PM</td>
+        <td>7:37:02 PM</td>
         <td>
           Test passed
         </td>
@@ -409,7 +542,7 @@
           <div class="test-detail">
             <p class="name">testSignInHereLinkTextisDisplayed</p>
             <p class="text-sm">
-              <span>5:47:48 PM</span> / <span>00:00:00:518</span>
+              <span>7:37:02 PM</span> / <span>00:00:00:638</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -418,9 +551,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testSignInHereLinkTextisDisplayed</h5>
-<span class='badge badge-success'>08.09.2024 5:47:48 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:47:48 PM</span>
-<span class='badge badge-default'>00:00:00:518</span>
+<span class='badge badge-success'>08.12.2024 7:37:02 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:37:03 PM</span>
+<span class='badge badge-default'>00:00:00:638</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -432,8 +565,15 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:03 PM</td>
+        <td>
+          'Sign in Here' Link Displayed: true
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:47:48 PM</td>
+        <td>7:37:03 PM</td>
         <td>
           Test passed
         </td>
@@ -450,7 +590,7 @@
           <div class="test-detail">
             <p class="name">testTextBeforeSignInHereLink</p>
             <p class="text-sm">
-              <span>5:47:48 PM</span> / <span>00:00:00:514</span>
+              <span>7:37:03 PM</span> / <span>00:00:00:536</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -459,9 +599,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testTextBeforeSignInHereLink</h5>
-<span class='badge badge-success'>08.09.2024 5:47:48 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:47:49 PM</span>
-<span class='badge badge-default'>00:00:00:514</span>
+<span class='badge badge-success'>08.12.2024 7:37:03 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:37:03 PM</span>
+<span class='badge badge-default'>00:00:00:536</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -473,8 +613,22 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:03 PM</td>
+        <td>
+          Expected Text Before 'Sign in Here' Link: To continue enrolling,
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:03 PM</td>
+        <td>
+          Actual Text Before 'Sign in Here' Link: To continue enrolling,
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:47:49 PM</td>
+        <td>7:37:03 PM</td>
         <td>
           Test passed
         </td>
@@ -491,7 +645,7 @@
           <div class="test-detail">
             <p class="name">testTitleisDisplayedCenter</p>
             <p class="text-sm">
-              <span>5:47:49 PM</span> / <span>00:00:02:619</span>
+              <span>7:37:03 PM</span> / <span>00:00:02:665</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -500,9 +654,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testTitleisDisplayedCenter</h5>
-<span class='badge badge-success'>08.09.2024 5:47:49 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:47:51 PM</span>
-<span class='badge badge-default'>00:00:02:619</span>
+<span class='badge badge-success'>08.12.2024 7:37:03 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:37:06 PM</span>
+<span class='badge badge-default'>00:00:02:665</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -514,8 +668,36 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:06 PM</td>
+        <td>
+          Logo Y Position: 20
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:06 PM</td>
+        <td>
+          Title Y Position: 160
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:06 PM</td>
+        <td>
+          Title Center X Position: 196
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:06 PM</td>
+        <td>
+          Window Center X Position: 196
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:47:51 PM</td>
+        <td>7:37:06 PM</td>
         <td>
           Test passed
         </td>
@@ -532,7 +714,7 @@
           <div class="test-detail">
             <p class="name">testWelcomeMessage1</p>
             <p class="text-sm">
-              <span>5:47:51 PM</span> / <span>00:00:03:089</span>
+              <span>7:37:06 PM</span> / <span>00:00:03:112</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -541,9 +723,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testWelcomeMessage1</h5>
-<span class='badge badge-success'>08.09.2024 5:47:51 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:47:55 PM</span>
-<span class='badge badge-default'>00:00:03:089</span>
+<span class='badge badge-success'>08.12.2024 7:37:06 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:37:09 PM</span>
+<span class='badge badge-default'>00:00:03:112</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -555,8 +737,29 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:09 PM</td>
+        <td>
+          Database Query: SELECT REPLACE(REPLACE(REPLACE(Welcome_Message,'<PartnerName>',Tender_Name_Body), '<PartnerPhone>', Partner_Contact_Number),'', '') AS WelcomeMessage FROM [dbo].[Partner_BuyDirect_Settings] PBS INNER JOIN [dbo].[Partner_Profile] PP ON PBS.Partner_ID = PP.Partner_ID WHERE PBS.Partner_ID = 127
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:09 PM</td>
+        <td>
+          Expected Welcome Message 1: Thank you for choosing BIM Grocery Pay! Proceed to enter your info, link your bank, and start saving BIG on every purchase!
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:09 PM</td>
+        <td>
+          Actual Welcome Message 1: Thank you for choosing BIM Grocery Pay! Proceed to enter your info, link your bank, and start saving BIG on every purchase!
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:47:55 PM</td>
+        <td>7:37:09 PM</td>
         <td>
           Test passed
         </td>
@@ -573,7 +776,7 @@
           <div class="test-detail">
             <p class="name">testWelcomePageTitle</p>
             <p class="text-sm">
-              <span>5:47:55 PM</span> / <span>00:00:00:494</span>
+              <span>7:37:09 PM</span> / <span>00:00:00:540</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -582,9 +785,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testWelcomePageTitle</h5>
-<span class='badge badge-success'>08.09.2024 5:47:55 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:47:55 PM</span>
-<span class='badge badge-default'>00:00:00:494</span>
+<span class='badge badge-success'>08.12.2024 7:37:09 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:37:10 PM</span>
+<span class='badge badge-default'>00:00:00:540</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -596,8 +799,29 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:09 PM</td>
+        <td>
+          Expected Welcome Page Title: Welcome
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:10 PM</td>
+        <td>
+          Actual Welcome Page Title: Welcome
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:47:55 PM</td>
+        <td>7:37:10 PM</td>
+        <td>
+          Welcome page title matched expected.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:37:10 PM</td>
         <td>
           Test passed
         </td>
@@ -614,7 +838,7 @@
           <div class="test-detail">
             <p class="name">test_FooterText</p>
             <p class="text-sm">
-              <span>5:47:55 PM</span> / <span>00:00:03:297</span>
+              <span>7:37:10 PM</span> / <span>00:00:03:264</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -623,9 +847,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">test_FooterText</h5>
-<span class='badge badge-success'>08.09.2024 5:47:55 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:47:58 PM</span>
-<span class='badge badge-default'>00:00:03:297</span>
+<span class='badge badge-success'>08.12.2024 7:37:10 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:37:13 PM</span>
+<span class='badge badge-default'>00:00:03:264</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -637,8 +861,22 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:13 PM</td>
+        <td>
+          Expected Footer Text: Please contact the Grocery Pay Support Team at 844-272-6616 with any questions.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:13 PM</td>
+        <td>
+          Actual Footer Text: Please contact the Grocery Pay Support Team at 844-272-6616 with any questions.
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:47:58 PM</td>
+        <td>7:37:13 PM</td>
         <td>
           Test passed
         </td>
@@ -655,7 +893,7 @@
           <div class="test-detail">
             <p class="name">test_FooterTextisDisplayed</p>
             <p class="text-sm">
-              <span>5:47:58 PM</span> / <span>00:00:00:488</span>
+              <span>7:37:13 PM</span> / <span>00:00:00:965</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -664,9 +902,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">test_FooterTextisDisplayed</h5>
-<span class='badge badge-success'>08.09.2024 5:47:58 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:47:59 PM</span>
-<span class='badge badge-default'>00:00:00:488</span>
+<span class='badge badge-success'>08.12.2024 7:37:13 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:37:14 PM</span>
+<span class='badge badge-default'>00:00:00:965</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -678,8 +916,15 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:14 PM</td>
+        <td>
+          Footer Text Displayed: true
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:47:59 PM</td>
+        <td>7:37:14 PM</td>
         <td>
           Test passed
         </td>
@@ -696,7 +941,7 @@
           <div class="test-detail">
             <p class="name">testContinueButton</p>
             <p class="text-sm">
-              <span>5:47:59 PM</span> / <span>00:00:03:533</span>
+              <span>7:37:14 PM</span> / <span>00:00:58:477</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -705,9 +950,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testContinueButton</h5>
-<span class='badge badge-success'>08.09.2024 5:47:59 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:48:02 PM</span>
-<span class='badge badge-default'>00:00:03:533</span>
+<span class='badge badge-success'>08.12.2024 7:37:14 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:38:12 PM</span>
+<span class='badge badge-default'>00:00:58:477</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -719,10 +964,24 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:18 PM</td>
+        <td>
+          Enrollment Page Displayed: true
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:48:02 PM</td>
+        <td>7:37:18 PM</td>
         <td>
           Test passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:12 PM</td>
+        <td>
+          Page objects initialized: WelcomePage, EnrollPage, Generics and Helper
         </td>
       </tr>
   </tbody>
@@ -737,7 +996,7 @@
           <div class="test-detail">
             <p class="name">brokenImageTest</p>
             <p class="text-sm">
-              <span>5:48:50 PM</span> / <span>00:00:01:377</span>
+              <span>7:38:12 PM</span> / <span>00:00:00:983</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -746,9 +1005,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">brokenImageTest</h5>
-<span class='badge badge-success'>08.09.2024 5:48:50 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:48:51 PM</span>
-<span class='badge badge-default'>00:00:01:377</span>
+<span class='badge badge-success'>08.12.2024 7:38:12 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:38:13 PM</span>
+<span class='badge badge-default'>00:00:00:983</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -760,8 +1019,22 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:13 PM</td>
+        <td>
+          Image URL: https://enroll-qa-cdn.bimnetworks.com/grocery.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:13 PM</td>
+        <td>
+          HTTP Response Code: 200
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:48:51 PM</td>
+        <td>7:38:13 PM</td>
         <td>
           Test passed
         </td>
@@ -778,7 +1051,7 @@
           <div class="test-detail">
             <p class="name">clickOnWelcomePageContinueButton</p>
             <p class="text-sm">
-              <span>5:48:51 PM</span> / <span>00:00:03:563</span>
+              <span>7:38:13 PM</span> / <span>00:00:02:931</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -787,9 +1060,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">clickOnWelcomePageContinueButton</h5>
-<span class='badge badge-success'>08.09.2024 5:48:51 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:48:55 PM</span>
-<span class='badge badge-default'>00:00:03:563</span>
+<span class='badge badge-success'>08.12.2024 7:38:13 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:38:16 PM</span>
+<span class='badge badge-default'>00:00:02:931</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -801,8 +1074,15 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:16 PM</td>
+        <td>
+          Clicked on the Continue button on the welcome page.
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:48:55 PM</td>
+        <td>7:38:16 PM</td>
         <td>
           Test passed
         </td>
@@ -819,7 +1099,7 @@
           <div class="test-detail">
             <p class="name">testCombinedTermsAndConditionsText</p>
             <p class="text-sm">
-              <span>5:48:55 PM</span> / <span>00:00:03:796</span>
+              <span>7:38:16 PM</span> / <span>00:00:03:838</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -828,9 +1108,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testCombinedTermsAndConditionsText</h5>
-<span class='badge badge-success'>08.09.2024 5:48:55 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:48:58 PM</span>
-<span class='badge badge-default'>00:00:03:796</span>
+<span class='badge badge-success'>08.12.2024 7:38:16 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:38:20 PM</span>
+<span class='badge badge-default'>00:00:03:838</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -842,8 +1122,36 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:16 PM</td>
+        <td>
+          Starting testCombinedTermsAndConditionsText
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:19 PM</td>
+        <td>
+          Expected Terms and Conditions text: I certify that I am at least 18 years old and that I agree to the Term and Conditions.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:20 PM</td>
+        <td>
+          Actual Terms and Conditions text: I certify that I am at least 18 years old and that I agree to the Term and Conditions.
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:48:58 PM</td>
+        <td>7:38:20 PM</td>
+        <td>
+          Terms and Conditions text matches the expected value.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:20 PM</td>
         <td>
           Test passed
         </td>
@@ -860,7 +1168,7 @@
           <div class="test-detail">
             <p class="name">testEnrollPageRequiredFieldErrorMessage</p>
             <p class="text-sm">
-              <span>5:48:58 PM</span> / <span>00:00:05:319</span>
+              <span>7:38:20 PM</span> / <span>00:00:05:730</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -869,9 +1177,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testEnrollPageRequiredFieldErrorMessage</h5>
-<span class='badge badge-success'>08.09.2024 5:48:58 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:49:04 PM</span>
-<span class='badge badge-default'>00:00:05:319</span>
+<span class='badge badge-success'>08.12.2024 7:38:20 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:38:26 PM</span>
+<span class='badge badge-default'>00:00:05:730</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -883,8 +1191,64 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:22 PM</td>
+        <td>
+          Clicked on the Continue button on the Enroll page.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:25 PM</td>
+        <td>
+          First Name Required: true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:25 PM</td>
+        <td>
+          Last Name Required: true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:25 PM</td>
+        <td>
+          Email Required: true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:25 PM</td>
+        <td>
+          Mobile Phone Required: true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:25 PM</td>
+        <td>
+          Pin Required: true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:25 PM</td>
+        <td>
+          Scrolled to the Terms and Conditions checkbox.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:26 PM</td>
+        <td>
+          Terms and Conditions Required: true
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:04 PM</td>
+        <td>7:38:26 PM</td>
         <td>
           Test passed
         </td>
@@ -901,7 +1265,7 @@
           <div class="test-detail">
             <p class="name">testIsDLRequired</p>
             <p class="text-sm">
-              <span>5:49:04 PM</span> / <span>00:00:03:424</span>
+              <span>7:38:26 PM</span> / <span>00:00:03:218</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -910,9 +1274,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testIsDLRequired</h5>
-<span class='badge badge-success'>08.09.2024 5:49:04 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:49:07 PM</span>
-<span class='badge badge-default'>00:00:03:424</span>
+<span class='badge badge-success'>08.12.2024 7:38:26 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:38:29 PM</span>
+<span class='badge badge-default'>00:00:03:218</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -924,8 +1288,36 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:28 PM</td>
+        <td>
+          Database Query: SELECT IsDLRequired, Is_Plastics_Page_Displayed FROM [dbo].[Partner_BuyDirect_Settings] WHERE Partner_ID = 127
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:28 PM</td>
+        <td>
+          IsDLRequired: 0, Is_Plastics_Page_Displayed: 2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:28 PM</td>
+        <td>
+          Expected Indicators: [Enroll, Address, Banking]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:29 PM</td>
+        <td>
+          Displayed Indicators: [Enroll, Address, Banking]
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:07 PM</td>
+        <td>7:38:29 PM</td>
         <td>
           Test passed
         </td>
@@ -942,7 +1334,7 @@
           <div class="test-detail">
             <p class="name">testPartnerLogo</p>
             <p class="text-sm">
-              <span>5:49:07 PM</span> / <span>00:00:03:230</span>
+              <span>7:38:29 PM</span> / <span>00:00:03:211</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -951,9 +1343,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testPartnerLogo</h5>
-<span class='badge badge-success'>08.09.2024 5:49:07 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:49:10 PM</span>
-<span class='badge badge-default'>00:00:03:230</span>
+<span class='badge badge-success'>08.12.2024 7:38:29 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:38:32 PM</span>
+<span class='badge badge-default'>00:00:03:211</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -965,8 +1357,29 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:32 PM</td>
+        <td>
+          Database Query: SELECT Partner_Image_URL FROM [dbo].[Partner_Image] WHERE Partner_ID = 127 AND Partner_Image_ID = 1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:32 PM</td>
+        <td>
+          Expected Partner Logo URL: https://enroll-qa-cdn.bimnetworks.com/grocery.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:32 PM</td>
+        <td>
+          Actual Partner Logo URL: https://enroll-qa-cdn.bimnetworks.com/grocery.png
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:10 PM</td>
+        <td>7:38:32 PM</td>
         <td>
           Test passed
         </td>
@@ -983,7 +1396,7 @@
           <div class="test-detail">
             <p class="name">testPartnerTenderNameHeader</p>
             <p class="text-sm">
-              <span>5:49:10 PM</span> / <span>00:00:02:965</span>
+              <span>7:38:32 PM</span> / <span>00:00:02:880</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -992,9 +1405,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testPartnerTenderNameHeader</h5>
-<span class='badge badge-success'>08.09.2024 5:49:10 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:49:13 PM</span>
-<span class='badge badge-default'>00:00:02:965</span>
+<span class='badge badge-success'>08.12.2024 7:38:32 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:38:35 PM</span>
+<span class='badge badge-default'>00:00:02:880</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -1006,8 +1419,29 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:35 PM</td>
+        <td>
+          Database Query: SELECT Tender_Name_Header FROM [dbo].[Partner_BuyDirect_Settings] WHERE Partner_ID = 127 AND Tender_Name_Header = 'BIM Grocery Pay'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:35 PM</td>
+        <td>
+          Expected Tender Name Header: BIM Grocery Pay
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:35 PM</td>
+        <td>
+          Actual Tender Name Header: BIM Grocery Pay
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:13 PM</td>
+        <td>7:38:35 PM</td>
         <td>
           Test passed
         </td>
@@ -1024,7 +1458,7 @@
           <div class="test-detail">
             <p class="name">testPartnerTenderNameisDisplayed</p>
             <p class="text-sm">
-              <span>5:49:13 PM</span> / <span>00:00:00:272</span>
+              <span>7:38:35 PM</span> / <span>00:00:00:255</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1033,9 +1467,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testPartnerTenderNameisDisplayed</h5>
-<span class='badge badge-success'>08.09.2024 5:49:13 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:49:14 PM</span>
-<span class='badge badge-default'>00:00:00:272</span>
+<span class='badge badge-success'>08.12.2024 7:38:35 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:38:36 PM</span>
+<span class='badge badge-default'>00:00:00:255</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -1047,8 +1481,15 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:36 PM</td>
+        <td>
+          Partner Tender Name Displayed: true
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:14 PM</td>
+        <td>7:38:36 PM</td>
         <td>
           Test passed
         </td>
@@ -1065,7 +1506,7 @@
           <div class="test-detail">
             <p class="name">testProgressIndicators</p>
             <p class="text-sm">
-              <span>5:49:14 PM</span> / <span>00:00:00:452</span>
+              <span>7:38:36 PM</span> / <span>00:00:00:421</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1074,9 +1515,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testProgressIndicators</h5>
-<span class='badge badge-success'>08.09.2024 5:49:14 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:49:14 PM</span>
-<span class='badge badge-default'>00:00:00:452</span>
+<span class='badge badge-success'>08.12.2024 7:38:36 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:38:36 PM</span>
+<span class='badge badge-default'>00:00:00:421</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -1088,8 +1529,15 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:36 PM</td>
+        <td>
+          All Progress Indicators Displayed: true
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:14 PM</td>
+        <td>7:38:36 PM</td>
         <td>
           Test passed
         </td>
@@ -1106,7 +1554,7 @@
           <div class="test-detail">
             <p class="name">testSignInHereLinkTextisDisplayed</p>
             <p class="text-sm">
-              <span>5:49:14 PM</span> / <span>00:00:00:279</span>
+              <span>7:38:36 PM</span> / <span>00:00:00:302</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1115,9 +1563,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testSignInHereLinkTextisDisplayed</h5>
-<span class='badge badge-success'>08.09.2024 5:49:14 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:49:14 PM</span>
-<span class='badge badge-default'>00:00:00:279</span>
+<span class='badge badge-success'>08.12.2024 7:38:36 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:38:36 PM</span>
+<span class='badge badge-default'>00:00:00:302</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -1129,8 +1577,22 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:36 PM</td>
+        <td>
+          Starting testSignInHereLinkTextisDisplayed
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:14 PM</td>
+        <td>7:38:36 PM</td>
+        <td>
+          Sign in here link is displayed.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:36 PM</td>
         <td>
           Test passed
         </td>
@@ -1147,7 +1609,7 @@
           <div class="test-detail">
             <p class="name">testTermsAndConditionsBeforeTextIsDisplayed</p>
             <p class="text-sm">
-              <span>5:49:14 PM</span> / <span>00:00:00:501</span>
+              <span>7:38:36 PM</span> / <span>00:00:00:498</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1156,9 +1618,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testTermsAndConditionsBeforeTextIsDisplayed</h5>
-<span class='badge badge-success'>08.09.2024 5:49:14 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:49:15 PM</span>
-<span class='badge badge-default'>00:00:00:501</span>
+<span class='badge badge-success'>08.12.2024 7:38:36 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:38:37 PM</span>
+<span class='badge badge-default'>00:00:00:498</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -1170,8 +1632,22 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:36 PM</td>
+        <td>
+          Starting testTermsAndConditionsBeforeTextIsDisplayed
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:15 PM</td>
+        <td>7:38:37 PM</td>
+        <td>
+          Terms and Conditions before text is displayed.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:37 PM</td>
         <td>
           Test passed
         </td>
@@ -1188,7 +1664,7 @@
           <div class="test-detail">
             <p class="name">testTermsAndConditionsLinkIsNotBroken</p>
             <p class="text-sm">
-              <span>5:49:15 PM</span> / <span>00:00:01:160</span>
+              <span>7:38:37 PM</span> / <span>00:00:01:436</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1197,9 +1673,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testTermsAndConditionsLinkIsNotBroken</h5>
-<span class='badge badge-success'>08.09.2024 5:49:15 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:49:16 PM</span>
-<span class='badge badge-default'>00:00:01:160</span>
+<span class='badge badge-success'>08.12.2024 7:38:37 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:38:38 PM</span>
+<span class='badge badge-default'>00:00:01:436</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -1211,8 +1687,29 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:37 PM</td>
+        <td>
+          Starting testTermsAndConditionsLinkIsNotBroken
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:37 PM</td>
+        <td>
+          Terms and Conditions link URL: https://test.bimnetworks.com/user/terms/partner/127
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:16 PM</td>
+        <td>7:38:38 PM</td>
+        <td>
+          Terms and Conditions link is valid with status code 200.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:38 PM</td>
         <td>
           Test passed
         </td>
@@ -1229,7 +1726,7 @@
           <div class="test-detail">
             <p class="name">testTermsAndConditionsLinkOpensNewWindow</p>
             <p class="text-sm">
-              <span>5:49:16 PM</span> / <span>00:00:06:013</span>
+              <span>7:38:38 PM</span> / <span>00:00:06:158</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1238,9 +1735,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testTermsAndConditionsLinkOpensNewWindow</h5>
-<span class='badge badge-success'>08.09.2024 5:49:16 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:49:22 PM</span>
-<span class='badge badge-default'>00:00:06:013</span>
+<span class='badge badge-success'>08.12.2024 7:38:38 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:38:44 PM</span>
+<span class='badge badge-default'>00:00:06:158</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -1252,8 +1749,43 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:38 PM</td>
+        <td>
+          Starting testTermsAndConditionsLinkOpensNewWindow
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:38 PM</td>
+        <td>
+          Scrolled to the Terms and Conditions link.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:40 PM</td>
+        <td>
+          Clicked on the Terms and Conditions link.
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:22 PM</td>
+        <td>7:38:44 PM</td>
+        <td>
+          New window opened with the expected URL.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:44 PM</td>
+        <td>
+          Closed the new window and switched back to the original window.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:44 PM</td>
         <td>
           Test passed
         </td>
@@ -1270,7 +1802,7 @@
           <div class="test-detail">
             <p class="name">testTermsAndConditionsLinkTextIsDisplayed</p>
             <p class="text-sm">
-              <span>5:49:22 PM</span> / <span>00:00:00:547</span>
+              <span>7:38:44 PM</span> / <span>00:00:00:636</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1279,9 +1811,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testTermsAndConditionsLinkTextIsDisplayed</h5>
-<span class='badge badge-success'>08.09.2024 5:49:22 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:49:23 PM</span>
-<span class='badge badge-default'>00:00:00:547</span>
+<span class='badge badge-success'>08.12.2024 7:38:44 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:38:45 PM</span>
+<span class='badge badge-default'>00:00:00:636</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -1293,8 +1825,22 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:44 PM</td>
+        <td>
+          Starting testTermsAndConditionsLinkTextIsDisplayed
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:23 PM</td>
+        <td>7:38:45 PM</td>
+        <td>
+          Terms and Conditions link text is displayed.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:45 PM</td>
         <td>
           Test passed
         </td>
@@ -1311,7 +1857,7 @@
           <div class="test-detail">
             <p class="name">testTextBeforeSignInHereLink</p>
             <p class="text-sm">
-              <span>5:49:23 PM</span> / <span>00:00:00:367</span>
+              <span>7:38:45 PM</span> / <span>00:00:00:330</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1320,9 +1866,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testTextBeforeSignInHereLink</h5>
-<span class='badge badge-success'>08.09.2024 5:49:23 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:49:23 PM</span>
-<span class='badge badge-default'>00:00:00:367</span>
+<span class='badge badge-success'>08.12.2024 7:38:45 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:38:45 PM</span>
+<span class='badge badge-default'>00:00:00:330</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=31</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -1334,8 +1880,22 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:45 PM</td>
+        <td>
+          Starting testTextBeforeSignInHereLink
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:23 PM</td>
+        <td>7:38:45 PM</td>
+        <td>
+          Sign in here text before link matches the expected text.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:45 PM</td>
         <td>
           Test passed
         </td>
@@ -1352,7 +1912,7 @@
           <div class="test-detail">
             <p class="name">testTextNotificationsLinkIsNotBroken</p>
             <p class="text-sm">
-              <span>5:49:23 PM</span> / <span>00:00:01:142</span>
+              <span>7:38:45 PM</span> / <span>00:00:01:322</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1361,9 +1921,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testTextNotificationsLinkIsNotBroken</h5>
-<span class='badge badge-success'>08.09.2024 5:49:23 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:49:24 PM</span>
-<span class='badge badge-default'>00:00:01:142</span>
+<span class='badge badge-success'>08.12.2024 7:38:45 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:38:47 PM</span>
+<span class='badge badge-default'>00:00:01:322</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -1375,8 +1935,29 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:45 PM</td>
+        <td>
+          Starting testTextNotificationsLinkIsNotBroken
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:46 PM</td>
+        <td>
+          Text Notifications link URL: https://test.bimnetworks.com/user/terms/partner/127#text-notification
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:24 PM</td>
+        <td>7:38:47 PM</td>
+        <td>
+          Text Notifications link is valid with status code 200.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:47 PM</td>
         <td>
           Test passed
         </td>
@@ -1393,7 +1974,7 @@
           <div class="test-detail">
             <p class="name">testTextNotificationsLinkOpensNewWindow</p>
             <p class="text-sm">
-              <span>5:49:24 PM</span> / <span>00:00:04:983</span>
+              <span>7:38:47 PM</span> / <span>00:00:05:630</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1402,9 +1983,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testTextNotificationsLinkOpensNewWindow</h5>
-<span class='badge badge-success'>08.09.2024 5:49:24 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:49:29 PM</span>
-<span class='badge badge-default'>00:00:04:983</span>
+<span class='badge badge-success'>08.12.2024 7:38:47 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:38:52 PM</span>
+<span class='badge badge-default'>00:00:05:630</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=33</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -1416,8 +1997,36 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:47 PM</td>
+        <td>
+          Starting testTextNotificationsLinkOpensNewWindow
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:48 PM</td>
+        <td>
+          Clicked on the Text Notifications link.
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:29 PM</td>
+        <td>7:38:52 PM</td>
+        <td>
+          New window opened with the expected URL.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:52 PM</td>
+        <td>
+          Closed the new window and switched back to the original window.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:52 PM</td>
         <td>
           Test passed
         </td>
@@ -1434,7 +2043,7 @@
           <div class="test-detail">
             <p class="name">testTextNotificationsLinkTextIsDisplayed</p>
             <p class="text-sm">
-              <span>5:49:29 PM</span> / <span>00:00:00:889</span>
+              <span>7:38:52 PM</span> / <span>00:00:00:975</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1443,9 +2052,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testTextNotificationsLinkTextIsDisplayed</h5>
-<span class='badge badge-success'>08.09.2024 5:49:29 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:49:30 PM</span>
-<span class='badge badge-default'>00:00:00:889</span>
+<span class='badge badge-success'>08.12.2024 7:38:52 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:38:53 PM</span>
+<span class='badge badge-default'>00:00:00:975</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=34</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -1457,8 +2066,22 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:52 PM</td>
+        <td>
+          Starting testTextNotificationsLinkTextIsDisplayed
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:30 PM</td>
+        <td>7:38:53 PM</td>
+        <td>
+          Text Notifications link text is displayed.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:53 PM</td>
         <td>
           Test passed
         </td>
@@ -1475,7 +2098,7 @@
           <div class="test-detail">
             <p class="name">testTextNotificationsTextIsDisplayed</p>
             <p class="text-sm">
-              <span>5:49:30 PM</span> / <span>00:00:00:271</span>
+              <span>7:38:53 PM</span> / <span>00:00:00:250</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1484,9 +2107,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testTextNotificationsTextIsDisplayed</h5>
-<span class='badge badge-success'>08.09.2024 5:49:30 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:49:30 PM</span>
-<span class='badge badge-default'>00:00:00:271</span>
+<span class='badge badge-success'>08.12.2024 7:38:53 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:38:54 PM</span>
+<span class='badge badge-default'>00:00:00:250</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=35</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -1498,8 +2121,22 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:53 PM</td>
+        <td>
+          Starting testTextNotificationsTextIsDisplayed
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:49:30 PM</td>
+        <td>7:38:54 PM</td>
+        <td>
+          Text Notifications text is displayed.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:54 PM</td>
         <td>
           Test passed
         </td>
@@ -1516,7 +2153,7 @@
           <div class="test-detail">
             <p class="name">testValidateTermsAndConditions</p>
             <p class="text-sm">
-              <span>5:49:30 PM</span> / <span>00:00:36:180</span>
+              <span>7:38:54 PM</span> / <span>00:00:34:605</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1525,9 +2162,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testValidateTermsAndConditions</h5>
-<span class='badge badge-success'>08.09.2024 5:49:30 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:50:06 PM</span>
-<span class='badge badge-default'>00:00:36:180</span>
+<span class='badge badge-success'>08.12.2024 7:38:54 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:39:28 PM</span>
+<span class='badge badge-default'>00:00:34:605</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=36</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -1539,8 +2176,64 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:54 PM</td>
+        <td>
+          Scrolled to the Terms and Conditions checkbox.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:54 PM</td>
+        <td>
+          Unchecked the Terms and Conditions checkbox.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:55 PM</td>
+        <td>
+          Clicked on the Continue button without checking Terms and Conditions.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:56 PM</td>
+        <td>
+          Aria-invalid value before checking: null
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:57 PM</td>
+        <td>
+          Checked the Terms and Conditions checkbox.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:57 PM</td>
+        <td>
+          Aria-invalid value after checking: false
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:50:06 PM</td>
+        <td>7:39:27 PM</td>
+        <td>
+          Error message 'Please select Terms of Services' is correctly hidden.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:39:28 PM</td>
+        <td>
+          Clicked on the Continue button after checking Terms and Conditions.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:39:28 PM</td>
         <td>
           Test passed
         </td>
@@ -1557,7 +2250,7 @@
           <div class="test-detail">
             <p class="name">test_PartnerLogoisDisplayed</p>
             <p class="text-sm">
-              <span>5:50:06 PM</span> / <span>00:00:00:524</span>
+              <span>7:39:28 PM</span> / <span>00:00:00:523</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1566,9 +2259,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">test_PartnerLogoisDisplayed</h5>
-<span class='badge badge-success'>08.09.2024 5:50:06 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:50:07 PM</span>
-<span class='badge badge-default'>00:00:00:524</span>
+<span class='badge badge-success'>08.12.2024 7:39:28 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:39:29 PM</span>
+<span class='badge badge-default'>00:00:00:523</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=37</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -1580,8 +2273,15 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:39:29 PM</td>
+        <td>
+          Partner Logo Displayed: true
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:50:07 PM</td>
+        <td>7:39:29 PM</td>
         <td>
           Test passed
         </td>
@@ -1598,7 +2298,7 @@
           <div class="test-detail">
             <p class="name">testValidEnrollmentInputFields</p>
             <p class="text-sm">
-              <span>5:50:07 PM</span> / <span>00:00:20:610</span>
+              <span>7:39:29 PM</span> / <span>00:00:17:678</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1607,9 +2307,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testValidEnrollmentInputFields</h5>
-<span class='badge badge-success'>08.09.2024 5:50:07 PM</span>
-<span class='badge badge-danger'>08.09.2024 5:50:28 PM</span>
-<span class='badge badge-default'>00:00:20:610</span>
+<span class='badge badge-success'>08.12.2024 7:39:29 PM</span>
+<span class='badge badge-danger'>08.12.2024 7:39:46 PM</span>
+<span class='badge badge-default'>00:00:17:678</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=38</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -1621,8 +2321,29 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:39:30 PM</td>
+        <td>
+          Enrollment data: First Name: Ranjan, Last Name: Kumar, Email: MobAutomation16a3b@hep.com, Phone: 740-847-0487, PIN: 9394
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:39:43 PM</td>
+        <td>
+          Entered all valid enrollment input fields.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:39:46 PM</td>
+        <td>
+          Clicked on the Continue button after entering valid data.
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:50:28 PM</td>
+        <td>7:39:46 PM</td>
         <td>
           Test passed
         </td>
@@ -1646,13 +2367,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Aug 9, 2024 05:46:52 PM</h3>
+<h3>Aug 12, 2024 07:35:59 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Aug 9, 2024 05:50:29 PM</h3>
+<h3>Aug 12, 2024 07:39:48 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -1703,10 +2424,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>38</b> events passed</small></div>
+<div><small data-tooltip='37%'><b>53</b> events passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>0</b> others
+<b data-tooltip='%'>88</b> others
 </small>
 </div>
 </div>
@@ -1722,7 +2443,7 @@
 </div></div>
 <script>
 var timeline = {
-"testPartnerTenderNameHeader":4.1,"testWelcomeMessage2":3.109,"brokenImageTest":0.824,"testContinueButtonText":0.539,"testCurrentURL":0.081,"testPartnerLogo":2.842,"testPartnerLogoisDisplayed":0.267,"testPartnerTenderNameisDisplayed":0.353,"testSignInHereLinkTextisDisplayed":0.518,"testTextBeforeSignInHereLink":0.514,"testTitleisDisplayedCenter":2.619,"testWelcomeMessage1":3.089,"testWelcomePageTitle":0.494,"test_FooterText":3.297,"test_FooterTextisDisplayed":0.488,"testContinueButton":3.533,"brokenImageTest":1.377,"clickOnWelcomePageContinueButton":3.563,"testCombinedTermsAndConditionsText":3.796,"testEnrollPageRequiredFieldErrorMessage":5.319,"testIsDLRequired":3.424,"testPartnerLogo":3.23,"testPartnerTenderNameHeader":2.965,"testPartnerTenderNameisDisplayed":0.272,"testProgressIndicators":0.452,"testSignInHereLinkTextisDisplayed":0.279,"testTermsAndConditionsBeforeTextIsDisplayed":0.501,"testTermsAndConditionsLinkIsNotBroken":1.16,"testTermsAndConditionsLinkOpensNewWindow":6.013,"testTermsAndConditionsLinkTextIsDisplayed":0.547,"testTextBeforeSignInHereLink":0.367,"testTextNotificationsLinkIsNotBroken":1.142,"testTextNotificationsLinkOpensNewWindow":4.983,"testTextNotificationsLinkTextIsDisplayed":0.889,"testTextNotificationsTextIsDisplayed":0.271,"testValidateTermsAndConditions":36.18,"test_PartnerLogoisDisplayed":0.524,"testValidEnrollmentInputFields":20.61
+"testPartnerTenderNameHeader":4.18,"testWelcomeMessage2":3.067,"brokenImageTest":2.126,"testContinueButtonText":0.58,"testCurrentURL":0.134,"testPartnerLogo":2.843,"testPartnerLogoisDisplayed":0.273,"testPartnerTenderNameisDisplayed":0.347,"testSignInHereLinkTextisDisplayed":0.638,"testTextBeforeSignInHereLink":0.536,"testTitleisDisplayedCenter":2.665,"testWelcomeMessage1":3.112,"testWelcomePageTitle":0.54,"test_FooterText":3.264,"test_FooterTextisDisplayed":0.965,"testContinueButton":58.477,"brokenImageTest":0.983,"clickOnWelcomePageContinueButton":2.931,"testCombinedTermsAndConditionsText":3.838,"testEnrollPageRequiredFieldErrorMessage":5.73,"testIsDLRequired":3.218,"testPartnerLogo":3.211,"testPartnerTenderNameHeader":2.88,"testPartnerTenderNameisDisplayed":0.255,"testProgressIndicators":0.421,"testSignInHereLinkTextisDisplayed":0.302,"testTermsAndConditionsBeforeTextIsDisplayed":0.498,"testTermsAndConditionsLinkIsNotBroken":1.436,"testTermsAndConditionsLinkOpensNewWindow":6.158,"testTermsAndConditionsLinkTextIsDisplayed":0.636,"testTextBeforeSignInHereLink":0.33,"testTextNotificationsLinkIsNotBroken":1.322,"testTextNotificationsLinkOpensNewWindow":5.63,"testTextNotificationsLinkTextIsDisplayed":0.975,"testTextNotificationsTextIsDisplayed":0.25,"testValidateTermsAndConditions":34.605,"test_PartnerLogoisDisplayed":0.523,"testValidEnrollmentInputFields":17.678
 };
 </script>
 <div class="row">
@@ -1734,11 +2455,11 @@ var timeline = {
 <tbody>
 <tr>
 <td>Host Name</td>
-<td>BimNetworks_BuyDirect</td>
+<td>BimNetworks-BuyDirect_Mobile</td>
 </tr>
 <tr>
 <td>Environment</td>
-<td>QA</td>
+<td>UQA</td>
 </tr>
 <tr>
 <td>User Name</td>
@@ -1770,11 +2491,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 38,
+passEvents: 53,
 failEvents: 0,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 0
+infoEvents: 88
 };
 </script>        </div>
       </div>
