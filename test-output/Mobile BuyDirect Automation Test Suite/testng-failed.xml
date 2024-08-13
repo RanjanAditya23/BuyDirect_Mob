@@ -6,14 +6,29 @@
   </listeners>
   <test thread-count="5" name="Test Cases(failed)">
     <classes>
-      <class name="org.BIMNetworks.BuyDirect_Test.EnrollPageTest">
+      <class name="org.BIMNetworks.BuyDirect_Test.WelcomePageTest">
         <methods>
-          <include name="testTextBeforeSignInHereLink"/>
-          <include name="configureAppium"/>
-          <include name="tearDown"/>
+          <include name="testContinueButtonText"/>
+          <include name="test_FooterText"/>
           <include name="driverInitialization"/>
+          <include name="test_FooterTextisDisplayed"/>
+          <include name="configureAppium"/>
+          <include name="testPartnerTenderNameHeader"/>
+          <include name="testContinueButton"/>
+          <include name="testPartnerLogoisDisplayed"/>
+          <include name="testCurrentURL"/>
+          <include name="testPartnerLogo"/>
+          <include name="testTitleisDisplayedCenter"/>
+          <include name="testTextBeforeSignInHereLink"/>
+          <include name="testSignInHereLinkTextisDisplayed"/>
+          <include name="testPartnerTenderNameisDisplayed"/>
+          <include name="tearDown"/>
+          <include name="testWelcomeMessage1"/>
+          <include name="brokenImageTest"/>
+          <include name="testWelcomeMessage2"/>
+          <include name="testWelcomePageTitle"/>
         </methods>
-      </class> <!-- org.BIMNetworks.BuyDirect_Test.EnrollPageTest -->
+      </class> <!-- org.BIMNetworks.BuyDirect_Test.WelcomePageTest -->
     </classes>
   </test> <!-- Test Cases(failed) -->
 </suite> <!-- Failed suite [Mobile BuyDirect Automation Test Suite] -->
