@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test Cases</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>38/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>52/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Aug 12 19:35:59 IST 2024</td>
+<td>Started on:</td><td>Fri Sep 06 15:51:47 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>228 seconds (228900 ms)</td>
+<tr><td>Total time:</td><td>440 seconds (440295 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,53 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.BuyDirect.tests.EnrollPageTest.testValidEnrollmentInputFields()'><b>testValidEnrollmentInputFields</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
+<td><div><pre>java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at com.BuyDirect.utils.Helper.generateRandomEmail(Helper.java:76)
+	at com.BuyDirect.tests.EnrollPageTest.testValidEnrollmentInputFields(EnrollPageTest.java:795)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace859258736", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace859258736'><pre>java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at com.BuyDirect.utils.Helper.generateRandomEmail(Helper.java:76)
+	at com.BuyDirect.tests.EnrollPageTest.testValidEnrollmentInputFields(EnrollPageTest.java:795)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,195 +122,265 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_FooterTextisDisplayed()'><b>test_FooterTextisDisplayed</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
+<td title='com.BuyDirect.tests.WelcomePageTest.testWelcomePageTitle()'><b>testWelcomePageTitle</b><br>Test class: com.BuyDirect.tests.WelcomePageTest</td>
+<td></td>
+<td>1</td>
+<td>com.BuyDirect.tests.WelcomePageTest@35d08e6c</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.EnrollPageTest.testPartnerLogo()'><b>testPartnerLogo</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.EnrollPageTest.test_FooterTextisDisplayed()'><b>test_FooterTextisDisplayed</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.EnrollPageTest.testCreatePinToolTipDisplayAndHide()'><b>testCreatePinToolTipDisplayAndHide</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
+<td></td>
+<td>16</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.EnrollPageTest.validateCreatePINPlaceholder()'><b>validateCreatePINPlaceholder</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.WelcomePageTest.testContinueButtonText()'><b>testContinueButtonText</b><br>Test class: com.BuyDirect.tests.WelcomePageTest</td>
+<td></td>
+<td>1</td>
+<td>com.BuyDirect.tests.WelcomePageTest@35d08e6c</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.EnrollPageTest.testLastNameLabelIsDisplayedAndCorrect()'><b>testLastNameLabelIsDisplayedAndCorrect</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.WelcomePageTest.testPartnerTenderNameisDisplayed()'><b>testPartnerTenderNameisDisplayed</b><br>Test class: com.BuyDirect.tests.WelcomePageTest</td>
 <td></td>
 <td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@e54303</td></tr>
+<td>com.BuyDirect.tests.WelcomePageTest@35d08e6c</td></tr>
 <tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.testValidateTermsAndConditions()'><b>testValidateTermsAndConditions</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
+<td title='com.BuyDirect.tests.WelcomePageTest.brokenImageTest()'><b>brokenImageTest</b><br>Test class: com.BuyDirect.tests.WelcomePageTest</td>
 <td></td>
-<td>34</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@2dc995f4</td></tr>
+<td>2</td>
+<td>com.BuyDirect.tests.WelcomePageTest@35d08e6c</td></tr>
 <tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.testValidEnrollmentInputFields()'><b>testValidEnrollmentInputFields</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
+<td title='com.BuyDirect.tests.WelcomePageTest.testPartnerTenderNameHeader()'><b>testPartnerTenderNameHeader</b><br>Test class: com.BuyDirect.tests.WelcomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.BuyDirect.tests.WelcomePageTest@35d08e6c</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.WelcomePageTest.testPartnerLogo()'><b>testPartnerLogo</b><br>Test class: com.BuyDirect.tests.WelcomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.BuyDirect.tests.WelcomePageTest@35d08e6c</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.EnrollPageTest.testEnrollPageRequiredFieldErrorMessage()'><b>testEnrollPageRequiredFieldErrorMessage</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
 <td></td>
 <td>17</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@2dc995f4</td></tr>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
 <tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.testTextBeforeSignInHereLink()'><b>testTextBeforeSignInHereLink</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
-<td></td>
-<td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@e54303</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.testIsDLRequired()'><b>testIsDLRequired</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
-<td></td>
-<td>3</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@2dc995f4</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.testTextNotificationsLinkIsNotBroken()'><b>testTextNotificationsLinkIsNotBroken</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
-<td></td>
-<td>1</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@2dc995f4</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.testSignInHereLinkTextisDisplayed()'><b>testSignInHereLinkTextisDisplayed</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
-<td></td>
-<td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@e54303</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.testTextNotificationsTextIsDisplayed()'><b>testTextNotificationsTextIsDisplayed</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
-<td></td>
-<td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@2dc995f4</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.testCurrentURL()'><b>testCurrentURL</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
-<td></td>
-<td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@e54303</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.testPartnerLogoisDisplayed()'><b>testPartnerLogoisDisplayed</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
-<td></td>
-<td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@e54303</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.test_FooterText()'><b>test_FooterText</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
-<td></td>
-<td>3</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@e54303</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.testProgressIndicators()'><b>testProgressIndicators</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
-<td></td>
-<td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@2dc995f4</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.testTermsAndConditionsLinkTextIsDisplayed()'><b>testTermsAndConditionsLinkTextIsDisplayed</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
-<td></td>
-<td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@2dc995f4</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.testTermsAndConditionsLinkOpensNewWindow()'><b>testTermsAndConditionsLinkOpensNewWindow</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
-<td></td>
-<td>6</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@2dc995f4</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.testContinueButton()'><b>testContinueButton</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
-<td></td>
-<td>3</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@e54303</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.testPartnerTenderNameisDisplayed()'><b>testPartnerTenderNameisDisplayed</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
-<td></td>
-<td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@2dc995f4</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.testWelcomeMessage1()'><b>testWelcomeMessage1</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
-<td></td>
-<td>3</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@e54303</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.brokenImageTest()'><b>brokenImageTest</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
-<td></td>
-<td>2</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@e54303</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.testContinueButtonText()'><b>testContinueButtonText</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
-<td></td>
-<td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@e54303</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.testTermsAndConditionsBeforeTextIsDisplayed()'><b>testTermsAndConditionsBeforeTextIsDisplayed</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
-<td></td>
-<td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@2dc995f4</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.brokenImageTest()'><b>brokenImageTest</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
-<td></td>
-<td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@2dc995f4</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.testTitleisDisplayedCenter()'><b>testTitleisDisplayedCenter</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
-<td></td>
-<td>2</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@e54303</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.testPartnerTenderNameHeader()'><b>testPartnerTenderNameHeader</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
+<td title='com.BuyDirect.tests.EnrollPageTest.testCombinedTermsAndConditionsText()'><b>testCombinedTermsAndConditionsText</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
 <td></td>
 <td>4</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@e54303</td></tr>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
 <tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.testTermsAndConditionsLinkIsNotBroken()'><b>testTermsAndConditionsLinkIsNotBroken</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
+<td title='com.BuyDirect.tests.EnrollPageTest.testProgressIndicators()'><b>testProgressIndicators</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
 <td></td>
 <td>1</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@2dc995f4</td></tr>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
 <tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.testSignInHereLinkTextisDisplayed()'><b>testSignInHereLinkTextisDisplayed</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
+<td title='com.BuyDirect.tests.WelcomePageTest.testTitleisDisplayedCenter()'><b>testTitleisDisplayedCenter</b><br>Test class: com.BuyDirect.tests.WelcomePageTest</td>
 <td></td>
-<td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@2dc995f4</td></tr>
+<td>6</td>
+<td>com.BuyDirect.tests.WelcomePageTest@35d08e6c</td></tr>
 <tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.testPartnerTenderNameisDisplayed()'><b>testPartnerTenderNameisDisplayed</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
-<td></td>
-<td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@e54303</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.testTextNotificationsLinkOpensNewWindow()'><b>testTextNotificationsLinkOpensNewWindow</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
-<td></td>
-<td>5</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@2dc995f4</td></tr>
-<tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.testPartnerTenderNameHeader()'><b>testPartnerTenderNameHeader</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
+<td title='com.BuyDirect.tests.WelcomePageTest.testSignInHereLinkTextisDisplayed()'><b>testSignInHereLinkTextisDisplayed</b><br>Test class: com.BuyDirect.tests.WelcomePageTest</td>
 <td></td>
 <td>2</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@2dc995f4</td></tr>
+<td>com.BuyDirect.tests.WelcomePageTest@35d08e6c</td></tr>
 <tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.testPartnerLogo()'><b>testPartnerLogo</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
+<td title='com.BuyDirect.tests.EnrollPageTest.validateLastNamePlaceholder()'><b>validateLastNamePlaceholder</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.EnrollPageTest.testMobilePhoneLabelIsDisplayedAndCorrect()'><b>testMobilePhoneLabelIsDisplayedAndCorrect</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
 <td></td>
 <td>2</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@e54303</td></tr>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
 <tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.testCombinedTermsAndConditionsText()'><b>testCombinedTermsAndConditionsText</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
+<td title='com.BuyDirect.tests.EnrollPageTest.testPartnerTenderNameisDisplayed()'><b>testPartnerTenderNameisDisplayed</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.EnrollPageTest.testEmailLabelIsDisplayedAndCorrect()'><b>testEmailLabelIsDisplayedAndCorrect</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
 <td></td>
 <td>3</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@2dc995f4</td></tr>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
 <tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.testTextBeforeSignInHereLink()'><b>testTextBeforeSignInHereLink</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
+<td title='com.BuyDirect.tests.EnrollPageTest.testTermsAndConditionsLinkOpensNewWindow()'><b>testTermsAndConditionsLinkOpensNewWindow</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
+<td></td>
+<td>11</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.EnrollPageTest.testProgressIndicatorsOnEnrollPage()'><b>testProgressIndicatorsOnEnrollPage</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
+<td></td>
+<td>7</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.EnrollPageTest.testTermsAndConditionsBeforeTextIsDisplayed()'><b>testTermsAndConditionsBeforeTextIsDisplayed</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.EnrollPageTest.testTextNotificationsLinkIsNotBroken()'><b>testTextNotificationsLinkIsNotBroken</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.EnrollPageTest.testValidateTermsAndConditions()'><b>testValidateTermsAndConditions</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
+<td></td>
+<td>40</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.EnrollPageTest.test_FooterText()'><b>test_FooterText</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.WelcomePageTest.testCurrentURL()'><b>testCurrentURL</b><br>Test class: com.BuyDirect.tests.WelcomePageTest</td>
 <td></td>
 <td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@2dc995f4</td></tr>
+<td>com.BuyDirect.tests.WelcomePageTest@35d08e6c</td></tr>
 <tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.test_PartnerLogoisDisplayed()'><b>test_PartnerLogoisDisplayed</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
+<td title='com.BuyDirect.tests.EnrollPageTest.testTextNotificationsLinkTextIsDisplayed()'><b>testTextNotificationsLinkTextIsDisplayed</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.EnrollPageTest.validateMobilePhonePlaceholder()'><b>validateMobilePhonePlaceholder</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.EnrollPageTest.testSignInHereLinkTextisDisplayed()'><b>testSignInHereLinkTextisDisplayed</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.WelcomePageTest.test_FooterText()'><b>test_FooterText</b><br>Test class: com.BuyDirect.tests.WelcomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.BuyDirect.tests.WelcomePageTest@35d08e6c</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.WelcomePageTest.testPartnerLogoisDisplayed()'><b>testPartnerLogoisDisplayed</b><br>Test class: com.BuyDirect.tests.WelcomePageTest</td>
 <td></td>
 <td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@2dc995f4</td></tr>
+<td>com.BuyDirect.tests.WelcomePageTest@35d08e6c</td></tr>
 <tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.testTextNotificationsLinkTextIsDisplayed()'><b>testTextNotificationsLinkTextIsDisplayed</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
+<td title='com.BuyDirect.tests.EnrollPageTest.testTextNotificationsLinkOpensNewWindow()'><b>testTextNotificationsLinkOpensNewWindow</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
+<td></td>
+<td>12</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.EnrollPageTest.testFirstNameLabelIsDisplayedAndCorrect()'><b>testFirstNameLabelIsDisplayedAndCorrect</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.WelcomePageTest.testWelcomeMessage1()'><b>testWelcomeMessage1</b><br>Test class: com.BuyDirect.tests.WelcomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.BuyDirect.tests.WelcomePageTest@35d08e6c</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.EnrollPageTest.testTextBeforeSignInHereLink()'><b>testTextBeforeSignInHereLink</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
 <td></td>
 <td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@2dc995f4</td></tr>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
 <tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.testEnrollPageRequiredFieldErrorMessage()'><b>testEnrollPageRequiredFieldErrorMessage</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
+<td title='com.BuyDirect.tests.EnrollPageTest.testTermsAndConditionsLinkTextIsDisplayed()'><b>testTermsAndConditionsLinkTextIsDisplayed</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
 <td></td>
-<td>5</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@2dc995f4</td></tr>
+<td>1</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
 <tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.clickOnWelcomePageContinueButton()'><b>clickOnWelcomePageContinueButton</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
+<td title='com.BuyDirect.tests.WelcomePageTest.test_FooterTextisDisplayed()'><b>test_FooterTextisDisplayed</b><br>Test class: com.BuyDirect.tests.WelcomePageTest</td>
+<td></td>
+<td>1</td>
+<td>com.BuyDirect.tests.WelcomePageTest@35d08e6c</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.EnrollPageTest.testTextNotificationsTextIsDisplayed()'><b>testTextNotificationsTextIsDisplayed</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.EnrollPageTest.validateFirstNamePlaceholder()'><b>validateFirstNamePlaceholder</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.EnrollPageTest.validateEmailAddressPlaceholder()'><b>validateEmailAddressPlaceholder</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.EnrollPageTest.brokenImageTest()'><b>brokenImageTest</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.EnrollPageTest.testPinFieldWithToggle()'><b>testPinFieldWithToggle</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
+<td></td>
+<td>13</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.EnrollPageTest.clickOnWelcomePageContinueButton()'><b>clickOnWelcomePageContinueButton</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.WelcomePageTest.testContinueButton()'><b>testContinueButton</b><br>Test class: com.BuyDirect.tests.WelcomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.BuyDirect.tests.WelcomePageTest@35d08e6c</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.WelcomePageTest.testWelcomeMessage2()'><b>testWelcomeMessage2</b><br>Test class: com.BuyDirect.tests.WelcomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.BuyDirect.tests.WelcomePageTest@35d08e6c</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.EnrollPageTest.testTermsAndConditionsLinkIsNotBroken()'><b>testTermsAndConditionsLinkIsNotBroken</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
 <td></td>
 <td>2</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@2dc995f4</td></tr>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
 <tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.testWelcomeMessage2()'><b>testWelcomeMessage2</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
+<td title='com.BuyDirect.tests.EnrollPageTest.testCreatePINLabelIsDisplayedAndCorrect()'><b>testCreatePINLabelIsDisplayedAndCorrect</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
 <td></td>
-<td>3</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@e54303</td></tr>
+<td>2</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
 <tr>
-<td title='org.BIMNetworks.BuyDirect_Test.WelcomePageTest.testWelcomePageTitle()'><b>testWelcomePageTitle</b><br>Test class: org.BIMNetworks.BuyDirect_Test.WelcomePageTest</td>
+<td title='com.BuyDirect.tests.WelcomePageTest.testTextBeforeSignInHereLink()'><b>testTextBeforeSignInHereLink</b><br>Test class: com.BuyDirect.tests.WelcomePageTest</td>
+<td></td>
+<td>1</td>
+<td>com.BuyDirect.tests.WelcomePageTest@35d08e6c</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.EnrollPageTest.testContinueButtonText()'><b>testContinueButtonText</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
+<tr>
+<td title='com.BuyDirect.tests.EnrollPageTest.test_PartnerLogoisDisplayed()'><b>test_PartnerLogoisDisplayed</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
 <td></td>
 <td>0</td>
-<td>org.BIMNetworks.BuyDirect_Test.WelcomePageTest@e54303</td></tr>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
 <tr>
-<td title='org.BIMNetworks.BuyDirect_Test.EnrollPageTest.testPartnerLogo()'><b>testPartnerLogo</b><br>Test class: org.BIMNetworks.BuyDirect_Test.EnrollPageTest</td>
+<td title='com.BuyDirect.tests.EnrollPageTest.testPartnerTenderNameHeader()'><b>testPartnerTenderNameHeader</b><br>Test class: com.BuyDirect.tests.EnrollPageTest</td>
 <td></td>
 <td>3</td>
-<td>org.BIMNetworks.BuyDirect_Test.EnrollPageTest@2dc995f4</td></tr>
+<td>com.BuyDirect.tests.EnrollPageTest@53d102a2</td></tr>
 </table><p>
 </body>
 </html>
