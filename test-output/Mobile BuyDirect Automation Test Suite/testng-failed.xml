@@ -2,33 +2,20 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Mobile BuyDirect Automation Test Suite]" guice-stage="DEVELOPMENT">
   <listeners>
-    <listener class-name="org.BuyDirect_Android_utils.ExtentTestNGListener"/>
+    <listener class-name="com.BuyDirect.listeners.ExtentTestNGListener"/>
   </listeners>
   <test thread-count="5" name="Test Cases(failed)">
     <classes>
-      <class name="org.BIMNetworks.BuyDirect_Test.WelcomePageTest">
+      <class name="com.BuyDirect.tests.EnrollPageTest">
         <methods>
-          <include name="testContinueButtonText"/>
-          <include name="test_FooterText"/>
-          <include name="driverInitialization"/>
-          <include name="test_FooterTextisDisplayed"/>
           <include name="configureAppium"/>
-          <include name="testPartnerTenderNameHeader"/>
-          <include name="testContinueButton"/>
-          <include name="testPartnerLogoisDisplayed"/>
-          <include name="testCurrentURL"/>
-          <include name="testPartnerLogo"/>
-          <include name="testTitleisDisplayedCenter"/>
-          <include name="testTextBeforeSignInHereLink"/>
-          <include name="testSignInHereLinkTextisDisplayed"/>
-          <include name="testPartnerTenderNameisDisplayed"/>
+          <include name="driverInitialization"/>
+          <include name="testValidEnrollmentInputFields"/>
           <include name="tearDown"/>
-          <include name="testWelcomeMessage1"/>
-          <include name="brokenImageTest"/>
-          <include name="testWelcomeMessage2"/>
-          <include name="testWelcomePageTitle"/>
+          <include name="validateMobilePhonePlaceholder"/>
+          <include name="afterSuite"/>
         </methods>
-      </class> <!-- org.BIMNetworks.BuyDirect_Test.WelcomePageTest -->
+      </class> <!-- com.BuyDirect.tests.EnrollPageTest -->
     </classes>
   </test> <!-- Test Cases(failed) -->
 </suite> <!-- Failed suite [Mobile BuyDirect Automation Test Suite] -->

@@ -5,8 +5,8 @@
     <classes>
       <class name="org.BIMNetworks.BuyDirect_Test.EnrollPageTest">
         <methods>
-          <include name="testTextBeforeSignInHereLink"/>
           <include name="configureAppium"/>
+          <include name="test_FooterText"/>
           <include name="tearDown"/>
           <include name="driverInitialization"/>
         </methods>
